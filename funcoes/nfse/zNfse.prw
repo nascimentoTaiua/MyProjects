@@ -1,3 +1,4 @@
+#INCLUDE 'TOPCONN.CH'
 #INCLUDE 'PROTHEUS.CH'
 
 /*/{Protheus.doc} zNfse
@@ -6,15 +7,11 @@
     @author Taiuã Nascimento | TOTVS Nordeste
     @since 09/01/2024
     @version 1.01
-    @param MV_ZINSCRM, CHAR, Informar a inscrição municipal para utilização da função customizada zNsfe
     @see (https://nfse.recife.pe.gov.br/arquivos/WsNFSeNacional.pdf) "página 14"
-    Obs1: Necessário criar o parâmetro MV_ZINSCRM e informar em seu conteúdo a inscrição municipal.
-    Obs2: Necessário criar consulta padrão para SX5 com filtro para tabela 01 Series de N. Fiscais.
+    Obs2: Necessário criar consulta padrão da SF2 que retorne F2_DOC, F2_SERIE, F2_CLIENTE e F2_LOJA.
 /*/
 
 User Function zNfse()
-
-    Local aArea        := GetArea()
 
     Local aPergs       := {}
     Local paramRps     := Space(TamSX3( 'F2_DOC' )[01])
@@ -26,10 +23,6 @@ User Function zNfse()
     Local cProtocolo   := ""
     Local cLink        := ""
 
-    DbSelectArea("SF2")
-    SF2->(DbSetOrder(13))
-    SF2->(DbGoTop())
-
     aadd(aPergs, {1, "RPS"        , paramRps    , "", ".T.", "SF2NFS"   , ".T.", 80, .F.})
     aadd(aPergs, {1, "Serie Docto", paramSerie  , "", ".T.", "", ".T.", 80, .F.})
     aadd(aPergs, {1, "Cliente"    , paramCliente, "", ".T.", ""   , ".T.", 80, .F.})
@@ -40,14 +33,19 @@ User Function zNfse()
 
     cNfs       := AllTrim(Posicione( 'SF2' ,1,FWxFilial( 'SF2' )+MV_PAR01+AllTrim(MV_PAR02)+MV_PAR03+MV_PAR04+ ' ' + 'N' , 'F2_NFELETR' ))
     cProtocolo := AllTrim(Posicione( 'SF2' ,1,FWxFilial( 'SF2' )+MV_PAR01+AllTrim(MV_PAR02)+MV_PAR03+MV_PAR04+ ' ' + 'N' , 'F2_CODNFE' ))
+    cProtocolo := LEFT(cProtocolo, 4)+RIGHT(cProtocolo, 4)
 
-    IF (cNfs != "" .AND. cProtocolo != "")
-        cLink := "https://nfse.recife.pe.gov.br/contribuinte/notaprint.aspx?ccm="+cInscricao+"&nf="+cNfs+"&cod="+SubStr(cProtocolo, 1, 4)+SubStr(cProtocolo, 6, 4)
-        ShellExecute("Open", cLink, "", "", 1)
+    IF (cNfs == "" .AND. cProtocolo == "")
+        cMsg := "Nota ainda nao autorizada. Selecione uma nota com codigo de verificacao. "
+        cMsg += "Verifique o conteúdo dos campos F2_NFELETR e F2_CODNFE"
+        MSGALERT(cMsg)
     ELSE
-        MSGALERT("Verifique os campos F2_CODNFE e F2_NFELETR na tabela SF2","Documento sem informações da NFS-e")
-    ENDIF
+        cLink := "https://nfse.recife.pe.gov.br/contribuinte/notaprint.aspx?"
+        cLink += "ccm="+cInscricao
+        cLink += "&nf="+cNfs
+        cLink += "&cod="+cProtocolo
 
-    RestArea(aArea)
+        ShellExecute("Open", cLink, "", "", 1)
+    ENDIF
 
 Return
