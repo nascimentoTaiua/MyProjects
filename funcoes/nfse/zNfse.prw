@@ -29,23 +29,22 @@ User Function zNfse()
     aadd(aPergs, {1, "Loja"       , paramLoja   , "", ".T.", ""      , ".T.", 80, .F.})
 
     IF Parambox(aPergs, "Informe os Parâmetros")
-    ENDIF
+        cNfs       := AllTrim(Posicione( 'SF2' ,1,FWxFilial( 'SF2' )+MV_PAR01+AllTrim(MV_PAR02)+MV_PAR03+MV_PAR04+ ' ' + 'N' , 'F2_NFELETR' ))
+        cProtocolo := AllTrim(Posicione( 'SF2' ,1,FWxFilial( 'SF2' )+MV_PAR01+AllTrim(MV_PAR02)+MV_PAR03+MV_PAR04+ ' ' + 'N' , 'F2_CODNFE' ))
+        cProtocolo := LEFT(cProtocolo, 4)+RIGHT(cProtocolo, 4)
 
-    cNfs       := AllTrim(Posicione( 'SF2' ,1,FWxFilial( 'SF2' )+MV_PAR01+AllTrim(MV_PAR02)+MV_PAR03+MV_PAR04+ ' ' + 'N' , 'F2_NFELETR' ))
-    cProtocolo := AllTrim(Posicione( 'SF2' ,1,FWxFilial( 'SF2' )+MV_PAR01+AllTrim(MV_PAR02)+MV_PAR03+MV_PAR04+ ' ' + 'N' , 'F2_CODNFE' ))
-    cProtocolo := LEFT(cProtocolo, 4)+RIGHT(cProtocolo, 4)
+        IF (cNfs == "" .AND. cProtocolo == "")
+            cMsg := "Nota ainda nao autorizada. Selecione uma nota com codigo de verificacao. "
+            cMsg += "Verifique o conteúdo dos campos F2_NFELETR e F2_CODNFE"
+            MSGALERT(cMsg)
+        ELSE
+            cLink := "https://nfse.recife.pe.gov.br/contribuinte/notaprint.aspx?"
+            cLink += "ccm="+cInscricao
+            cLink += "&nf="+cNfs
+            cLink += "&cod="+cProtocolo
 
-    IF (cNfs == "" .AND. cProtocolo == "")
-        cMsg := "Nota ainda nao autorizada. Selecione uma nota com codigo de verificacao. "
-        cMsg += "Verifique o conteúdo dos campos F2_NFELETR e F2_CODNFE"
-        MSGALERT(cMsg)
-    ELSE
-        cLink := "https://nfse.recife.pe.gov.br/contribuinte/notaprint.aspx?"
-        cLink += "ccm="+cInscricao
-        cLink += "&nf="+cNfs
-        cLink += "&cod="+cProtocolo
-
-        ShellExecute("Open", cLink, "", "", 1)
+            ShellExecute("Open", cLink, "", "", 1)
+        ENDIF
     ENDIF
 
 Return
