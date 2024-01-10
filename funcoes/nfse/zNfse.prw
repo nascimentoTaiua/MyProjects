@@ -21,7 +21,7 @@ User Function zNfse()
     Local paramSerie   := Space(TamSX3( 'F2_SERIE' )[01])
     Local paramCliente := Space(TamSX3( 'A1_COD' )[01])
     Local paramLoja    := Space(TamSX3( 'A1_LOJA' )[01])
-    Local cInscricao   := GetMV( 'MV_ZINSCRM' )
+    Local cInscricao   := SM0->M0_INSCM
     Local cNfs         := ""
     Local cProtocolo   := ""
     Local cLink        := ""
@@ -30,9 +30,9 @@ User Function zNfse()
     SF2->(DbSetOrder(13))
     SF2->(DbGoTop())
 
-    aadd(aPergs, {1, "RPS"        , paramRps    , "", ".T.", "SF2"   , ".T.", 80, .F.})
-    aadd(aPergs, {1, "Serie Docto", paramSerie  , "", ".T.", "SX5SER", ".T.", 80, .F.})
-    aadd(aPergs, {1, "Cliente"    , paramCliente, "", ".T.", "SA1"   , ".T.", 80, .F.})
+    aadd(aPergs, {1, "RPS"        , paramRps    , "", ".T.", "SF2NFS"   , ".T.", 80, .F.})
+    aadd(aPergs, {1, "Serie Docto", paramSerie  , "", ".T.", "", ".T.", 80, .F.})
+    aadd(aPergs, {1, "Cliente"    , paramCliente, "", ".T.", ""   , ".T.", 80, .F.})
     aadd(aPergs, {1, "Loja"       , paramLoja   , "", ".T.", ""      , ".T.", 80, .F.})
 
     IF Parambox(aPergs, "Informe os Parâmetros")
