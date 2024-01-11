@@ -48,3 +48,9 @@ User Function zNfse()
     ENDIF
 
 Return
+
+//Função para buscar o municipio e retornar o link para a função zNfse
+
+User Function zGetLinkMun()
+    
+Return 
