@@ -1,14 +1,16 @@
-#INCLUDE 'TOPCONN.CH'
-#INCLUDE 'PROTHEUS.CH'
+#INCLUDE 'topconn.ch'
+#INCLUDE 'protheus.ch'
+#INCLUDE 'totvs.ch'
 
 /*/{Protheus.doc} zNfse
-    Função para abrir via navegador a NFS da Prefeitura do Recife
+    Função para chamar o link da NFS-e, de acordo com a RPS informada. 
     @type  Function
     @author Taiuã Nascimento | TOTVS Nordeste
     @since 09/01/2024
-    @version 1.01
-    @see (https://nfse.recife.pe.gov.br/arquivos/WsNFSeNacional.pdf) "página 14"
-    Obs2: Necessário criar consulta padrão da SF2 que retorne F2_DOC, F2_SERIE, F2_CLIENTE e F2_LOJA.
+    @version 1.02
+    Obs1: Necessário criar consulta padrão da SF2 que retorne F2_DOC, F2_SERIE, F2_CLIENTE e F2_LOJA.
+    Obs2: Criar campo na tabela CC2->CC2_XLINK, nesse campo será informado a estrutura da URL para
+    Vizualização da NFS-e emitida pela respectiva prefeitura.
 /*/
 
 User Function zNfse()
@@ -18,7 +20,9 @@ User Function zNfse()
     Local paramSerie   := Space(TamSX3( 'F2_SERIE' )[01])
     Local paramCliente := Space(TamSX3( 'A1_COD' )[01])
     Local paramLoja    := Space(TamSX3( 'A1_LOJA' )[01])
-    Local cInscricao   := SM0->M0_INSCM
+    Local cInscricao   := SM0->M0_INSCM //Campo utilizado na chamada do link na linha 46
+    Local cMunicipio   := SubStr(SM0->M0_CODMUN, 3, 5)
+    Local cEstado      := SM0->M0_ESTENT
     Local cNfs         := ""
     Local cProtocolo   := ""
     Local cLink        := ""
@@ -29,7 +33,10 @@ User Function zNfse()
     aadd(aPergs, {1, "Loja"       , paramLoja   , "", ".T.", ""      , ".T.", 80, .F.})
 
     IF Parambox(aPergs, "Informe os Parâmetros")
+        
         cNfs       := AllTrim(Posicione( 'SF2' ,1,FWxFilial( 'SF2' )+MV_PAR01+AllTrim(MV_PAR02)+MV_PAR03+MV_PAR04+ ' ' + 'N' , 'F2_NFELETR' ))
+
+        cNfs       := Strzero(Val(cNfs),TamSX3("F2_DOC")[1])
         cProtocolo := AllTrim(Posicione( 'SF2' ,1,FWxFilial( 'SF2' )+MV_PAR01+AllTrim(MV_PAR02)+MV_PAR03+MV_PAR04+ ' ' + 'N' , 'F2_CODNFE' ))
         cProtocolo := LEFT(cProtocolo, 4)+RIGHT(cProtocolo, 4)
 
@@ -38,19 +45,9 @@ User Function zNfse()
             cMsg += "Verifique o conteúdo dos campos F2_NFELETR e F2_CODNFE"
             MSGALERT(cMsg)
         ELSE
-            cLink := "https://nfse.recife.pe.gov.br/contribuinte/notaprint.aspx?"
-            cLink += "ccm="+cInscricao
-            cLink += "&nf="+cNfs
-            cLink += "&cod="+cProtocolo
-
-            ShellExecute("Open", cLink, "", "", 1)
+            cLink := Posicione("CC2",1,XFILIAL("CC2")+cEstado+cMunicipio,"CC2_XLINK")
+            ShellExecute("Open", &(cLink), "", "", 1)
         ENDIF
     ENDIF
 
 Return
-
-//Função para buscar o municipio e retornar o link para a função zNfse
-
-User Function zGetLinkMun()
-    
-Return 
