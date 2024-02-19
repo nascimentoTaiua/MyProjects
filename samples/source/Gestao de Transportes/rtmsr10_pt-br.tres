@@ -1,0 +1,35 @@
+0001#STR0001#ALL#Este programa ira imprimir as Cotacoes.             
+0002#STR0002#ALL#                                                    
+0003#STR0003#ALL#Cotacao de Frete
+0004#STR0004#ALL#Zebrado
+0005#STR0005#ALL#Administracao
+0006#STR0006#ALL#Imprimindo a Cotacao de Frete.
+0007#STR0007#ALL#*** CANCELADO PELO OPERADOR ***
+0008#STR0008#ALL#Filial.......: 
+0009#STR0009#ALL#Numero.......: 
+0010#STR0010#ALL#Data Cotacao.: 
+0011#STR0011#ALL#Data Validade: 
+0012#STR0012#ALL#Telefone.....: 
+0013#STR0013#ALL#Contato...: 
+0014#STR0014#ALL#Remetente....: 
+0015#STR0015#ALL#Destinatario.: 
+0016#STR0016#ALL#Devedor......: 
+0017#STR0017#ALL#Destino.......: 
+0018#STR0018#ALL#Peso Real.....: 
+0019#STR0019#ALL#Peso Cubado...: 
+0020#STR0020#ALL#Produto.......: 
+0021#STR0021#ALL#Volumes.......: 
+0022#STR0022#ALL#Embalagem.....: 
+0023#STR0023#ALL#Valor Mercad..: 
+0024#STR0024#ALL#Tipo do Frete.: 
+0025#STR0025#ALL#Tipo Tabela..: 
+0026#STR0026#ALL#Desconto......: 
+0027#STR0027#ALL# C L I E N T E 
+0028#STR0028#ALL# C A R G A 
+0029#STR0029#ALL# F R E T E   C O M B I N A D O 
+0030#STR0030#ALL# O B S E R V A C O E S 
+0031#STR0031#ALL#TOTAL DE FRETE
+0032#STR0032#ALL#Atendente: 
+0033#STR0033#ALL#Unitizadores..: 
+0034#STR0034#ALL#Cd.Solicitante:
+0035#STR0035#ALL#Contato......:

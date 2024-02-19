@@ -1,0 +1,59 @@
+0001#STR0001#ALL#Export of benefits files
+0002#STR0002#ALL#This routine processes and generates benefits file for integration
+0003#STR0003#ALL#Reading INI file
+0004#STR0004#ALL#Processing start
+0005#STR0005#ALL#There were problems closing the file.
+0006#STR0006#ALL#Processing end
+0007#STR0007#ALL#Export of benefits files
+0008#STR0008#ALL#Ok
+0009#STR0009#ALL#Warning
+0010#STR0010#ALL#There are no records to record.
+0011#STR0011#ALL#Process canceled by user!
+0012#STR0012#ALL#File cannot be created! Check parameters.
+0013#STR0013#ALL#Attention
+0014#STR0014#ALL#Process canceled by user!
+0015#STR0015#ALL#Special
+0016#STR0016#ALL#Management
+0017#STR0017#ALL#Benefits List
+0018#STR0018#ALL#Issuance of report for benefits assessment.
+0019#STR0019#ALL#It will be printed in accordance with the parameters requested.
+0020#STR0020#ALL#*** CANCELED BY OPERATOR ***
+0021#STR0021#ALL#Printing...
+0022#STR0022#ALL#Cost Center Total Values:
+0023#STR0023#ALL#Number of Cost Center Entries:
+0024#STR0024#ALL#Branch Total Values:
+0025#STR0025#ALL#Number of Branch Entries: 
+0026#STR0026#ALL#Company Total Values:
+0027#STR0027#ALL#Number of Company Entries:
+0028#STR0028#ALL#Invalid data. Check the routine Process Log!
+0029#STR0029#ALL#.INI file not entered in Auxiliary Table S018!
+0030#STR0030#ALL#Output file not entered in Auxiliary Table S018
+0031#STR0031#ALL#Validation Function not entered in Auxiliary Table S018
+0032#STR0032#ALL#Branch: 
+0033#STR0033#ALL# - Registration: 
+0034#STR0034#ALL# - Employee with RA_CEP field blank.
+0035#STR0035#ALL# - Employee with RA_CIC field blank.
+0036#STR0036#ALL# - Employee with RA_RG field blank.
+0037#STR0037#ALL# - Employee with RA_MAE field blank.
+0038#STR0038#ALL# - Employee with RA_ENDEREC field blank.
+0039#STR0039#ALL# - Employee with RA_COMPLEM field blank.
+0040#STR0040#ALL# - Employee with RA_MUNICIP field blank.
+0041#STR0041#ALL# - Employee with RA_ESTADO field blank.
+0042#STR0042#ALL#Branch
+0043#STR0043#ALL#Registration
+0044#STR0044#ALL#Name
+0045#STR0045#ALL#Benefit Type
+0046#STR0046#ALL#Benefit Value
+0047#STR0047#ALL#Initialization file not found. 
+0048#STR0048#ALL#File already exists. Overwrite?
+0049#STR0049#ALL#No
+0050#STR0050#ALL#Yes
+0051#STR0051#ALL#Parameter on the supplier not filled out!
+0052#STR0052#ALL#Parameter on the admission date not filled out!
+0053#STR0053#ALL#Parameter on benefits type not filled out!
+0054#STR0054#ALL#INI File processed
+0055#STR0055#ALL# - Employee with Delivery Place Code (RA_LOCBNF) in blank.
+0056#STR0056#ALL#Validation function with character -()- invalid, on table S018
+0057#STR0057#ALL#Unable to find records in the Employees table (SRA). Check the parameters (Branch / Cost Center / Registration / Admission Date) entered in the filter.
+0058#STR0058#ALL#Unable to find records in the Benefits table (SR0). Check the parameters (Branch / Cost Center / Registration / Admission Date / Process / Period) entered in the filter.
+0059#STR0059#ALL#Unable to find records in the Benefits History table (RG2). Check the parameters (Branch / Cost Center / Registration / Admission Date / Process / Period) entered in the filter.

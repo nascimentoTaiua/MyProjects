@@ -1,0 +1,34 @@
+0001#STR0001#ALL#O cliente não tem número contribuinte registado. não será criada a factura.
+0002#STR0002#ALL#Actualize os dados do cliente!
+0003#STR0003#ALL#O cliente não tem número contribuinte registado 
+0004#STR0004#ALL#O cliente não tem número de contribuinte válido registado. não será criada a factura.
+0005#STR0005#ALL#O número contribuinte é inválido 
+0006#STR0006#ALL#Dados Do Cliente
+0007#STR0007#ALL#Dados do cliente 
+0008#STR0008#ALL#Abertura De Documento
+0009#STR0009#ALL#Abertura de documento 
+0010#STR0010#ALL#Dados do artigo 
+0011#STR0011#ALL#Fim De Impressão
+0012#STR0012#ALL#Erro No Controlo De Memória Fiscal. Terminal Bloqueado!
+0013#STR0013#ALL#Erro No Controlo De Memória De Trabalho. Terminal Bloqueado!
+0015#STR0015#ALL#Dados Não Válidos Num Campo
+0016#STR0016#ALL#Comando Não Válido Para O Estado Fiscal Actual
+0017#STR0017#ALL#Acima Do Total
+0018#STR0018#ALL#Memória Fiscal Cheia, Bloqueada Ou Dada De Baixa. Terminal Bloqueado!
+0019#STR0019#ALL#Memória fiscal a ponto de ser totalmente preenchida!
+0020#STR0020#ALL#Erro Não Determinado Na Impressora Fiscal!
+0021#STR0021#ALL#Verificação Do Estado Da Impressora
+0022#STR0022#ALL# verificação do estado da impressora 
+0023#STR0023#ALL#Erro Na Abertura Do Documento!
+0024#STR0024#ALL#Erro Da Impressora Fiscal
+0025#STR0025#ALL#Erro na abertura do documento, não retorna número de documento 
+0026#STR0026#ALL#Erro De Impressora Fiscal
+0028#STR0028#ALL#Impressora Fiscal Offline!
+0029#STR0029#ALL#Falta Papel Na Impressora Fiscal
+0030#STR0030#ALL#Falta Papel Na Impressora Fiscal
+0031#STR0031#ALL#Tampa De Impressora Aberta!
+0032#STR0032#ALL#Número Do Pdv
+0033#STR0033#ALL#Número do pdv-orçamento 
+0034#STR0034#ALL#Erro no sub-total do documento
+0035#STR0035#ALL#Erro no sub-total, não retorna os dados do documento
+0036#STR0036#ALL#Data da impressora fiscal diferente da data do módulo

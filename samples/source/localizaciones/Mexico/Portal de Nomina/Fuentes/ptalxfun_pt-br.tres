@@ -1,0 +1,27 @@
+0001#STR0001#MEX#01-Admissão
+0002#STR0002#MEX#03-Alta Reg.Patr.
+0003#STR0003#MEX#05-Alter.Sal.
+0004#STR0004#MEX#06-Re-admissão
+0005#STR0005#MEX#04-Baixa Reg.Patr
+0006#STR0006#MEX#20-Baixa Folha de Pagamento
+0007#STR0007#MEX#Mudança Departamento
+0008#STR0008#MEX#Mudança Centro de Custo
+0009#STR0009#MEX#Mudança Função
+0010#STR0010#MEX#Mudança Cargos
+0011#STR0011#MEX#Não foi encontrada a Função
+0012#STR0012#MEX#Não foi encontrado o Cargo
+0013#STR0013#MEX#Não foi encontrado a Loc. 
+0014#STR0014#MEX#Não foi encontrado o C.C.
+0015#STR0015#MEX#Não foi encontrada a Função
+0016#STR0016#MEX#Não foi encontrado o Cargo
+0017#STR0017#MEX#Solicitado
+0018#STR0018#MEX#Ativo
+0019#STR0019#MEX#Pago
+0020#STR0020#MEX#Suspendido
+0021#STR0021#MEX#Dias de gozo
+0022#STR0022#MEX#Dias Programados
+0023#STR0023#MEX#Dias de Gozo
+0024#STR0024#MEX#Dias Pagos
+0025#STR0025#MEX#Acidente de Trabalho
+0026#STR0026#MEX#Acidente no Percurso
+0027#STR0027#MEX#Doença de Trabalho

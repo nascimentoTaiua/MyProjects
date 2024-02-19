@@ -1,0 +1,40 @@
+0001#STR0001#ALL#Sales Order Issue - Telesales
+0002#STR0002#ALL#This program will issue the sales order made by the system
+0003#STR0003#ALL#with or without release or the issue of invoice.
+0004#STR0004#ALL#Inform the selection parameters to issue the Orders
+0005#STR0005#ALL#Z-Form
+0006#STR0006#ALL#Administration
+0007#STR0007#ALL#Selecting Files...
+0008#STR0008#ALL#CANCELLED BY OPERATOR
+0009#STR0009#ALL#Company
+0010#STR0010#ALL#PLACE FOR DELIVERY
+0011#STR0011#ALL#COLLECTION ADDRESS
+0012#STR0012#ALL#Name
+0013#STR0013#ALL#Address
+0014#STR0014#ALL#Inscr./ID
+0015#STR0015#ALL#SSN/EIN
+0016#STR0016#ALL#Servicing   : 
+0017#STR0017#ALL#Order       : 
+0018#STR0018#ALL#Issue       : 
+0019#STR0019#ALL#Freight     : 
+0020#STR0020#ALL#Beginn./ End: 
+0021#STR0021#ALL#Expenses    : 
+0022#STR0022#ALL#Contact     : 
+0023#STR0023#ALL#Discount    : 
+0024#STR0024#ALL#Sales Rep.  : 
+0025#STR0025#ALL#Paymt.Term  : 
+0026#STR0026#ALL#Operator    : 
+0027#STR0027#ALL#Load Map    : 
+0028#STR0028#ALL#LOAD   
+0029#STR0029#ALL#DO NOT LOAD
+0030#STR0030#ALL#Paymt.Term  : 
+0031#STR0031#ALL#Indemnity   : 
+0032#STR0032#ALL#Carrier     : 
+0033#STR0033#ALL#Validity    : 
+0034#STR0034#ALL#Observat. : 
+0035#STR0035#ALL#Item Product Description MU Qty Unit Val. Item Val. Desc.% Desc. Val. Addit.% Addit. Val.
+0036#STR0036#ALL#Total of quantities  
+0037#STR0037#ALL#Goods total value
+0038#STR0038#ALL#| Expiration     Terms          Value || Expiration     Term          Value || Expiration     Terms          Value || Exp.     Terms          Value |
+0039#STR0039#ALL#From service  
+0040#STR0040#ALL#To service       

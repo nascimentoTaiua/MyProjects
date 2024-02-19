@@ -1,0 +1,39 @@
+0001#STR0001#ALL#Relatorio de tabela de frete
+0002#STR0002#ALL#Tabela de frete
+0003#STR0003#ALL#Componente de frete
+0004#STR0004#ALL#Sub-faixas
+0005#STR0005#ALL#Complemento Sub-faixa
+0006#STR0006#ALL#Complemento tabela de frete
+0007#STR0007#ALL#Descricao
+0008#STR0008#ALL#Tipo tabela
+0009#STR0009#ALL#Descrição tipo tabela
+0010#STR0010#ALL#Origem
+0011#STR0011#ALL#Descricao origem
+0012#STR0012#ALL#Destino
+0013#STR0013#ALL#Descricao destino
+0014#STR0014#ALL#Componente
+0015#STR0015#ALL#Item
+0016#STR0016#ALL#Faixas - ate
+0017#STR0017#ALL#Fator peso
+0018#STR0018#ALL#Valor
+0019#STR0019#ALL#Fracao
+0020#STR0020#ALL#Componente tarifa
+0021#STR0021#ALL#Excedente minimo
+0022#STR0022#ALL#Valor minimo
+0023#STR0023#ALL#Valor maximo
+0024#STR0024#ALL#Valor excedente
+0025#STR0025#ALL#Fracao excedente
+0026#STR0026#ALL#Produto
+0027#STR0027#ALL#Filial
+0028#STR0028#ALL#Inicio vigencia
+0029#STR0029#ALL#Descricao do produto
+0030#STR0030#ALL#Tabela de tarifa
+0031#STR0031#ALL#Complemento dos componentes
+0032#STR0032#ALL#Excedente das faixas dos componentes
+0033#STR0033#ALL#Subfaixas - ate
+0034#STR0034#ALL#Componentes relacionados a TDA
+0035#STR0035#ALL#Percentual Base Calculo
+0036#STR0036#ALL#Componentes relacionados a TRT
+0037#STR0037#ALL#Componente de frete TRT
+0038#STR0038#ALL#Percentual
+0039#STR0039#ALL#Fim vigencia

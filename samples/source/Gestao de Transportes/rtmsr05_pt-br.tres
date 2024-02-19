@@ -1,0 +1,25 @@
+0001#STR0001#ALL#Este programa irá emitir o Romaneio de Carga.
+0002#STR0002#ALL#Romaneio de Carga
+0003#STR0003#ALL#Zebrado
+0004#STR0004#ALL#Administracao
+0005#STR0005#ALL#Imprimindo o Romaneio de Carga.
+0006#STR0006#ALL#CANCELADO PELO OPERADOR
+0007#STR0007#ALL#Conferente                           Arrumador
+0008#STR0008#ALL#Ajudante                             Ajudante
+0009#STR0009#ALL#Filial de Origem: 
+0010#STR0010#ALL#Emissao: 
+0011#STR0011#ALL#CNH : 
+0012#STR0012#ALL#Veiculo   : 
+0013#STR0013#ALL# Tipo: 
+0014#STR0014#ALL#Capac: 
+0015#STR0016#ALL#Motorista : 
+0016#STR0017#ALL#Telerisco: 
+0017#STR0018#ALL#Observacao: 
+0018#STR0019#ALL#Valor Adto.: 
+0019#STR0020#ALL#Telerisco: 
+0020#STR0021#ALL#Viagem: 
+0021#STR0022#ALL#|Destino     |
+0022#STR0023#ALL#|Descarga    |
+0023#STR0024#ALL#|(  ) 1a Parte |(  ) 2a Parte |(  ) 3a Parte |(  ) Encerramento
+0024#STR0025#ALL# |  No. Lacre: 
+0025#STR0026#ALL#Local/Localizacao  Documento/Serie  Volume

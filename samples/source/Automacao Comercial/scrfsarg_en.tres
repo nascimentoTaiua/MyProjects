@@ -1,0 +1,37 @@
+0001#STR0001#ALL#The Customer does not have registered CUIT. The invoice will not be generated.
+0002#STR0002#ALL#Update the Customer´s data!
+0003#STR0003#ALL#The Customer does not have registered CUIT 
+0004#STR0004#ALL#The Customer does not have registered CUIT. The invoice will not be generated.
+0005#STR0005#ALL#Invalid CUIT 
+0006#STR0006#ALL#Customer´s Data
+0007#STR0007#ALL#Customer´s Data 
+0008#STR0008#ALL#Document Opening
+0009#STR0009#ALL#Document Opening 
+0010#STR0010#ALL#Product Data 
+0011#STR0011#ALL#End of Printing
+0012#STR0012#ALL#Error on Fiscal Memory Check. Locked Terminal!
+0013#STR0013#ALL#Error on Working Memory Check. Locked Terminal!
+0014#STR0014#ALL#Unknown Command
+0015#STR0015#ALL#Data not Valid on a Field
+0016#STR0016#ALL#Command not valid for the Present Fiscal Status
+0017#STR0017#ALL#Above the Total
+0018#STR0018#ALL#Fiscal Memory full, locked or posted. Locked Terminal Bloqueado!
+0019#STR0019#ALL#Fiscal Memory almost totally filled in!
+0020#STR0020#ALL#Error not identified on the Fiscal Printer!
+0021#STR0021#ALL#Checking the Printer Status
+0022#STR0022#ALL#Checking the Printer Status 
+0023#STR0023#ALL#Error while Opening the Document!
+0024#STR0024#ALL#Error on the Fiscal Printer
+0025#STR0025#ALL#Error while Opening the Document, do not return the Document Number 
+0026#STR0026#ALL#Error on the Fiscal Printer
+0027#STR0027#ALL#Check the Problem
+0028#STR0028#ALL#Fiscal Printer Off-Line!
+0029#STR0029#ALL#Lack of paper on the Fiscal Printer
+0030#STR0030#ALL#Lack of paper on the Fiscal Printer
+0031#STR0031#ALL#Printer Lid Open!
+0032#STR0032#ALL#POS Number
+0033#STR0033#ALL#POS Number-Budget 
+0034#STR0034#ALL#Error in the document Subtotal
+0035#STR0035#ALL#Error in the Subtotal, it does not bring the document data back
+0036#STR0036#ALL#Tax printer date differs from system date 
+0037#STR0037#ALL#Attention

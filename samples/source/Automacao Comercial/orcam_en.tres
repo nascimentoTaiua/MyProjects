@@ -1,0 +1,35 @@
+0001#STR0001#ALL#Budgets Issues
+0002#STR0002#ALL#The aim of this program is to show the budgets in details
+0003#STR0003#ALL#Z.Form
+0004#STR0004#ALL#Administration
+0005#STR0005#ALL#|Budget Number :
+0006#STR0006#ALL#Issue   :
+0007#STR0007#ALL#Validity :
+0008#STR0008#ALL#|Customer      :
+0009#STR0009#ALL#|Sales Represen:
+0010#STR0010#ALL#|It Code Description |
+0011#STR0011#ALL#|T O T A L ......................................................
+0012#STR0012#ALL#|D I S C O U N T ................................................
+0013#STR0013#ALL#|N E T ..........................................................
+0014#STR0014#ALL#|Payment Term.......:
+0015#STR0015#ALL#|Mode of Payment....:
+0016#STR0016#ALL#Payment Term 
+0017#STR0017#ALL#|Your Order Nr.     :
+0018#STR0018#ALL#CNPJ:
+0019#STR0019#ALL#SI.:
+0020#STR0020#ALL#IF.:
+0021#STR0021#ALL#IM.:
+0022#STR0022#ALL#*** NOT A TAX DOCUMENT ***
+0023#STR0023#ALL#*** REQUIRE THE TAX COUPON - NOT VALID AS GUARANTEE OF GOODS ***
+0024#STR0024#ALL#NOT VALID AS GUARANTEE OF MERCHANDISE
+0025#STR0025#ALL#|IT      Code              Descript.                     Qty.      UM       Unit Val.   ST      Desc.Amn         Total Amn
+0026#STR0026#ALL#NOT A TAX DOCUMENT - INVALID AS GUARANTEE.
+0027#STR0027#ALL#|T O T A L
+0028#STR0028#ALL#|D I S C O U N T 
+0029#STR0029#ALL#|N E T         
+0030#STR0030#ALL#AUXILIARY SALE DOCUMENT - QUOTATION
+0031#STR0031#ALL#Nr. of Fiscal Document:_______________
+0032#STR0032#ALL#Issue       :
+0033#STR0033#ALL#Validity :
+0034#STR0034#ALL#                   Authentication of this document is prohibited.
+0035#STR0035#ALL#|Qty Mu UnitVal. DiscountVl. Total Vl. |

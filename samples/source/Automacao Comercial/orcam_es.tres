@@ -1,0 +1,35 @@
+0001#STR0001#ALL#Emisión de presupuestos
+0002#STR0002#ALL#El objetivo de este informe es mostrar detalladamente los presupuestos
+0003#STR0003#ALL#A rayas
+0004#STR0004#ALL#Administración
+0005#STR0005#ALL#|Nº. Presupuest:
+0006#STR0006#ALL#Emisión :
+0007#STR0007#ALL#Validez  :
+0008#STR0008#ALL#|Cliente       :
+0009#STR0009#ALL#|Vendedor      :
+0010#STR0010#ALL#|Ít Código          Descripción                                                 |
+0011#STR0011#ALL#|T O T A L ......................................................
+0012#STR0012#ALL#|D E S C U E N T O ..............................................
+0013#STR0013#ALL#|N E T O ........................................................
+0014#STR0014#ALL#|Condición de pago  :
+0015#STR0015#ALL#|Forma de pago      :
+0016#STR0016#ALL#Cond. de pago   
+0017#STR0017#ALL#|Su pedido  Nº      :
+0018#STR0018#ALL#RCPJ: 
+0019#STR0019#ALL#IE.: 
+0020#STR0020#ALL#IF.: 
+0021#STR0021#ALL#IM.: 
+0022#STR0022#ALL#*** NO ES DOCUMENTO FISCAL ***
+0023#STR0023#ALL#*** EXIJA EL COMPROBANTE FISCAL - NO TIENE VALIDEZ COMO GARANTÍA DE MERCADERÍA ***
+0024#STR0024#ALL#INVÁLIDO COMO GARANTÍA DE MERCADERÍA
+0025#STR0025#ALL#|ÍT      Código            Descripc.                     Cant      UM       Vl.Unit.    ST      Vl.Desc.         Val.Total
+0026#STR0026#ALL#NO ES DOCUMENTO FISCAL - INVÁLIDO COMO GARANTÍA.
+0027#STR0027#ALL#|T O T A L 
+0028#STR0028#ALL#|D E S C U E N T O 
+0029#STR0029#ALL#|N E T O 
+0030#STR0030#ALL#DOCUMENTO AUXILIAR DE VENTA - PRESUPUESTO
+0031#STR0031#ALL#Nº del Docum. Fiscal  :_______________
+0032#STR0032#ALL#Emisión       :
+0033#STR0033#ALL#Validez :
+0034#STR0034#ALL#                   Se prohibe la autenticación de este documento
+0035#STR0035#ALL#|Cant.        UM    Val.Unitario   Val.Descuento     Val.Total                  |

@@ -1,0 +1,1209 @@
+﻿body {
+    font-family: "arial",verdana,Tahoma;
+    font-size: 8pt; 
+}
+
+.bodystyle
+{
+    background-color: #f2f5fa;    
+}
+
+*{
+margin:0;
+padding:0;
+}
+
+.fieldset
+{
+    background-color: #fff;
+    border: solid 2px #ccc;
+    padding-left: 15px;
+    width: 470px;
+    margin-top:0px;
+}
+.legenda
+{
+    color: #000;
+    font-size: 8pt;    
+}
+
+#index
+{
+   width: 100%;
+   height: 100%;
+   text-align:center;
+}
+#content
+{
+    padding:0;
+    width:1000px;
+    position: relative;
+    top:-10px;
+}
+#container 
+{
+    width: 1000px;
+    margin: 0px auto;
+    height:100%;
+   
+}
+
+#sidebar {
+    width: 200px;  
+    height: 550px;  
+    float: left;
+    /*background-color: #f3f9f5;*/
+    top:0px;
+}
+#sidebar_der
+{
+    float:right;
+    /*height: 530px;*/
+    width:180px;
+    background-image: url(images/fondo_derecho.png);
+    background-position: left;
+    background-repeat:repeat;
+}
+#main 
+{
+    float:left;
+    width: 610px;
+    height: 100%; 
+    background-color: #fff;
+    border-left: solid  5px  #f2f5fa;
+    margin-top:0px;
+    position: relative;
+    top:-5px;
+}
+#sub_main
+{
+    padding-left: 20px;
+    width: 600px;
+    background-color: #fff;
+}
+#footer {
+    clear: both;
+    height:40px;
+    margin-bottom: 0px;    
+}
+
+#logo{
+    float:left;
+    width: 150px;
+    height: 40px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+#header 
+{
+	margin: 0 0 15px 0;
+	height:120px;
+    width: 1000px;	
+    background-image: url(images/fondo.png);
+    background-repeat: repeat-x;
+}
+
+#sub_header
+{
+    height: 45px;
+}
+#header_sup_der
+{
+    width: 800px;
+    height: 40px;
+    float:right;
+    text-align: left;
+}
+#superior
+{
+    top: 0px;
+    width: 800px;
+    height: 40px;
+    text-align: right;
+}
+#datos_empresa
+{       
+    text-align: left ;
+    padding-left: 200px;
+    padding-top:0px;
+    height:30px;    
+}
+#datos_empresa .Title
+{
+    font-family: "Calibri",Tahoma,Courier,Arial,Verdana;
+    font-weight: bold;
+    font-size: 18px;   
+}
+img.esquina_inf_izq {
+    float:left;
+}
+img.esquina_inf_der {
+    float:right;
+}
+#datos_acceso
+{
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    height:16PX;
+    top:0px;
+    padding-top: 5px;
+    text-align: left;    
+}
+.datos_acceso
+{
+    color: #fff;
+}
+#login
+{
+    position: relative;
+    margin: 0px;
+    width: 1000px;
+    text-align: left;
+    height: 22px;
+}
+#login .label1
+{
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 550px;
+}
+#login a
+{
+    text-decoration: none;
+}
+#datos_acceso .acceso
+{
+    float: right;
+    width: 450px;
+    padding-top: 2px;
+    padding-left: 50px;
+    font-size: 7pt;
+    font-family: "Segoe", Arial, Verdana;  
+    text-align: left;
+}
+#datos_acceso .menu_opcion
+{
+    float: left;
+    padding-left: 10px;
+    padding-top: 2px;
+    width: 450px;
+    font-size: 7pt;
+    text-align: left;
+}
+#separador
+{
+    width: 550px;
+    padding-top:150px;
+    height: 200px;
+}
+#sub_footer
+{
+    width: 560px;
+}
+.sub_footer
+{
+    width:560px;
+}
+.cintilla
+{
+    width: 520px;
+    background-color:#054f76;
+    text-align:left; 
+    text-align: left; 
+    height: 15px;
+    font-family: "Arial",Verdana;
+    font-size: 8pt;
+    color: #fff;
+    padding-left: 28px;
+    margin-left: 5px;
+    
+}
+.negrita
+{
+    font-weight:bold;
+}
+.Titulo
+{
+    font-Family: Arial;
+    font-weight:bold;
+    font-size: 18px;
+    color: #000;
+    width: 560px;
+    padding-top: 25px;
+}
+.Titulo label
+{
+    padding-left:5px;
+}
+.link002
+{
+    color: #000;
+    font-size: 7pt;
+}
+div.medidas
+{
+    text-align:left;
+}
+div.medidas label
+{
+    margin-top: 5px;
+    float:left;
+    width:100px;   
+}
+div.medidas span
+{
+    margin-top: 5px;
+    margin-bottom:5px;  
+}
+div.medidas input
+{
+    width:350px;
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+.estilo1
+{
+    font-family: Calibri;
+}
+.estilo2
+{
+    font-family: Arial ;
+    font-size: 8pt;
+}
+.espacioetiqueta
+{
+	margin-left: 15px;
+}
+.sangria
+{
+	margin-left: 20px;
+}
+.negrita
+{
+    font-weight: bold;
+}
+.sangriatit
+{
+	margin-left: 10px;
+}
+
+.espaciocierre
+{
+	font-family: "Segoe", Arial, Verdana;
+	font-size: 8pt;
+    margin-left: 200px;
+}
+	
+.espaciobienvenido
+{
+	margin-left:320px
+}
+
+.espaciocampos
+{
+	margin-left: 40px;
+}
+.espacioenvio
+{
+	margin-left:470px
+}
+.anchoselect
+{
+	margin-left:50px
+}
+
+.calFin
+{
+    z-index: 1;
+}
+.calendario
+{
+    background-color: #336633;
+}
+
+/*BOTONES*/
+#botones
+{
+    float: right;
+    text-align: right;
+    width: 180px;
+    position: relative;
+}
+.botones
+{
+    float: right;
+    text-align: right;
+    width: 180px;
+    position: relative;
+}
+#concepto
+{
+    float: left;
+}
+#fechas label
+{
+
+}
+.boton001
+{
+    border: solid 1px #ccc;
+    background-color: #f3f4f7;
+    width: 60px;
+    color: #054f76;
+    font-weight:bold;
+    text-align:center;
+    height: 25px;
+    font-size: 7.5pt;
+}
+.boton001:hover
+{
+    background-color: #dff4ff;
+    /*#054f76;
+    color: #fff;*/
+}
+.boton002
+{
+    border: solid 1px #ccc;
+    background-color: #f3f4f7;
+    width: 80px;
+    height:25px;
+    color: #054f76;
+    font-weight:bold;
+    text-align:center;
+    font-size: 7.5pt;
+}
+.boton002:hover
+{
+    background-color:#dff4ff; 
+    /*#054f76;
+    color: #f3f9f5;*/
+    
+}
+.Subrayado
+{
+    text-decoration : underline;
+    color: #0B0B61;
+}
+/***PANEL DESPLEGABLE**/
+.overdiv {
+	position:absolute;
+	top: 150px; 
+	left: 21%;
+	width:320px;
+	visibility:hidden;
+	background-color:#fff;
+	color: #000;
+	padding-top: 2px;
+    padding-bottom: 20px;
+    padding-left: 20px ;
+    padding-right: 20px;
+	border:2px solid;
+	border-color: #ccc;	
+	font-family: arial;
+	font-size: 11px;
+	z-index:1;
+}
+.link
+{
+    float: right;
+    background-image: url(images/status-offline.png);
+    background-position: center left;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: #000;
+    font-weight:bold;
+    font-weight: bold;
+    width: 40px;
+}
+.link001
+{
+    font-size: 8pt;
+    color: Navy;
+}
+.overdivamor {
+	position:absolute;
+	top: 100px; 
+	left: 2%;
+	width:460px;
+	height:220px;
+	visibility:hidden;
+	background-color:#FFF;
+	color:#000;
+	padding:2px;
+	border:2px solid;
+	border-color: #BDBDBD;	
+	font-family: arial;
+	font-size: 11px;
+	z-index:1;
+}
+
+#gv_amor_tiz td
+{
+	height:10px;}
+
+.label
+{
+    float:left;
+    width:100px; 
+}
+
+#solicitud
+{
+    position:relative;
+    top:0px; 
+    height: 80px; 
+    width: 550px;
+    padding-bottom: 10px;
+}
+
+#Div1
+{
+    width: 104px; 
+    vertical-align: middle; 
+    text-align: left; 
+    height: 15px;
+}
+.frame
+{
+    width: 600px;     
+    left: 0px;
+    overflow: hidden; 
+}
+#login_main
+    {
+        width: 900px;
+        height: 400px;
+        background-color: #fff;
+    }
+.Login1
+{
+   padding: 20px;
+}
+#Login1 a
+{
+    color: #000; 
+    
+}
+#logindiv
+{
+    width:550px;
+    height:340px;
+    margin: 30px;
+    border-bottom: dotted 1px #ccc;
+    border-top: dotted 1px #ccc;
+}
+#DivDatos
+{
+    vertical-align: middle; 
+    width: 520px;  
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "arial", Verdana, Tahoma;
+    font-size: 8pt;
+    padding-left: 33px;
+}
+.texto
+{
+    font-size: 8pt;
+}
+.estilo01
+{
+    font-family: "arial", Verdana, Tahoma;
+    font-size: 10pt;
+}
+
+.estilo02
+{
+    text-align: right;
+    width: 550px;
+    height: 40px;
+    
+}
+
+#cbxAll
+{
+    padding: 5px;
+    width: 550px;
+    font-size: 8pt;
+    margin-top: 0px;
+}
+
+
+
+.centro
+{
+    text-align:center;
+}
+
+.ajax__calendar_title 
+{ width:140px; margin:auto; }
+.ajax__calendar_container
+{
+    z-index: 1;
+}
+/* menú lateral dinámico */  
+#Menu 
+{
+    margin-left: 0px; 
+    width: 100%;
+    height: 100%;
+}
+.MenuGen
+{    
+    text-align: left;
+    font-family: Arial;
+    font-size: 11px;
+}
+.invisible
+{
+    visibility: hidden;
+    font-size: 6px;
+    height: 5px;
+    padding: 0px;
+}
+#Menu ul
+{
+    font-family: Calibri;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#Menu ul li 
+{ 
+    list-style-type: none;    
+    background-color: #f3f9f5;
+    background-image: url(images/menu_lateral_closed.jpg);
+    background-repeat: no-repeat;
+}
+
+#Menu a
+{
+    background-image: url(images/menu_lateral_bullet_closed.jpg);
+    background-position: left;
+    background-repeat: no-repeat; 
+    display: block;
+    padding: 5px 10px;
+    margin-left: 10px;
+    width: 80%;
+    color: #000;
+    text-decoration: none;
+}
+#Menu a:active
+{
+    color: #0B0B3B;
+    font-weight: bold;
+}
+
+#Menu a:hover
+{
+    text-decoration: underline;
+}
+
+#Menu ul ul
+{
+    padding: 0;
+}
+#Menu ul ul li 
+{ 
+    margin: 0px;     
+    list-style-image: none;
+    background-color: #f3f9f5;
+    background-image: url(images/menu_lateral_middle.jpg);
+    background-position: left;
+    background-repeat: repeat-y;   
+     
+}
+#Menu ul ul li:hover
+{
+    list-style-image:none;    
+}
+#Menu ul ul a
+{
+    display: block;    
+    margin-left: 10px;
+    width: 155px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: dotted 1px #DDDDDD; 
+    height: 10px;
+    font-size: 7.5pt;
+    background: none;
+
+}
+
+#Menu ul ul a:hover
+{
+   text-decoration: underline;
+}
+
+#Menu .last
+{
+    background-image: url(images/menu_lateral_bottom.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+/* información de contacto */
+#info
+{
+    height: 100px;
+    background-image: url(images/sibe_bpt2.png);
+    background-repeat: repeat-x;
+    padding: 10px;
+}
+.info
+{
+    text-align: left;
+    color: #fff;
+}
+/** barra lateral noticias **/
+#news
+{
+    padding: 10px;
+}
+#logo_totvs
+{
+    width:100%;
+    padding: 10px;
+    text-align:left;
+}
+#Fecha
+{
+    color: #000;
+    
+}
+#enc_news
+{
+    margin-top: 10px;
+    text-align: left; 
+    height: 60px;
+    color: #000;
+    
+}
+#enc_news a
+{
+    text-decoration: none;
+    color: #000;
+}
+#enc_news a:visited
+{
+    color: #000;
+}
+.enc_news
+{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+.enc_label
+{
+    padding-top: 10px;
+    height: 40px;
+    margin-left:35px;
+    text-align: left;
+}
+enc_label a
+{
+    color: #000;
+}
+#Content_news
+{
+     text-align: left;
+
+}
+#Content_news a
+{
+    text-decoration: none;
+    font-family: "arial",verdana, Tahoma;
+    font-size: 8pt;
+    color: #000;
+}
+#Content_news a:hover
+{
+    text-decoration: none;
+    color: #0B3861;
+    font-weight: bold;
+}
+
+#form_news
+{
+    padding: 25px;
+    height: 100%;
+    width: 600px;
+}
+#form_news a
+{
+    text-decoration:none;
+    color: #054f76;
+    background-color: #fff;   
+}
+
+#form_news a:hover
+{
+    color: #0174DF;
+}
+.noticia
+{
+    padding: 10px;
+    border-bottom: dotted 1px #ccc;
+    margin: 10px;
+    width: 500px;
+}
+
+/* pagina principa lescripciones */
+
+.parrafo
+{
+    width: 450px;
+    padding-top: 5px;
+}
+.subTitle
+{
+    font-family: "arial", Verdana, Tahoma;
+    font-weight: bold;
+    font-size: 8pt;
+    height:25px;
+}
+
+/*.descripcion
+{
+    border-bottom: dotted 1px #ccc;
+    width: 550px;
+    
+    height: 80px;
+    font-family: "arial",verdana;
+    font-size: 8pt;
+    padding-top: 5px;
+
+}*/
+.descripcion
+{
+    border-bottom: dotted 1px #ccc;
+    width: 550px;
+    display: inline-block;
+    /*float: left;
+    height: 80px;*/
+    font-family: "arial",verdana;
+    font-size: 8pt;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.desc
+{
+    width: 350px;
+    margin-left: 80px;
+}
+.img_desc
+{
+    float: left;
+    top: 0px;
+}
+.linea
+{
+    color: #ccc;
+    height: 1px;
+   
+}
+
+.linea2
+{    
+    margin-top: 10px;
+    border-top: 1px dotted #ccc;
+    border-bottom: 0px solid #f00;
+    color: #fff;
+    background-color: #fff;
+    height: 0px; 
+}
+
+/**TABLAS***/
+
+#gvEdoCta th
+{
+    border-bottom: solid 1px #ccc;
+    height: 25px;
+    background-color: #FFF;    
+    
+}
+
+#gvEdoCta td
+{
+    padding: 1px;
+}    
+#lis_sol_pres
+{
+    font-size: 8pt;
+    width: 550px;
+    border-collapse: collapse;
+}
+#lis_sol_pres th
+{
+    font-weight:bold;
+}
+
+#gvDiasFestivos th
+{
+    height: 30px;
+    font-weight: bold;
+}
+
+#gvHisLab th
+{
+    font-weight: bold;
+    border-bottom: solid 1px #ccc;
+    border-top: solid 1px #ccc;
+    font-size: 7.5pt;
+    height: 25px;
+    text-align: left;
+}
+
+#gv_cta_pres
+{
+    font-size: 8pt;
+    font-family: Arial;
+}
+#gvSolicitudes
+{
+   font-size: 8pt;
+}
+
+#up
+{
+    margin-bottom:5px;
+    margin-right: 30px;
+    width: 490px;
+}
+#up1
+{
+    margin-bottom:5px;
+    width: 490px;  
+}
+#up2
+{
+    margin-bottom:5px;
+    width: 490px;  
+}
+#up2 .td1
+{
+    width: 160px;
+}
+
+#up2 .td2
+{
+    width:180px;
+}
+.label003
+{
+    margin-right: 30px;
+}
+.label004
+{
+    margin-right:30px;
+    font-size: 10pt;
+}
+#down
+{
+    margin-top: 5px;
+    width: 490px;
+    margin-right: 30px;
+}
+.right
+{
+    text-align: right;
+}
+#gvHisLab td
+{
+    font-size: 6pt;
+    text-align:left;
+    width:68px;
+    text-transform: uppercase;
+    padding: 0 2px 0 2px;
+}
+
+#lis_sol_doc
+{
+    font-size: 8pt;
+}
+#lis_sol_doc th
+{
+    font-weight: bold;
+}
+
+/* Recibo de nómina */
+
+#Recibo
+{
+    width: 620px;
+    background-color: #fff;
+    font-family: Arial;
+    font-size: 10px;   
+}
+
+
+#rec_nom
+{
+    width: 100%;
+    height : 100%;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+#rec_nom table
+{
+    width: 100%;
+    border-collapse: collapse;
+    border:  dotted 1px #ccc;
+}
+
+/************************************/
+
+.label02
+{
+    width: 150px;
+    height: 15px;
+    float: left;    
+    text-align: right;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+#centro
+{
+    text-align: center;
+    padding-left:20px;
+}
+#centro a
+{
+    text-align: center;
+    color: #000;
+    font-size: 8pt;
+    font-weight: bold;
+}
+.middle
+{
+    width: 400px;
+    height: 30px;
+}
+#middle input
+{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+#pass_int
+{
+    text-align:center;
+    width:560px;
+    
+}
+#pass_int td
+{
+    height:25px;
+}
+#pass_int .td1
+{
+    width: 50%;
+    text-align: right;
+    padding-right: 10px;
+}
+#pass_int .td2
+{
+    width: 50%;
+    text-align: left;
+    padding-left:10px;
+}
+
+
+.btnEliminar
+{
+    font-family: Arial;
+    font-size: 8.5pt;
+    text-decoration:underline;
+    padding: 2px 5px 2px 20px;
+    width: 80px;
+    background-image: url(images/eliminar.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+    /*background-color:#EFF5FB;
+    border: solid 1px #ccc;*/
+    font-weight: bold;
+    color: #084B8A;
+}
+.btnEnviar
+{
+    font-family: Arial;
+    font-size: 8.5pt;
+    text-decoration: underline;
+    padding: 2px 5px 2px 20px;
+    width: 80px;
+    background-image: url(images/email_star.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+    /*background-color:#EFF5FB;
+    border: solid 1px #ccc;*/
+    font-weight: bold;
+    color: #084B8A;
+}
+
+.btnImprimir
+{
+    font-family: Arial;
+    font-size: 8.5pt;
+    text-decoration:underline;
+    padding: 2px 5px 2px 20px;
+    width: 80px;
+    background-image: url(images/printer_mono.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    color: #084B8A;
+}
+.btnRegresar
+{
+    font-family: Arial;
+    font-size: 8.5pt;
+    /*text-decoration:none;*/
+    padding: 2px 5px 2px 20px;
+    width: 80px;
+    background-image: url(images/reverse_green.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    color: #084B8A;
+}
+
+.btnEnviar:hover,.btnEliminar:Hover, .btnImprimir:Hover,.link:Hover,.btnRegresar:hover{
+    background-color:#dff4ff;
+    /*background-color: #054f76;*/
+    border:1px solid #c2e1ef;
+    color:#336699;
+}
+.btnRegresar
+{
+    
+}
+
+.combo
+{
+    font-size: 9pt;
+    font-family: Arial;
+}
+.imgcal
+{
+    position: absolute;
+}
+
+#mod
+{
+    width: 490px; 
+    margin-left:35px;
+    text-align: left;
+}
+
+#Fecha
+{
+    margin-top:0px;
+}
+
+
+#datos_emp
+{
+    margin-top:60px;
+    padding-left:40px;
+    width:520px;
+}
+#datos_emp label
+{
+    font-family: tahoma, helvetica, sans-serif;
+	font-size: 6pt ;
+	font-family: Arial;
+	font-variant: normal;
+	font-weight: bold;
+	color: #000000;
+	text-transform: uppercase;
+	margin-top:3px;
+	
+}
+#datos_emp input
+{
+    border: 1px solid #969696;
+	background: url(none) no-repeat #fff;
+	font-family: tahoma, helvetica, sans-serif;
+	font-style: normal;
+	font-size: 6pt;
+	font-weight: bold;
+	color: #454743;
+	padding:3px;
+	margin-bottom: 5px;	
+	width: 350px;
+	text-transform:uppercase;
+}
+#carpetas {
+    float:left;
+    width:580px;
+    background:#fff;/*#F4F4F4;*/
+    font-family: Arial;
+    font-size:7.5pt;
+    font-weight: bold;
+    line-height:normal;
+    border-bottom:1px solid #ccc;/*#24618E;*/
+    margin-left: -10px;
+}
+#carpetas ul {
+	margin:0;
+	padding:5px 10px 0 0px;
+	list-style:none;
+}
+#carpetas li {
+    display:inline;
+    margin:0;
+    padding:0;
+}
+#carpetas a {
+    float:left;
+    background:url("images/tableftJ4.gif") no-repeat left -42px;
+    margin:0;
+    padding:0 0 0 5px;
+    text-decoration:none;
+}
+
+#carpetas a span {
+    float:left;
+    display:block;
+    background:url("images/tabrightJ4.gif") no-repeat;
+    background-position:  100% -42px;
+    padding: 5px 15px 4px 6px;
+    color: #FFF;
+}
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#carpetas a span {float:none;}
+/* End IE5-Mac hack */
+#carpetas a:hover span {
+    color:#24618E;
+}
+#carpetas a:hover {
+    background-position:0% 0px;
+}
+#carpetas a:hover span {
+    background-position:100% 0px;
+}
+.izq_alig
+{
+    display:block;
+    float:left;
+    position: relative; top:5px;
+}
+#carpetas .seleccion {
+    background-position:0% 0px;
+   
+}
+
+#carpetas .seleccion span {
+    background-position:0% 0px;
+    color:#24618E;
+}

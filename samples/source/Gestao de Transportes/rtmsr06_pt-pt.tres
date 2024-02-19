@@ -1,0 +1,39 @@
+0001#STR0001#ALL#Impressão Do Contrato De Camionista
+0002#STR0002#ALL#Este Programa Irá Listar Os Contratos De Camionistas
+0003#STR0003#ALL#Código de barras
+0004#STR0004#ALL#Administração
+0006#STR0006#ALL#No. contrato : 
+0008#STR0008#ALL#Para 
+0009#STR0009#ALL#Peso total..............: 
+0010#STR0010#ALL#Peso pago...............: 
+0012#STR0012#ALL#Valor frete.............: 
+0014#STR0014#ALL#Valor pedagio...........: 
+0015#STR0015#ALL#Adiantamento de pedagio.: 
+0016#STR0016#ALL#Valor total.............: 
+0017#STR0017#ALL#Saldo no destino........: 
+0018#STR0018#ALL#Saldo a pagar por extenso : 
+0019#STR0019#ALL#O saldo será pago em 
+0020#STR0020#ALL#O condutor  e ou proprietarios(s) assumem obrigações aqui estabelecidas,
+0021#STR0021#ALL#Bem como as do termo de responsabilidade inerentes ao transporte anexo.
+0022#STR0022#ALL#Declaro ter recebido o saldo deste contrato, dando total e plena quitação :
+0024#STR0024#ALL#Ass.condutor  : 
+0027#STR0027#ALL#Número da consulta telerisco: 
+0028#STR0028#ALL#Hora emissão contrato: 
+0029#STR0029#ALL#V E í C U L O S
+0030#STR0030#ALL#Veiculo   Nome                  Cor                   Tipo                       Placa     Cidade           Uf  Ano
+0031#STR0031#ALL#P R O P R I E T á R I O S
+0032#STR0032#ALL#Veiculo   Nome                                      Morada                                  Cidade           Uf   Cgc/cpf
+0034#STR0034#ALL#Nome                                      Morada                                  Concelho           Uf  Cnh/pgu
+0035#STR0035#ALL#Contrato de transporte - carreto 
+0036#STR0036#ALL#Próprio
+0037#STR0037#ALL#Terceiro
+0038#STR0038#ALL#Os condutor s e ou proprietarios acima discriminados, se obrigam por este, a transportar a carga, no trajeto e nas condições abaixo
+0039#STR0039#ALL#Como segue :  
+0041#STR0041#ALL#Manifesto   Fil.origem       Fil.destino              Peso    Manifesto   Fil.origem       Fil.destino              Peso
+0043#STR0043#ALL#Viagem no : 
+0044#STR0044#ALL#Condutor  no : 
+0045#STR0045#ALL#Processo de transporte: 
+0046#STR0046#ALL#Local de liquidação:
+0048#STR0048#ALL# p o n t o s   d e   a p o i o 
+0049#STR0049#ALL#Previsão          Posto                                           Morada                                Telefone        Vl. Diesel
+0050#STR0050#ALL#O pagamento será efectuado pela Operadora de Frotas

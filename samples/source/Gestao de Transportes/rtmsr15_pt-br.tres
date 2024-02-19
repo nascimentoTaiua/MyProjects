@@ -1,0 +1,20 @@
+0001#STR0001#ALL#Impressão do Plano de Viagem
+0002#STR0002#ALL#Este programa ira listar o Plano de Viagem das viagens selecionadas
+0003#STR0003#ALL#Zebrado
+0004#STR0004#ALL#Administração
+0005#STR0005#ALL#Número da Viagem: 
+0006#STR0006#ALL#Proc. de Transporte: 
+0007#STR0007#ALL# V E Í C U L O S 
+0008#STR0008#ALL#Veiculo   Nome                  Cor                   Tipo                       Placa     Cidade           UF  Ano
+0009#STR0009#ALL# M O T O R I S T A 
+0010#STR0010#ALL#Nome                                      Endereco                                  Cidade           UF  CNH/PGU
+0011#STR0011#ALL# P O N T O S   D E   A P O I O 
+0012#STR0012#ALL#Previsao          Posto                                           Endereco                                Telefone        Vl. Diesel
+0013#STR0013#ALL#Os preços dos combustíveis estão em vigor na data/hora da impressão do documento, porém estão sujeitos à alteração.
+0014#STR0014#ALL# C O N T R A T O   D E   C A R R E T E I R O 
+0015#STR0015#ALL#Contrato  Emissao           Proprietario                                    Vlr. Frete    Vlr. Pedagio      Vlr. Adto.
+0016#STR0016#ALL# O B S E R V A Ç Õ E S 
+0017#STR0017#ALL# P R A Ç A S   D E   P E D Á G I O 
+0018#STR0018#ALL#Seq. Pdg.  Rodovia                                                 KM  Municipio        Sentido         Vlr. Eixo    Vlr. Veiculo
+0019#STR0019#ALL# A T I V I D A D E S 
+0020#STR0020#ALL#Ordem   Atividade

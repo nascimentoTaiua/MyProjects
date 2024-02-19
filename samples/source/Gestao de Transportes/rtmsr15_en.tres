@@ -1,0 +1,20 @@
+0001#STR0001#ALL#Printing of Trip Plan
+0002#STR0002#ALL#This program lists the Trip Plan of the selected trips
+0003#STR0003#ALL#Z-form
+0004#STR0004#ALL#Management
+0005#STR0005#ALL#Trip Number: 
+0006#STR0006#ALL#Transporte Process: 
+0007#STR0007#ALL# V E H I C L E S 
+0008#STR0008#ALL#Vehicle   Name                 Color                  Type                  License Plate  City          State Year
+0009#STR0009#ALL# D R I V E R 
+0010#STR0010#ALL#Name                                      Address                                    City         State  CNH/PGU
+0011#STR0011#ALL# S U P P O R T   P O I N T S  
+0012#STR0012#ALL#Forecast        Gas Station                                       Address                                Telephone        Diesel Vl.
+0013#STR0013#ALL#Prices of fuel are in force at the time/date of printing the document but are subject to alteration.
+0014#STR0014#ALL# C A R R I E R   C O N T R A C T  
+0015#STR0015#ALL#Contract  Issue             Owner                                          Freight Amt.    Toll Amt.        Adv. Amt.
+0016#STR0016#ALL# R E M A R K S  
+0017#STR0017#ALL# T O L L  B O O T H S 
+0018#STR0018#ALL#Seq. Tol.  Highway                                                 KM  City             Direction       Axle Val.    Vehicle Val.
+0019#STR0019#ALL# A C T I V I T I E S 
+0020#STR0020#ALL#Order   Activity

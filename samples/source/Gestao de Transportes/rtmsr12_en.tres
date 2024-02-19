@@ -1,0 +1,18 @@
+0001#STR0001#ALL#List of appointments      
+0002#STR0002#ALL#Issue a schedule list according to the parameters entered 
+0003#STR0003#ALL#Z.form 
+0004#STR0004#ALL#Administrat. 
+0005#STR0005#ALL#CANCELLED BY OPERATOR  
+0006#STR0006#ALL#Scheduling  : 
+0007#STR0007#ALL#Register Dt: 
+0008#STR0008#ALL#Area Code/Phone: 
+0009#STR0009#ALL#Requestor...: 
+0010#STR0010#ALL#Contact....: 
+0011#STR0011#ALL#Address ....: 
+0012#STR0012#ALL#District...: 
+0013#STR0013#ALL#Municipalty.: 
+0014#STR0014#ALL#State......: 
+0015#STR0015#ALL#Zip code....: 
+0016#STR0016#ALL#Item Status Col   Status Ent   Place Collec Sender               Recipient            Origin                         Destin.                        Dt.Prev.Col Tm.Prev.Col  Dt.Prev.Ent  Tm.Prev.Ent       Type of Vehicle 
+0017#STR0017#ALL#                                                                                      Product                        Package             Qty.Vol.    Qty.Unit.   ActualWght   Cubed wght   Merch. value  
+0018#STR0018#ALL#Code.......: 

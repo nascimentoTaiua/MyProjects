@@ -1,0 +1,35 @@
+0001#STR0001#ALL#This program will print the Quotations.             
+0002#STR0002#ALL#                                                    
+0003#STR0003#ALL#Freight Quotation
+0004#STR0004#ALL#Z.form
+0005#STR0005#ALL#Management
+0006#STR0006#ALL#Printing The Freight Quotation.
+0007#STR0007#ALL#*** CANCELED BY OPERATOR ***
+0008#STR0008#ALL#Branch......:  
+0009#STR0009#ALL#Number.......: 
+0010#STR0010#ALL#Quotation date: 
+0011#STR0011#ALL#Validity Date: 
+0012#STR0012#ALL#Telephone....: 
+0013#STR0013#ALL#Contact...: 
+0014#STR0014#ALL#Sender.......: 
+0015#STR0015#ALL#Addressee....: 
+0016#STR0016#ALL#Debtor.......: 
+0017#STR0017#ALL#Destination...: 
+0018#STR0018#ALL#Real Weight...: 
+0019#STR0019#ALL#Cb.Weight.....: 
+0020#STR0020#ALL#Product.......: 
+0021#STR0021#ALL#Volumes 
+0022#STR0022#ALL#Packaging.....: 
+0023#STR0023#ALL#Goods Value...: 
+0024#STR0024#ALL#Freight Type.: 
+0025#STR0025#ALL#Table Type...: 
+0026#STR0026#ALL#Discount......: 
+0027#STR0027#ALL# C U S T O M E R 
+0028#STR0028#ALL# L O A D 
+0029#STR0029#ALL# A G R E E D  F R E I G H T 
+0030#STR0030#ALL# N O T E S 
+0031#STR0031#ALL#FREIGHT TOTAL
+0032#STR0032#ALL#Attendant: 
+0033#STR0033#ALL#Unitizers.....: 
+0034#STR0034#ALL#Requester Code:
+0035#STR0035#ALL#Contact......:

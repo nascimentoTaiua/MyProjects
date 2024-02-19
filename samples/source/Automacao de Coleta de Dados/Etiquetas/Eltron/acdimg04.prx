@@ -1,0 +1,53 @@
+/*
+Padrao Eltron
+ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+±±ÉÍÍÍÍÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍ»±±
+±±ºPrograma  ³IMG04     ºAutor  ³Sandro Valex        º Data ³  19/06/01   º±±
+±±ÌÍÍÍÍÍÍÍÍÍÍØÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍ¹±±
+±±ºDesc.     ³Ponto de entrada referente a imagem de operador             º±±
+±±ÌÍÍÍÍÍÍÍÍÍÍØÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹±±
+±±ºUso       ³ AP5                                                        º±±
+±±ÈÍÍÍÍÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼±±
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+*/
+User Function Img04 // imagem de etiqueta de dispositivo de movimentacao
+Local cCodigo
+Local nID := paramixb[1]
+IF nID # NIL
+	cCodigo := nID
+ElseIf Empty(CB1->CB1_IDETIQ)
+	IF UsaCB0("04")
+		cCodigo := CBGrvEti('04',{CB1->CB1_CODOPE})
+		RecLock("CB1",.F.)
+		CB1->CB1_IDETIQ := cCodigo
+		MsUnlock()
+	Else
+		cCodigo := CB1->CB1_CODOPE
+	EndIf
+Else
+	IF UsaCB0("04")
+		cCodigo := CB1->CB1_IDETIQ
+	Else
+		cCodigo := CB1->CB1_CODOPE
+	EndIf
+Endif
+cCodigo := Alltrim(cCodigo)
+MSCBLOADGRF("SIGA.PCX")
+MSCBBEGIN(1,6)
+MSCBGRAFIC(04,02,"SIGA")
+MSCBBOX(05,01,76,30,2)
+MSCBLineH(30,06,71,2)
+MSCBLineH(05,12,71,2)
+MSCBLineH(05,18,71,2)
+MSCBLineV(30,1,12,2) //Monta Linha Vertical
+MSCBSAY(33,02,'OPERADOR',"N","2","1,2")
+MSCBSAY(33,07,"CODIGO", "N", "1", "1,1")
+MSCBSAY(33,09,CB1->CB1_CODOPE, "N", "1", "1,2")
+MSCBSAY(07,13,"NOME","N","1","1,1")
+MSCBSAY(07,15,CB1->CB1_NOME,"N", "1", "1,2")
+MSCBSAYBAR(28,19,cCodigo,'N',"MB07",06,.T.,,,,2,2,,,,)
+MSCBInfoEti("Operador","30X100")
+MSCBEND()
+Return .F.

@@ -1,0 +1,50 @@
+0001#STR0001#ALL#Este programa irá emitir a Ficha do Motorista.
+0002#STR0002#ALL#Ficha do Motorista
+0003#STR0003#ALL#Zebrado
+0004#STR0004#ALL#Administracao
+0005#STR0005#ALL#Imprimindo a Ficha do Motorista
+0006#STR0006#ALL#Pesquisar
+0007#STR0007#ALL#Visualiza
+0008#STR0008#ALL#Imprimir
+0009#STR0009#ALL#Ficha de Motoristas
+0010#STR0010#ALL#Imprimindo Ficha de Motoristas ...
+0011#STR0011#ALL#Selecionando Registros...
+0012#STR0012#ALL#|Veiculo  Placa              Fab/Mod     Modelo                 Chassi              Capac.Carga Cubagem  Bloq.                    |
+0013#STR0013#ALL#|Veiculo  Nome                           Endereco                                   CGC/CPF              Cidade          CEP      |
+0014#STR0014#ALL#|         Telefone                       Bairro                                     INSS                 UF              Filial   |
+0015#STR0015#ALL#|Motorista...: 
+0016#STR0016#ALL#Filial......: 
+0017#STR0017#ALL#|Apelido.....: 
+0018#STR0018#ALL#Data Nascto.: 
+0019#STR0019#ALL#|Endereco....: 
+0020#STR0020#ALL#|Cidade......: 
+0021#STR0021#ALL#Bairro......: 
+0022#STR0022#ALL#|Estado......: 
+0023#STR0023#ALL#Telefone : 
+0024#STR0024#ALL#Recados.....: 
+0025#STR0025#ALL#|Falar Com...: 
+0026#STR0026#ALL#|No.Seguro...: 
+0027#STR0027#ALL#Est.Civil...: 
+0028#STR0028#ALL#|Pai.........: 
+0029#STR0029#ALL#Altura.....:  
+0030#STR0030#ALL#|Mae.........: 
+0031#STR0031#ALL#Peso.......: 
+0032#STR0032#ALL#|Sinais......: 
+0033#STR0033#ALL#|Cor Pele....: 
+0034#STR0034#ALL#|Cor Barba...: 
+0035#STR0035#ALL#|Cor Cabelo..: 
+0036#STR0036#ALL#Bloqueado..: 
+0037#STR0037#ALL#|Cor Olhos...: 
+0038#STR0038#ALL#Venc CNH...: 
+0039#STR0039#ALL#Exped.CNH: 
+0040#STR0040#ALL#|No.Reg.CNH..: 
+0041#STR0041#ALL#|Obs.........: 
+0042#STR0042#ALL#Selecionando Motoristas...
+0043#STR0043#ALL#V E Í C U L O S
+0044#STR0044#ALL#Marca/Cor
+0045#STR0045#ALL#P R O P R I E T Á R I O S
+0046#STR0046#ALL#M O T O R I S T A
+0047#STR0047#ALL#CEP
+0048#STR0048#ALL#CPF
+0049#STR0049#ALL#RG
+0050#STR0050#ALL#CNH

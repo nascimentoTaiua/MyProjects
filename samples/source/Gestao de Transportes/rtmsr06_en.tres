@@ -1,0 +1,50 @@
+0001#STR0001#ALL#Truck Driver Agreement Printing
+0002#STR0002#ALL#This program will list the Truck Driver Agreements
+0003#STR0003#ALL#Z.form
+0004#STR0004#ALL#Management
+0005#STR0005#ALL#Trip         : 
+0006#STR0006#ALL#Contract No : 
+0007#STR0007#ALL#Itinerary from 
+0008#STR0008#ALL#to 
+0009#STR0009#ALL#Total Weight............: 
+0010#STR0010#ALL#Weight Paid.............: 
+0011#STR0011#ALL#Fare.: 
+0012#STR0012#ALL#Freight Value...........: 
+0013#STR0013#ALL#Advance.................: 
+0014#STR0014#ALL#Toll Value..............: 
+0015#STR0015#ALL#Advance Toll............: 
+0016#STR0016#ALL#Total Value.............: 
+0017#STR0017#ALL#Balance in Destination..: 
+0018#STR0018#ALL#Balance to be Paid in Writing : 
+0019#STR0019#ALL#Balance will be paid on 
+0020#STR0020#ALL#Driver and/or owner(s) take the obligations herein mentioned,
+0021#STR0021#ALL#as well as the liability statement regardint the annexed transport.  
+0022#STR0022#ALL#I confirm I have received the balance referring to this contract, which is fully paid :
+0023#STR0023#ALL#Date:
+0024#STR0024#ALL#Driver Signature : 
+0025#STR0025#ALL#Date Arrival        Hours            Bonus Value           %   
+0026#STR0026#ALL#R E M A R K S 
+0027#STR0027#ALL#Telerisco Searching Number: 
+0028#STR0028#ALL#Contract Issue Hour: 
+0029#STR0029#ALL#V E H I C L E S
+0030#STR0030#ALL#Vehicle Name                       Color                  Model                      Licence No City             ST Year
+0031#STR0031#ALL#O W N E R S
+0032#STR0032#ALL#Vehicle Name                                        Address                                   City             ST  CGC/CPF
+0033#STR0033#ALL#D R I V E R
+0034#STR0034#ALL#Name                                      Address                                   City           State CNH/PGU
+0035#STR0035#ALL#Transportation Agreement - Freight 
+0036#STR0036#ALL#OWN
+0037#STR0037#ALL#THIRD PARTY
+0038#STR0038#ALL#Drivers and Owners above mentioned, assume the obligation herein, to carry the load following the course and conditions below
+0039#STR0039#ALL#described:  
+0040#STR0040#ALL# L O A D   D E T A I L S    
+0041#STR0041#ALL#MANIFEST    ORIGIN BRN       DEST.BRANCH      WGHT            MANIFEST    ORIGIN BRN       DEST.BRANCH      WGHT
+0042#STR0042#ALL#Place: 
+0043#STR0043#ALL#Trip No.  : 
+0044#STR0044#ALL#Driver No.: 
+0045#STR0045#ALL#Transport Process: 
+0046#STR0046#ALL#Place of Receipt:
+0047#STR0047#ALL#Prices of fuel are in force on the date/time of printing the document but are subject to alteration.
+0048#STR0048#ALL#S U P P O R T   P O I N T S    
+0049#STR0049#ALL#Forecast          Gas Station                                     Address                                 Telephone       Diesel Vl.
+0050#STR0050#ALL#Payment will be made by the Fleet Operator

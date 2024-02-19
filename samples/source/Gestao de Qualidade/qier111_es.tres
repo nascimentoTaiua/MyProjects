@@ -1,0 +1,15 @@
+0001#STR0001#ALL#FORMULAS DE IQF :
+0002#STR0002#ALL#IQI : IQP * FC
+0003#STR0003#ALL#IQP : ( 100 - K ) - Factor Critico
+0004#STR0004#ALL#IA  : ((Fator1 * q1 + Fator2 * q2 + Fator3 * q3) / (q1 + q2 + q3)) * 100
+0005#STR0005#ALL#     Siendo FC.: Factor de Correccion, tabulado en funcion de IQS
+0006#STR0006#ALL#            K..: Ctd. obtenida en funcion del Indice de Aceptacion (IA)
+0007#STR0007#ALL#            qx.: Cantidad Entradada con el Factor x.
+0008#STR0008#ALL#IES : IPO
+0009#STR0009#ALL#IPO : ( 1 - (Sumacion Ni * Di / (
+0010#STR0010#ALL# * Nt)) ) * 100
+0011#STR0011#ALL#     Siendo Ni: Cantidad Entrada en atraso (lote a lote)
+0012#STR0012#ALL#            Di: Numero de dias de atraso (lote a lote)
+0013#STR0013#ALL#            Nt: Cantidad total Entrada en el mes
+0014#STR0014#ALL#           Obs: En el Calculo de IPO, si el nº. de dias de atraso real es mayor que el nº.
+0015#STR0015#ALL#                dias definido en el parametro MV_QDIAIPO, se utilizara este ultimo.

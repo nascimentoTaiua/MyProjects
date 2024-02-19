@@ -1,0 +1,38 @@
+0001#STR0001#ALL#Emisión de Recibos de Pago
+0002#STR0002#ALL#Recibo de Pago
+0004#STR0004#ALL#Periodo:
+0005#STR0005#ALL#Pago:
+0006#STR0006#ALL#Periodo de Pago:
+0007#STR0007#ALL#Fecha de Pago:
+0008#STR0008#ALL#Sucursal:
+0010#STR0010#ALL#Nombre:
+0013#STR0013#ALL#Función:
+0016#STR0016#ALL#C.Costo:
+0024#STR0024#ALL#Sueldo:
+0027#STR0027#ALL#Devengos
+0028#STR0028#ALL#Descuentos
+0030#STR0030#ALL#Concepto
+0031#STR0031#ALL#Hrs./Día
+0032#STR0032#ALL#Importes
+0034#STR0034#ALL#Total Devengos:
+0035#STR0035#ALL#Total Descuentos:
+0037#STR0037#ALL#Neto Recibido (S/.):
+0038#STR0038#ALL#Cuenta:
+0039#STR0039#ALL#Recibí el valor anterior el __/__/___ ___________________________________________
+0040#STR0040#ALL#Empleado
+0042#STR0042#ALL#Neto Recibido:
+0044#STR0044#ALL#Recibí el valor anterior el ___/___/____
+0045#STR0045#ALL#El servidor SMTP no está cnfigurado 
+0046#STR0046#ALL#La cuenta de e-mail no está configurada 
+0047#STR0047#ALL#La contraseña del email no está configurada 
+0048#STR0048#ALL#Errores ocurridos durante el envío de los comprobantes de pago
+0050#STR0050#ALL#Ocurrieron algunos errores durante el envío del comprobante de pago por email, vea la siguiente lista:
+0051#STR0051#ALL#Error durante el envío del mensaje:
+0052#STR0052#ALL#Falta de dirección de email registrado para el envío:
+0053#STR0053#ALL#Boleta de Remuneraciones - Saldos
+0054#STR0054#ALL#Atentamente,
+0056#STR0056#ALL#¡Atención!
+0057#STR0057#ALL#No se localizaron comprobantes de pago disponibles para esta consulta.
+0058#STR0058#ALL#¡CONTINUA!
+0059#STR0059#ALL#Comprobante de pago
+0060#STR0060#ALL#Se consigna en documento adjunto su comprobante de pago referente a

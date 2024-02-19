@@ -1,0 +1,25 @@
+0001#STR0001#ALL#This program will print the Cargo Checklist. 
+0002#STR0002#ALL#Cargo Checklist 
+0003#STR0003#ALL#Z.form
+0004#STR0004#ALL#Management   
+0005#STR0005#ALL#Printing Cargo Checklist       
+0006#STR0006#ALL#CANCELED BY OPERATOR
+0007#STR0007#ALL#Checker                              Arranger 
+0008#STR0008#ALL#Helper                               Helper  
+0009#STR0009#ALL#Origin Branch   : 
+0010#STR0010#ALL#Issue  : 
+0011#STR0011#ALL#D.L.: 
+0012#STR0012#ALL#Vehicle   : 
+0013#STR0013#ALL# Type: 
+0014#STR0014#ALL#Capac: 
+0015#STR0016#ALL#Driver    : 
+0016#STR0017#ALL#Telerisk: 
+0017#STR0018#ALL#Note      : 
+0018#STR0019#ALL#Value Adva.: 
+0019#STR0020#ALL#Telerisk: 
+0020#STR0021#ALL#Trip  : 
+0021#STR0022#ALL#|Destination |
+0022#STR0023#ALL#|Unload      |
+0023#STR0024#ALL#|(  ) 1st Part |(  ) 2nd Part |(  ) 3rd Part |(  ) Closure   
+0024#STR0025#ALL# |  Seal Nbr.: 
+0025#STR0026#ALL#Local/Localizat.   Document/Series  Volume

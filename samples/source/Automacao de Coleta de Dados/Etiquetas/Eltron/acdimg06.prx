@@ -1,0 +1,54 @@
+/*
+Padrao Eltron
+ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+±±ÉÍÍÍÍÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍ»±±
+±±ºPrograma  ³IMG06     ºAutor  ³Sandro Valex        º Data ³  19/06/01   º±±
+±±ÌÍÍÍÍÍÍÍÍÍÍØÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍ¹±±
+±±ºDesc.     ³Ponto de entrada referente a imagem de identificacao do     º±±
+±±º          ³transporte                                                  º±±
+±±ÌÍÍÍÍÍÍÍÍÍÍØÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹±±
+±±ºUso       ³ AP5                                                        º±±
+±±ÈÍÍÍÍÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼±±
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+*/
+User Function Img06  // imagem de etiqueta de transportadora
+Local cCodigo
+Local nID := paramixb[1]
+If nID # NIL
+	cCodigo := nID
+ElseIf Empty(SA4->A4_IDETIQ)
+	If UsaCB0("06")
+		cCodigo := CBGrvEti('06',{SA4->A4_COD})
+		RecLock("SA4",.F.)
+		SA4->A4_IDETIQ := cCodigo
+		MsUnlock()
+	Else
+		cCodigo := SA4->A4_COD
+	EndIf
+Else
+	If UsaCB0("06")
+		cCodigo := SA4->A4_IDETIQ
+	Else
+		cCodigo := SA4->A4_COD
+	EndIf
+Endif
+cCodigo := Alltrim(cCodigo)
+MSCBLOADGRF("SIGA.PCX")
+MSCBBEGIN(1,6)
+MSCBGRAFIC(04,02,"SIGA")
+MSCBBOX(05,01,76,30,2)
+MSCBLineH(30,06,71,2)
+MSCBLineH(05,12,71,2)
+MSCBLineH(05,18,71,2)
+MSCBLineV(30,1,12,2) //Monta Linha Vertical
+MSCBSAY(33,02,'TRANSPORTADORA',"N","2","1,2")
+MSCBSAY(33,07,"CODIGO", "N", "1", "1,1")
+MSCBSAY(33,09,SA4->A4_COD, "N", "1", "1,2")
+MSCBSAY(07,13,"DESCRICAO","N","1","1,1")
+MSCBSAY(07,15,SA4->A4_NOME,"N", "1", "1,2")
+MSCBSAYBAR(28,19,cCodigo,'N',"MB07",06,.T.,,,,2,2,,,,)
+MSCBInfoEti("Transportadora","30X100")
+MSCBEND()
+Return .F.

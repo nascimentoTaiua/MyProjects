@@ -1,0 +1,24 @@
+0001#STR0001#BRA#Taxa
+0002#STR0002#BRA#Cfop
+0003#STR0003#BRA#Cfop/aliquota
+0004#STR0004#BRA#Uf/cfop
+0005#STR0005#BRA#Mapa De Resumo Dos Livros Fiscais
+0006#STR0006#BRA#Este Relatório Irá Imprimir Um Resumo Com As Movimentações Através De Notas Fiscais De Entrada/saída, De Icms Ou Ipi
+0007#STR0007#BRA#1.000 - Entradas E/ou Aquisições De Serviços Do Distrito
+0008#STR0008#BRA#2.000 - Entradas E/ou Aquisições De Serviços De Outros Distritos
+0009#STR0009#BRA#3.000 - Entradas E/ou Aquisições De Serviços Do Exterior
+0010#STR0010#BRA#5.000 - Saídas E/ou Prestações De Serviços Para O Distrito
+0011#STR0011#BRA#6.000 - Saídas E/ou Prestações De Serviços Para Outros Distritos
+0012#STR0012#BRA#7.000 - Saídas E/ou Prestações De Serviços Para O Exterior
+0013#STR0013#BRA#Entradas E/ou Aquisições De Serviços
+0014#STR0014#BRA#Saídas E/ou Prestações De Serviços
+0017#STR0017#BRA#Cfop
+0018#STR0018#BRA#Taxa
+0019#STR0019#BRA#Valor contabilístico
+0020#STR0020#BRA#Base de cálculo
+0024#STR0024#BRA#Total Das Entradas
+0025#STR0025#BRA#Total Das Saídas
+0027#STR0027#BRA#* <- cfops não registados na tabela [13]
+0028#STR0028#BRA#Total Do Distrito
+0029#STR0029#BRA#Uf
+0034#STR0034#BRA#Apuro

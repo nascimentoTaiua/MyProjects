@@ -1,0 +1,40 @@
+0001#STR0001#ALL#Este programa irá emitir a ficha do condutor .
+0002#STR0002#ALL#Ficha Do Condutor
+0003#STR0003#ALL#Código de barras
+0004#STR0004#ALL#Administração
+0005#STR0005#ALL#Imprimindo A Ficha Do Condutor 
+0009#STR0009#ALL#Ficha De Condutor S
+0010#STR0010#ALL#Imprimindo ficha de condutor s ...
+0011#STR0011#ALL#A Seleccionar Registos...
+0012#STR0012#ALL#|veiculo  placa              fab/mod     modelo                 chassi              capac.carga cubagem  bloq.                    |
+0013#STR0013#ALL#|veiculo  nome                           morada                                   cgc/cpf              cidade          cep      |
+0014#STR0014#ALL#|         telefone                       morada                                     inss                 uf              filial   |
+0015#STR0015#ALL#|condutor ...: 
+0017#STR0017#ALL#|apelido.....: 
+0018#STR0018#ALL#Data nascto.: 
+0019#STR0019#ALL#|morada....: 
+0020#STR0020#ALL#|cidade......: 
+0021#STR0021#ALL#Freguesia......: 
+0022#STR0022#ALL#|distrito......: 
+0025#STR0025#ALL#|falar com...: 
+0026#STR0026#ALL#|no.seguro...: 
+0027#STR0027#ALL#Est.civil...: 
+0028#STR0028#ALL#|pai.........: 
+0030#STR0030#ALL#|mãe.........: 
+0032#STR0032#ALL#|sinais......: 
+0033#STR0033#ALL#|cor pele....: 
+0034#STR0034#ALL#|cor barba...: 
+0035#STR0035#ALL#|cor cabelo..: 
+0037#STR0037#ALL#|cor olhos...: 
+0038#STR0038#ALL#Venc cnh...: 
+0039#STR0039#ALL#Exped.cnh: 
+0040#STR0040#ALL#|no.reg.cnh..: 
+0041#STR0041#ALL#|obs.........: 
+0042#STR0042#ALL#A Selecionar Condutores...
+0043#STR0043#ALL#V e í c u l o s
+0044#STR0044#ALL#Marca/cor
+0045#STR0045#ALL#P r o p r i e t á r i o s
+0047#STR0047#ALL#Código postal
+0048#STR0048#ALL#Cpf
+0049#STR0049#ALL#Rg
+0050#STR0050#ALL#Cnh

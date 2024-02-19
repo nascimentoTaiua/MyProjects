@@ -1,0 +1,35 @@
+0001#STR0001#ALL#Este programa imprimira las Cotizaciones.           
+0002#STR0002#ALL#                                                    
+0003#STR0003#ALL#Cotizacion Flete 
+0004#STR0004#ALL#A Rayas
+0005#STR0005#ALL#Administracion
+0006#STR0006#ALL#Imprimiendo Cotizacion de Flete.
+0007#STR0007#ALL#*** ANULADO POR EL OPERADOR ***
+0008#STR0008#ALL#Sucursal.....: 
+0009#STR0009#ALL#Numero.......: 
+0010#STR0010#ALL#Fch Cotizac..: 
+0011#STR0011#ALL#Fch Validez..: 
+0012#STR0012#ALL#Telefono.....: 
+0013#STR0013#ALL#Contacto...: 
+0014#STR0014#ALL#Remitente....: 
+0015#STR0015#ALL#Destinatario.: 
+0016#STR0016#ALL#Deudor.......: 
+0017#STR0017#ALL#Destino......: 
+0018#STR0018#ALL#Peso Real....: 
+0019#STR0019#ALL#Peso Cubico...: 
+0020#STR0020#ALL#Producto.....: 
+0021#STR0021#ALL#Bultos.......: 
+0022#STR0022#ALL#Embalaje......: 
+0023#STR0023#ALL#Valor Mercad.: 
+0024#STR0024#ALL#Tipo de Flete.: 
+0025#STR0025#ALL#Tipo Tabla...: 
+0026#STR0026#ALL#Descuento.....: 
+0027#STR0027#ALL# C L I E N T E 
+0028#STR0028#ALL# C A R G A 
+0029#STR0029#ALL# F L E T E   C O M B I N A D O 
+0030#STR0030#ALL# O B S E R V A C I O N E S 
+0031#STR0031#ALL#TOTAL DE FLETE
+0032#STR0032#ALL#Operador  : 
+0033#STR0033#ALL#Unitizadores...
+0034#STR0034#ALL#Archivo Solicitante:
+0035#STR0035#ALL#Contacto......:

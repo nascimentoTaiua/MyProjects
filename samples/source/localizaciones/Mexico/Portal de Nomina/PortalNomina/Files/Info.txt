@@ -1,0 +1,1 @@
+En esta carpeta se alojan los archivos temporalmente para la descarga del recibo de nómina y el archivo .XML

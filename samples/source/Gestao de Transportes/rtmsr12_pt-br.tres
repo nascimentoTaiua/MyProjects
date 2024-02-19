@@ -1,0 +1,18 @@
+0001#STR0001#ALL#Relação de Agendamentos
+0002#STR0002#ALL#Emite a relação dos Agendamento conforme os parâmetros informados
+0003#STR0003#ALL#Zebrado
+0004#STR0004#ALL#Administração
+0005#STR0005#ALL#CANCELADO PELO OPERADOR
+0006#STR0006#ALL#Agendamento.: 
+0007#STR0007#ALL#Dt.Cadastro: 
+0008#STR0008#ALL#DDD/Telefone: 
+0009#STR0009#ALL#Solicitante.: 
+0010#STR0010#ALL#Contato....: 
+0011#STR0011#ALL#Endereço....: 
+0012#STR0012#ALL#Bairro.....: 
+0013#STR0013#ALL#Município...: 
+0014#STR0014#ALL#Estado.....: 
+0015#STR0015#ALL#CEP.........: 
+0016#STR0016#ALL#Item Status Col   Status Ent   Local Coleta Remetente            Destinatario         Origem                         Destino                        Dt.Prev.Col Hr.Prev.Col  Dt.Prev.Ent  Hr.Prev.Ent       Tipo de Veiculo 
+0017#STR0017#ALL#                                                                                      Produto                        Embalagem          Qtd.Vol.    Qtd.Unit.   Peso Real    Peso Cubado  Vlr.Mercadoria
+0018#STR0018#ALL#Codigo.......: 

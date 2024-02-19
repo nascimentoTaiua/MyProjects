@@ -106,25 +106,27 @@ User Function SPEDRTMS()
    
         cCod_Part   := "SA1"
         cCodMunOri  := SM0->M0_CODMUN
-        cCodMunDes  := UfCodIBGE(SA1->A1_EST) + AllTrim(SA1->A1_COD_MUN)
    
         DbSelectArea("SF2")
         SF2->(DBSetOrder(1))
         SF2->(DBSeek(XFilial("SF2") + aCmpAntSFT[1] + aCmpAntSFT[2] + aCmpAntSFT[3] + aCmpAntSFT[4]))
-           
+
+        cCodMunDes  := SF2->F2_XMUNDES
+
         cCod_Part += SF2->(F2_FILIAL+F2_CLIENTE+F2_LOJA)
     Else
         DbSelectArea("SA2")
         SA2->(DBSetOrder(1))
         SA2->(DBSeek(XFilial("SA2") + aCmpAntSFT[3] + aCmpAntSFT[4]))
    
-        cCod_Part   := "SA2"
-        cCodMunOri  := UfCodIBGE(SA2->A2_EST) + AllTrim(SA2->A2_COD_MUN)
-        cCodMunDes  := SM0->M0_CODMUN
+        cCod_Part   := "SA2"      
   
         DbSelectArea("SF1")
         SF1->(DBSetOrder(1))
         SF1->(DBSeek(XFilial("SF1") + aCmpAntSFT[1] + aCmpAntSFT[2] + aCmpAntSFT[3] + aCmpAntSFT[4]))
+
+        cCodMunOri  := UfCodIBGE(SF1->F1_UFORITR) + AllTrim(SF1->F1_MUORITR)
+        cCodMunDes  := UfCodIBGE(SF1->F1_UFDESTR) + AllTrim(SF1->F1_MUDESTR)
    
         cCod_Part += SF1->(F1_FILIAL+F1_FORNECE+F1_LOJA)
     EndIf
@@ -180,14 +182,18 @@ User Function SPEDRTMS()
    
         DbSelectArea("SF3")
         SF3->(DBSetOrder(1))
-        SF3->(DBSeek(XFilial("SF3") + DtoS(aCmpAntSFT[6]) + aCmpAntSFT[1] + aCmpAntSFT[2] + aCmpAntSFT[3] + aCmpAntSFT[4]))
    
         vValBSICM := LTrim(Transform(F3_VALCONT, "@E 99999999.99"))
    
         AAdd(vLinha,    "D100")         //01 REG
         AAdd(vLinha,    cInd_Oper)      //02 IND_OPER
         AAdd(vLinha,    cInd_Emit)      //03 IND_EMIT
-        AAdd(vLinha,    IIf(cModelo$"63", "", cModelo))      //04 COD_PART
+        //AAdd(vLinha,    IIf(cModelo$"63", "", cModelo))      //04 COD_PART
+        If aCmpAntSFT[43] == "S"
+            AAdd(vLinha,    "SA1"+cFilAnt+SA1->A1_COD+SA1->A1_LOJA)//04 COD_PART
+        Else
+            AAdd(vLinha,    "SA2"+cFilAnt+SA2->A2_COD+SA2->A2_LOJA)//04 COD_PART
+        EndIf
         AAdd(vLinha,    AModNot(aCmpAntSFT[42])) //05 COD_MOD
         AAdd(vLinha,    "00")           //06 COD_SIT
         AAdd(vLinha,    aCmpAntSFT[2])  //07 SER

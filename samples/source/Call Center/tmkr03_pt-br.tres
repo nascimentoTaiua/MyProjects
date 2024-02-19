@@ -1,0 +1,40 @@
+0001#STR0001#ALL#Emissão do Pedido de Vendas - Televendas
+0002#STR0002#ALL#Este programa irá emitir o pedido de vendas criado no sistema
+0003#STR0003#ALL#com ou sem liberação ou a emissão da nota fiscal.
+0004#STR0004#ALL#Informe os parâmetros de seleção para emissão dos Pedidos
+0005#STR0005#ALL#Zebrado
+0006#STR0006#ALL#Administração
+0007#STR0007#ALL#Selecionando Registros...
+0008#STR0008#ALL#CANCELADO PELO OPERADOR
+0009#STR0009#ALL#Empresa
+0010#STR0010#ALL#LOCAL DE ENTREGA
+0011#STR0011#ALL#ENDEREÇO DE COBRANÇA
+0012#STR0012#ALL#Nome
+0013#STR0013#ALL#Endereço
+0014#STR0014#ALL#Inscr./RG
+0015#STR0015#ALL#CPF/CNPJ
+0016#STR0016#ALL#Atendimento : 
+0017#STR0017#ALL#Pedido      : 
+0018#STR0018#ALL#Emissão     : 
+0019#STR0019#ALL#Frete       : 
+0020#STR0020#ALL#Inicio / Fim: 
+0021#STR0021#ALL#Despesas    : 
+0022#STR0022#ALL#Contato     : 
+0023#STR0023#ALL#Desconto    : 
+0024#STR0024#ALL#Vendedor    : 
+0025#STR0025#ALL#Cond. Pagto : 
+0026#STR0026#ALL#Operador    : 
+0027#STR0027#ALL#Mapa Carreg.: 
+0028#STR0028#ALL#CARREGA
+0029#STR0029#ALL#NÃO CARREGA
+0030#STR0030#ALL#Forma Pagto : 
+0031#STR0031#ALL#Indenização : 
+0032#STR0032#ALL#Transportad.: 
+0033#STR0033#ALL#Validade    : 
+0034#STR0034#ALL#Observação: 
+0035#STR0035#ALL#Item Produto         Descrição                     UM   Qtde     Vlr Unit.     Vlr Item      %Desc.   Val. Desc.     %Acresc.   Val Acresc.
+0036#STR0036#ALL#Total das quantidades
+0037#STR0037#ALL#Vlr.total Mercadoria
+0038#STR0038#ALL#| Vencto     Forma          Valor || Vencto     Forma          Valor || Vencto     Forma          Valor || Vencto     Forma          Valor |
+0039#STR0039#ALL#Do Atendimento
+0040#STR0040#ALL#Ate o Atendimento

@@ -1,0 +1,46 @@
+0001#STR0001#ALL#Exportação dos ficheiros de benefícios
+0002#STR0002#ALL#Este procedimento processa e gera o ficheiro de benefícios para integração
+0003#STR0003#ALL#A ler ficheiro INI
+0004#STR0004#ALL#Início de processamento
+0005#STR0005#ALL#Ocorreram problemas no fechamento do ficheiro.
+0006#STR0006#ALL#Fim do processamento
+0007#STR0007#ALL#Exportação de ficheiros de benefícios
+0010#STR0010#ALL#Não existem registos a serem gravados.
+0011#STR0011#ALL#Processamento cancelado pelo utilizador.
+0012#STR0012#ALL#O ficheiro não pode ser criado. Verifique os parâmetros.
+0014#STR0014#ALL#Processamento cancelado pelo utilizador.
+0016#STR0016#ALL#Administração
+0017#STR0017#ALL#Listagem de benefícios
+0018#STR0018#ALL#Emissão de relatório para avaliação de benefícios.
+0019#STR0019#ALL#Será impresso de acordo com os parâmetros solicitados.
+0021#STR0021#ALL#A imprimir...
+0022#STR0022#ALL#Valores totais centro de custo:
+0023#STR0023#ALL#Quantidade de lançamentos do centro custo:
+0024#STR0024#ALL#Valores totais da filial:
+0025#STR0025#ALL#Quantidade de lançamentos da filial: 
+0026#STR0026#ALL#Valores totais da empresa:
+0027#STR0027#ALL#Quantidade de lançamentos da empresa:
+0028#STR0028#ALL#Existem dados inválidos. Verifique o Log de Processos deste procedimento.
+0029#STR0029#ALL#Ficheiro .INI não informado na Tabela Auxiliar S018.
+0030#STR0030#ALL#Ficheiro de saída não informado na Tabela Auxiliar S018
+0031#STR0031#ALL#Função de validação não informada na Tabela Auxiliar S018
+0033#STR0033#ALL# - Matrícula: 
+0034#STR0034#ALL# - Colaborador com campo RA_CEP em branco.
+0035#STR0035#ALL# - Colaborador com campo RA_CIC em branco.
+0036#STR0036#ALL# - Colaborador com campo RA_RG em branco.
+0037#STR0037#ALL# - Colaborador com campo RA_MAE em branco.
+0038#STR0038#ALL# - Colaborador com campo RA_ENDEREC em branco.
+0039#STR0039#ALL# - Colaborador com campo RA_COMPLEM em branco.
+0040#STR0040#ALL# - Colaborador com campo RA_MUNICIP em branco.
+0041#STR0041#ALL# - Colaborador com campo RA_ESTADO em branco.
+0043#STR0043#ALL#Matrícula
+0045#STR0045#ALL#Tp.Benef.
+0046#STR0046#ALL#Valor benef.
+0047#STR0047#ALL#Ficheiro de inicialização não localizado: 
+0048#STR0048#ALL#Ficheiro já existente. Sobrepor?
+0051#STR0051#ALL#Parâmetro sobre fornecedor não preenchido.
+0052#STR0052#ALL#Parâmetro sobre data de admissão não preenchido.
+0053#STR0053#ALL#Parâmetro sobre Tipos de benefícios não preenchido.
+0054#STR0054#ALL#Ficheiro INI processado
+0055#STR0055#ALL# - Colaborador com o Código do local de entrega (RA_LOCBNF) em branco.
+0056#STR0056#ALL#Função validadora com caracter -()- inválido, na tabela S018

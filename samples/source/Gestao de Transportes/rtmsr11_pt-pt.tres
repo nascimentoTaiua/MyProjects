@@ -1,0 +1,10 @@
+0001#STR0001#ALL#Contrato De Coleta E Entrega
+0002#STR0002#ALL#Este Programa Irá Emitir O Contrato De Coleta E Entrega
+0003#STR0003#ALL#De acordo com os parâmetro s escolhidos pelo utilizador
+0004#STR0004#ALL#Código de barras
+0006#STR0006#ALL#Número       :
+0007#STR0007#ALL#Cancelado Pelo Operador
+0008#STR0008#ALL#Data     Serv.transp.  Tipo Transp. Viagem    Qtd.vol. Qtd.doc.         Peso    Frete     Irrf Sest/senat     Inss   Vl.liquido
+0009#STR0009#ALL#Não Existem Viagens Para Este Contrato
+0010#STR0010#ALL#Proprietario :
+0011#STR0011#ALL#Total =>

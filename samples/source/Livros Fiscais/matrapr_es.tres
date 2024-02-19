@@ -1,0 +1,34 @@
+0001#STR0001#BRA#Alicuota
+0002#STR0002#BRA#CFOP
+0003#STR0003#BRA#CFOP/Alicuota
+0004#STR0004#BRA#Estado/CFOP
+0005#STR0005#BRA#Mapa Resumen de los Libros Fiscales
+0006#STR0006#BRA#Este informe imprimira un resumen con los movimientos a traves de la facturas de entrada/ salida, de ICMS o IPI 
+0007#STR0007#BRA#1.000 - Entradas y/o Adquisiciones de Servicios del Estado
+0008#STR0008#BRA#2.000 - Entradas y/o Adquisiciones de Servicios de Otros Estados
+0009#STR0009#BRA#3.000 - Entradas y/o Adquisiciones de Servicios del Exterior
+0010#STR0010#BRA#5.000 - Salidas y/o Prestaciones de Servicios al Estado
+0011#STR0011#BRA#6.000 - Salidas y/o Prestaciones de Servicios a otros Estados
+0012#STR0012#BRA#7.000 - Salidas y/o Prestaciones de Servicios al Exterior
+0013#STR0013#BRA#Entradas y/o Prestaciones de Servicios
+0014#STR0014#BRA#Salidas y/o Prestaciones de Servicios
+0015#STR0015#BRA#Entradas
+0016#STR0016#BRA#Salidas
+0017#STR0017#BRA#CFOP
+0018#STR0018#BRA#Alicuota
+0019#STR0019#BRA#Valor Contable
+0020#STR0020#BRA#Base de Calculo
+0021#STR0021#BRA#Valor Tributado
+0022#STR0022#BRA#Exentas
+0023#STR0023#BRA#Otras
+0024#STR0024#BRA#Total de las Entradas
+0025#STR0025#BRA#Total de las Salidas
+0026#STR0026#BRA#Total
+0027#STR0027#BRA#* <- CFOPs no registrados en la Tabla [13]
+0028#STR0028#BRA#Total del Estado
+0029#STR0029#BRA#Estado
+0030#STR0030#BRA#Libros Fiscales
+0031#STR0031#BRA#Movimientos
+0032#STR0032#BRA#Sucurs.
+0033#STR0033#BRA#Sucur.:
+0034#STR0034#BRA#Calculo

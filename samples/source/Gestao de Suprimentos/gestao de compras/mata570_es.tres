@@ -1,0 +1,17 @@
+0001#STR0001#ALL#Esta rutina requiere que los archivos a ella
+0002#STR0002#ALL#asociados no esten siendo usados por otras
+0003#STR0003#ALL#estaciones.
+0004#STR0004#ALL#Haga con que los otros usuarios salgan del
+0005#STR0005#ALL#sistema.
+0006#STR0006#ALL#ATENCION
+0007#STR0007#ALL#Limpieza Mensual
+0008#STR0008#ALL#El objetivo de este programa es efectuar la limpieza de archivos del modulo SIGACOM.
+0009#STR0009#ALL#Debe ser informada la fecha limite para limpieza.  Los registros borrados seran 
+0010#STR0010#ALL#guardados en un grupo de archivos generados por el programa.
+0011#STR0011#ALL#Fecha Limite
+0012#STR0012#ALL#Directorio
+0013#STR0013#ALL#Recuperando espacio fisico en el archivo
+0014#STR0014#ALL#Efectuando limpieza en el archivo
+0015#STR0015#ALL#ÌArchivo 
+0016#STR0016#ALL# ya existe !
+0017#STR0017#ALL#Archivo 

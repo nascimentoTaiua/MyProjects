@@ -1,0 +1,10 @@
+0001#STR0001#ALL#This report will print the invoice of issued AWBs
+0002#STR0002#ALL#Report of invoice of AWBs
+0003#STR0003#ALL#Airline: 
+0004#STR0004#ALL#Nr.AWB       Dig.         Weight         AWB Value      Net Vl. AWB        Calc. Freight       Decrea.Vl.      AWB Vl. Disc.     Doc. Freight      %CustxRec  %CustxRec(R)  Customer                            
+0005#STR0005#ALL#Doc.Nr.     Origin Type                          Weight    Destination                     Sender                    Recipient               %CustxRec  %CustxRec(R)  Freight Vl.     Tax    Freight Tot.
+0006#STR0006#ALL#Z-form
+0007#STR0007#ALL#Administration
+0008#STR0008#ALL#Detailed
+0009#STR0009#ALL#Summarized
+0010#STR0010#ALL#Air Invoice Nr. 

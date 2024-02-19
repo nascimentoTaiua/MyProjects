@@ -1,0 +1,80 @@
+/*
+Padrao Intermec
+ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+±±ÉÍÍÍÍÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍ»±±
+±±ºPrograma  ³IMG05     ºAutor  ³Sandro Valex        º Data ³  19/06/01   º±±
+±±ÌÍÍÍÍÍÍÍÍÍÍØÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍ¹±±
+±±ºDesc.     ³Ponto de entrada referente a imagem de identificacao do     º±±
+±±º          ³volume temporario                                           º±±
+±±ÌÍÍÍÍÍÍÍÍÍÍØÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹±±
+±±ºUso       ³ AP5                                                        º±±
+±±ÈÍÍÍÍÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼±±
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+*/
+User Function Img05   // imagem de etiqueta de volume temporaria
+Local cVolume := paramixb[1]
+Local cPedido := paramixb[2]
+Local cNota   := IF(len(paramixb)>=3,paramixb[3],nil)
+Local cSerie  := IF(len(paramixb)>=4,paramixb[4],nil)
+
+Local cID := CBGrvEti('05',{cVolume,cPedido,cNota,cSerie})
+Local sConteudo
+
+//MSCBLOADGRF("SIGA.BMP")
+MSCBBEGIN(1,3)
+	MSCBBOX(01,02,34,76,1)
+	MSCBLineV(30,30,76,1)
+	MSCBLineV(23,02,76,1)
+	MSCBLineV(15,02,76,1)
+	MSCBLineH(23,30,34,1)
+//	MSCBGRAFIC(26,2,"SIGA",.T.)
+	MSCBSAY(32,33,"VOLUME","R","2","01,01")
+	MSCBSAY(29,33,"CODIGO","R","2","01,01")
+	MSCBSAY(26,33, cVolume, "R", "2", "01,01")
+	If cNota==NIL
+		MSCBSAY(22,05,"Pedido","R","2","01,01")
+		MSCBSAY(19,05,cPedido,"R", "2", "01,01")
+	Else
+		MSCBSAY(22,05,"Nota","R","2","01,01")
+		MSCBSAY(19,05,cNota+ ' '+cSerie,"R", "2", "01,01")
+	EndIf
+	MSCBSAYBAR(12,22,cId,"R","MB07",8.36,.F.,.T.,.F.,,2,2,.F.,.F.,"1",.T.)
+	MSCBInfoEti("Volume Temp.","30X100")
+sConteudo:=MSCBEND()
+Return sConteudo
+
+/*
+ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+±±ÉÍÍÍÍÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍ»±±
+±±ºPrograma  ³IMG05OFI  ºAutor  ³Sandro Valex        º Data ³  19/06/01   º±±
+±±ÌÍÍÍÍÍÍÍÍÍÍØÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍ¹±±
+±±ºDesc.     ³Ponto de entrada referente a imagem de identificacao do     º±±
+±±º          ³volume permanente."Oficial"                                 º±±
+±±ÌÍÍÍÍÍÍÍÍÍÍØÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹±±
+±±ºUso       ³ AP5                                                        º±±
+±±ÈÍÍÍÍÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼±±
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+*/
+User Function Img05OFI // imagem de etiqueta de volume permanente (OFICIAL)
+Local cId     := CBGrvEti('05',{CB6->CB6_VOLUME,CB6->CB6_PEDIDO})
+Local nTotEti := paramixb[1]
+Local nAtu    := paramixb[2]
+MSCBBEGIN(1,3)
+	MSCBLineH(01,07,34,1)
+	MSCBLineH(01,22,34,1)
+	MSCBLineH(01,31,34,1)
+	MSCBLineH(01,39,34,1)
+	MSCBSAY(02,03,"VOLUME","N","2","01,01")
+	MSCBSAYBAR(02,10,AllTrim(cId),"N","MB07",8.36,.F.,.T.,.F.,,2,2,.F.,.F.,"1",.T.)
+	MSCBSAY(02,24,"PEDIDO","N","2","01,01")
+	MSCBSAY(02,27,CB6->CB6_PEDIDO,"N", "2", "01,01")
+	MSCBSAY(02,32,"CODIGO","N","2","01,01")
+	MSCBSAY(02,35,CB6->CB6_VOLUME, "N", "2", "01,01")
+	MSCBSAY(07,60,StrZero(nAtu,2)+"/"+StrZero(nTotEti,2), "N", "2", "06,03")
+	MSCBInfoEti("Volume Oficial","30X100")
+MSCBEND()
+Return .f.

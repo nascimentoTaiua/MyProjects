@@ -1,0 +1,102 @@
+0001#STR0001#MEX#Controle do Supervisor
+0002#STR0002#MEX#Não existem funcionários alocados para o supervisor com matrícula:
+0003#STR0003#MEX#Empréstimos por Autorizar
+0004#STR0004#MEX#Férias por Autorizar
+0005#STR0005#MEX#Dados Pessoais
+0006#STR0006#MEX#História de Trabalho
+0007#STR0007#MEX#Histórico de Empréstimos
+0008#STR0008#MEX#Histórico de Férias
+0009#STR0009#MEX#Histórico de Ausências
+0010#STR0010#MEX#Sair
+0011#STR0011#MEX#Rejeitar Empréstimo
+0012#STR0012#MEX#Rejeitar
+0013#STR0013#MEX#Não existem Solicitações de Empréstimos pendentes...
+0014#STR0014#MEX#Autorização de Empréstimos
+0015#STR0015#MEX#Marca Todos
+0016#STR0016#MEX#Desmarca Todos
+0017#STR0017#MEX#Estornar Seleção
+0018#STR0018#MEX#Rejeitar Férias
+0019#STR0019#MEX#Rejeitar
+0020#STR0020#MEX#Não existem Solicitações de Férias pendentes...
+0021#STR0021#MEX#Autorização de Férias
+0022#STR0022#MEX#Não foram encontrados os dados para a matrícula:
+0023#STR0023#MEX#Não existem dados configurados para visualizar desde o Terminal do Funcionário. Confira.
+0024#STR0024#MEX#Data Motivo
+0025#STR0025#MEX#Tipo
+0026#STR0026#MEX#Sal. Diário
+0027#STR0027#MEX#Sal. Diá. Int.
+0028#STR0028#MEX#Sal. Mensal
+0029#STR0029#MEX#Loc. Pagamento
+0030#STR0030#MEX#C.C.
+0031#STR0031#MEX#Depto
+0032#STR0032#MEX#Função
+0033#STR0033#MEX#Cargo
+0034#STR0034#MEX#Não existe histórico funcional para este funcionário
+0035#STR0035#MEX#Histórico Funcional de 
+0036#STR0036#MEX#Filtro
+0037#STR0037#MEX#Filtro
+0038#STR0038#MEX#Não existem empréstimos ativos de nenhum funcionário
+0039#STR0039#MEX#Consulta de Empréstimos 
+0040#STR0040#MEX#Verba
+0041#STR0041#MEX#,
+0042#STR0042#MEX#,
+0043#STR0043#MEX#Dias de Direito
+0044#STR0044#MEX#Dias de Gozo
+0045#STR0045#MEX#Dias Programados
+0046#STR0046#MEX#Dias Pagos
+0047#STR0047#MEX#Saldo
+0048#STR0048#MEX#Consulta de Férias de 
+0049#STR0049#MEX#Filtro
+0050#STR0050#MEX#Filtro
+0051#STR0051#MEX#Não existem ausências para o funcionário:
+0052#STR0052#MEX#Consulta de Ausências de 
+0053#STR0053#MEX#É necessário o correio eletrônico do superivor para poder autorizar 
+0054#STR0054#MEX#É necessário o correio eletrônico do Administrador de Folhas de Pagamento para poder autorizar 
+0055#STR0055#MEX#Está seguro que deseja autorizar?
+0056#STR0056#MEX#Autorização de Empréstimos
+0057#STR0057#MEX#Autorizam-se os empréstimos para o seguinte pessoal:
+0058#STR0058#MEX#Funcionário :
+0059#STR0059#MEX#/ Verba: 
+0060#STR0060#MEX#/ Valor $ 
+0061#STR0061#MEX#Autorizado por: 
+0062#STR0062#MEX#Confira se existe algum problema de conexão, pois não se conseguiu enviar o e-mail para o administrador da Folha de Pagamento e não foi possivel autorizar 
+0063#STR0063#MEX#Envio de Autorização com sucesso 
+0064#STR0064#MEX#Autorização Efetuada com Sucesso 
+0065#STR0065#MEX#Deve selecionar no mínimo uma solicitação para poder efetuar a autorização
+0066#STR0066#MEX#Está seguro que deseja anular as solicitações?
+0067#STR0067#MEX#Descreva o Motivo da Rejeição
+0068#STR0068#MEX#A descrição do motivo é obrigatória 
+0069#STR0069#MEX#Deve selecionar no mínimo uma solicitação para poder Cancelar 
+0070#STR0070#MEX#É necessário o correio eletrônico do supervisor para poder autorizar 
+0071#STR0071#MEX#É necessário o correio eletrônico do Administrador das Folhas de Pagamento para poder autorizar 
+0072#STR0072#MEX#Está seguro de autorizar?
+0073#STR0073#MEX#Autorização de Férias
+0074#STR0074#MEX#Autizam-se as férias do seguinte pessoal:
+0075#STR0075#MEX#Funcionário:
+0076#STR0076#MEX#/  Verba:
+0077#STR0077#MEX#/ Data Final :
+0078#STR0078#MEX#Autorizado por: 
+0079#STR0079#MEX#Confira se existe algum problema de conexão, pois não foi possível enviar o e-mail para o administrador da Folha de Pagamento e não foi possível autorizar 
+0080#STR0080#MEX#Envio de Autorização com Sucesso
+0081#STR0081#MEX#Autorização Efetuada com Sucesso
+0082#STR0082#MEX#Deve selecionar no mínimo uma solicitação para poder autorizar 
+0083#STR0083#MEX#Está seguro de anular as solicitações?
+0084#STR0084#MEX#Descreva o Motivo da Rejeição
+0085#STR0085#MEX#A descrição do motivo é obrigatória
+0086#STR0086#MEX#Deve selecionar no mínimo uma solicitação para poder Cancelar
+0087#STR0087#MEX#A-Altas
+0088#STR0088#MEX#B-Baixas
+0089#STR0089#MEX#M-Alteração
+0090#STR0090#MEX#L-Localidade de Pagamento
+0091#STR0091#MEX#C-Centros de custo
+0092#STR0092#MEX#D-Departamento
+0093#STR0093#MEX#F-Funções
+0094#STR0094#MEX#P-Cargos
+0095#STR0095#MEX#Selecione os Tipos de Movimento
+0096#STR0096#MEX#Alguma verba selecionada não existe 
+0097#STR0097#MEX#Este campo não pode esta vazio
+0098#STR0098#MEX#Não existem dados a consultar
+0099#STR0099#MEX#Aviso
+0100#STR0100#MEX#Verba
+0101#STR0101#MEX#Marca/Desmarca Todos
+0102#STR0102#MEX#Dados Pessoais

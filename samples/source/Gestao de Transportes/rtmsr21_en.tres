@@ -1,0 +1,13 @@
+0001#STR0001#ALL#Debit/Credit Note
+0002#STR0002#ALL#This program will print Debit/Credit Note
+0003#STR0003#ALL#Z-form
+0004#STR0004#ALL#Management
+0005#STR0005#ALL# of 
+0006#STR0006#ALL#N O T E  O F  
+0007#STR0007#ALL#D E B I T
+0008#STR0008#ALL#C R E D I T
+0009#STR0009#ALL#Docum. Referring: 
+0010#STR0010#ALL#Reason..........: 
+0011#STR0011#ALL#Value...........: 
+0012#STR0012#ALL#Without other reasons for now, we sign it.
+0013#STR0013#ALL#Sincerely,

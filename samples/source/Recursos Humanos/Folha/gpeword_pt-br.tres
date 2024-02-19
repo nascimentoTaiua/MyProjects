@@ -1,0 +1,419 @@
+0001#STR0001#ALL#Integracao com MS-Word
+0002#STR0002#ALL#Impressao de Documentos Word. Serao impressos de acordo com a
+0003#STR0003#ALL#Selecao dos Parametros.
+0004#STR0004#ALL#Impr. _Variaveis
+0005#STR0005#ALL#Impr. _Documento
+0006#STR0006#ALL#Modelo de Documentos(*.DOT)  |*.DOT|Modelo de Documentos(*.DOTX) |*.DOTX|
+0007#STR0007#ALL#Selecione o arquivo *.DOT ou *.DOTX
+0008#STR0008#ALL#DOT
+0009#STR0009#ALL#Arquivo Selecionado
+0010#STR0010#ALL#OK
+0011#STR0011#ALL#Arquivo Invalido 
+0012#STR0012#ALL#Cancelada a Selecao! Voce cancelou a selecao do arquivo.
+0013#STR0013#ALL#Filial
+0014#STR0014#ALL#Matricula
+0015#STR0015#ALL#Centro de Custo
+0016#STR0016#ALL#Descricao do Centro de Custo
+0017#STR0017#ALL#Nome do Funcionario
+0018#STR0018#ALL#Numero do CIC/CPF
+0019#STR0019#ALL#Numero do PIS
+0020#STR0020#ALL#Numero do RG
+0021#STR0021#ALL#Numero da CTPS
+0022#STR0022#ALL#Numero de Serie da CTPS
+0023#STR0023#ALL#Estado Emissor da CTPS
+0024#STR0024#ALL#Numero da Carteira Nacional de Habilitacao
+0025#STR0025#ALL#Numero da Carteira de Reservista
+0026#STR0026#ALL#Numero do Titulo de Eleitor
+0027#STR0027#ALL#Numero da Zona/Secao do Tiluto de Eleitor
+0028#STR0028#ALL#Endereco
+0029#STR0029#ALL#Complemento de Endereco
+0030#STR0030#ALL#Bairro
+0031#STR0031#ALL#Municipio
+0032#STR0032#ALL#Sigla do Estado
+0033#STR0033#ALL#Descricao do Estado
+0034#STR0034#ALL#Numero do CEP
+0035#STR0035#ALL#Numero do Telefone
+0036#STR0036#ALL#Nome do Pai
+0037#STR0037#ALL#Nome da Mae
+0038#STR0038#ALL#Sexo
+0039#STR0039#ALL#Descricao do Sexo
+0040#STR0040#ALL#Estado Civil
+0041#STR0041#ALL#Codigo da Naturalidade
+0042#STR0042#ALL#Descricao da Naturalidade
+0043#STR0043#ALL#Codigo da Nacionalidade
+0044#STR0044#ALL#Descricao da Nacionalidade
+0045#STR0045#ALL#Ano de Chegada no Pais
+0046#STR0046#ALL#Numero de Dependentes de IR
+0047#STR0047#ALL#Numero de Dependentes de Salario Familia
+0047#STR0047#CHI#Qtd.de Auxílio de Sal. Família
+0048#STR0048#ALL#Data de Nascimento
+0049#STR0049#ALL#Data de Admissao
+0050#STR0050#ALL#Dia da Data de Admissao
+0051#STR0051#ALL#Mes da Data de Admissao
+0052#STR0052#ALL#Ano da Data de Admissao
+0053#STR0053#ALL#Data da Opcao do FGTS
+0054#STR0054#ALL#Data de Demissao
+0055#STR0055#ALL#Data de Experiencia
+0056#STR0056#ALL#Dia da Data de Experiencia
+0057#STR0057#ALL#Mes da Data de Experiencia
+0058#STR0058#ALL#Ano da Data de Experiencia
+0059#STR0059#ALL#Dias de Experiencia
+0060#STR0060#ALL#Data Vencimento Exame Medico
+0061#STR0061#ALL#Banco/Agencia Deposito de Salario
+0062#STR0062#ALL#Descricao do Banco de Deposito de Salario
+0063#STR0063#ALL#Descricao da Agencia de Deposito de Salario
+0064#STR0064#ALL#Numero da Conta de Deposito de Salario
+0065#STR0065#ALL#Banco/Agencia de Deposito do FGTS
+0066#STR0066#ALL#Descricao da Banco do Deposito de FGTS
+0067#STR0067#ALL#Descricao da Agencia de Deposito do FGTS
+0068#STR0068#ALL#Numero da Conta de Deposito do FGTS
+0069#STR0069#ALL#Situacao na Folha
+0070#STR0070#ALL#Descricao da Situacao na Folha
+0071#STR0071#ALL#Horas Mensais
+0072#STR0072#ALL#Horas Semanais
+0073#STR0073#ALL#Numero da Chapa
+0074#STR0074#ALL#Codigo do Turno de Trabalho
+0075#STR0075#ALL#Descricao do Turno de Trabalho
+0076#STR0076#ALL#Codigo da Funcao
+0077#STR0077#ALL#Descricao da Funcao
+0078#STR0078#ALL#Numero do CBO
+0079#STR0079#ALL#Codigo Pagamento Contribuicao Sindical
+0080#STR0080#ALL#Codigo do Sindicato
+0081#STR0081#ALL#Descricao do Sindicato
+0082#STR0082#ALL#Codigo Assistencia Medica
+0083#STR0083#ALL#Numero de Dependentes para Assistencia Medica
+0083#STR0083#CHI#Qtd. de Encargo Familiar para Assistência Médica
+0084#STR0084#ALL#Codigo do Adicional Por Tempo de Servico
+0085#STR0085#ALL#Codigo da Cesta Basica
+0086#STR0086#ALL#Codigo do Vale Refeicao
+0087#STR0087#ALL#Codigo do Seguro de Vida
+0088#STR0088#ALL#Percentual da Pensao Alimenticia
+0089#STR0089#ALL#Percentual do Adiantamento
+0090#STR0090#ALL#Categoria do Funcionario
+0091#STR0091#ALL#Descricao da Categoria do Funcionario
+0092#STR0092#ALL#Descricao do Tipo de Pagamento (Mes/Hora)
+0093#STR0093#ALL#Tipo de Pagamento
+0094#STR0094#ALL#Descricao do Tipo de Pagamento
+0095#STR0095#ALL#Salario
+0096#STR0096#ALL#Salario Dissidio
+0097#STR0097#ALL#Base INSS Outras Empresas
+0098#STR0098#ALL#Inss Outras Empresas
+0099#STR0099#ALL#Horas de Periculosidade
+0100#STR0100#ALL#Horas de Insalubridade Minima
+0101#STR0101#ALL#Horas de Insalubridade Media
+0102#STR0102#ALL#Horas de Insalubridade Maxima
+0103#STR0103#ALL#Tipo de Admissao
+0104#STR0104#ALL#Descricao do Tipo de Admissao
+0105#STR0105#ALL#Codigo de Afastamento do FGTS
+0106#STR0106#ALL#Descricao do Afastamento do FGTS
+0107#STR0107#ALL#Codigo do Vinculo Empregaticio da RAIS
+0108#STR0108#ALL#Descricao do Vinculo Empregaticio da RAIS
+0109#STR0109#ALL#Codigo de Instrucao da RAIS
+0110#STR0110#ALL#Descricao do Codigo de Instrucao da RAIS
+0111#STR0111#ALL#Codigo de Rescisao da RAIS
+0112#STR0112#ALL#Numero do Cracha
+0113#STR0113#ALL#Codigo da Regra de Apontamento
+0114#STR0114#ALL#Foto do Funcionario
+0115#STR0115#ALL#Numero de Registro
+0116#STR0116#ALL#Numero da Ficha
+0117#STR0117#ALL#Codigo do Tipo de Contrato de Trabalho
+0118#STR0118#ALL#Descricao do Tipo de Contrato de Trabalho
+0119#STR0119#ALL#Apelido do Funcionario
+0120#STR0120#ALL#E-mail do Funcionario
+0121#STR0121#ALL#Texto 01 para Livre Digitacao
+0122#STR0122#ALL#Texto 02 para Livre Digitacao
+0123#STR0123#ALL#Texto 03 para Livre Digitacao
+0124#STR0124#ALL#Texto 04 para Livre Digitacao
+0125#STR0125#ALL#Extenso do Salario
+0126#STR0126#ALL#Data Base do Sistema
+0127#STR0127#ALL#Dia da Data Base do Sistema
+0128#STR0128#ALL#Mes da Data Base do Sistema
+0129#STR0129#ALL#Ano da Data Base do Sistema
+0130#STR0130#ALL#Nome da Empresa
+0131#STR0131#ALL#Endereco da Empresa
+0132#STR0132#ALL#Municipio da Empresa
+0133#STR0133#ALL#Numero do CEP da Empresa
+0134#STR0134#ALL#CGC da Empresa
+0135#STR0135#ALL#Numero da Inscricao Estadual da Empresa
+0136#STR0136#ALL#Telefone da Empresa/Fax
+0137#STR0137#ALL#Bairro da Empresa
+0138#STR0138#ALL#Descricao do Tipo de Rescisao da RAIS
+0139#STR0139#ALL#Dia da Data de Demissao
+0140#STR0140#ALL#Mes da Data de Demissao
+0141#STR0141#ALL#Ano da Data de Demissao
+0142#STR0142#ALL#Variavel
+0143#STR0143#ALL#Descricao da Variavel
+0144#STR0144#ALL#Relatorio Variaveis GPE_Word.
+0145#STR0145#ALL#Será impresso de acordo com os parametros solicitados pelo
+0146#STR0146#ALL#usuario.
+0147#STR0147#ALL#Zebrado
+0148#STR0148#ALL#Administraçäo
+0149#STR0149#ALL#Variaveis                      Descricao
+0150#STR0150#ALL#Nome do Dependente
+0150#STR0150#CHI#Nome do Encargo Familiar
+0151#STR0151#ALL#Data de Nascimento do Dependente De Salario Familia
+0151#STR0151#CHI#Data de Nascimento de Encargo do Salário Familiar
+0152#STR0152#ALL#Orgao Emissor Doc.Identidade
+0153#STR0153#ALL#Relacao de Dependencia 
+0154#STR0154#ALL#Dependente de Imposto de Renda 
+0155#STR0155#ALL#Extenso do mes de admissao 
+0156#STR0156#ALL#Nome do apoderado 
+0157#STR0157#ALL#Atividade da empresa 
+0158#STR0158#ALL#Numero do Livro em que foi Registrado
+0159#STR0159#ALL#Numero da Folha do Livro em que foi Registrado
+0160#STR0160#ALL#Data da Entrega dos Documentos
+0161#STR0161#ALL#Data da Baixa dos Documentos
+0162#STR0162#ALL#Selecionando Registros.....
+0163#STR0163#ALL#Data de Nascimento do Dependente De Imposto de Renda
+0164#STR0164#ALL#Local de Nascimento
+0165#STR0165#ALL#Numero do Registro de Nascimento
+0166#STR0166#ALL#Municipio de Nascimento
+0167#STR0167#ALL#Integração Word funciona somente com Windows !!!
+0168#STR0168#ALL#Atenção !
+0169#STR0169#ALL#Primeiro Nome
+0170#STR0170#ALL#Segundo Nome
+0171#STR0171#ALL#Primeiro Sobrenome
+0172#STR0172#ALL#Segundo Sobrenome
+0173#STR0173#ALL#Codigo do Processo
+0174#STR0174#ALL#Codigo do Local de Pagamento
+0175#STR0175#ALL#Tipo de Salario IMSS
+0176#STR0176#ALL#Tipo de Empregado IMSS
+0177#STR0177#ALL#Tipo de Jornada IMSS
+0178#STR0178#ALL#Data de Readmissao
+0179#STR0179#ALL#Data de Baixa IMSS
+0180#STR0180#ALL#Codigo do Registro Patronal
+0181#STR0181#ALL#Codigo do Departamento
+0182#STR0182#ALL#Codigo do Posto
+0183#STR0183#ALL#CURP
+0184#STR0184#ALL#Tipo de Infonavit
+0185#STR0185#ALL#Valor do Infonavit
+0186#STR0186#ALL#Nro. de Credito Infonavit
+0187#STR0187#ALL#O endereco completo do local onde está o arquivo do Word excedeu o limite de 75 caracteres!
+0188#STR0188#ALL#Dia Inicio Per.Aquis.Ferias
+0189#STR0189#ALL#Mes Inicio Per.Aquis.Ferias
+0190#STR0190#ALL#Ano Inicio Per.Aquis.Ferias
+0191#STR0191#ALL#Dia Fim Per.Aquis.Ferias
+0192#STR0192#ALL#Mes Fim Per.Aquis.Ferias
+0193#STR0193#ALL#Ano Fim Per.Aquis.Ferias
+0194#STR0194#ALL#Descrição do Estado Civil
+0195#STR0195#ALL#Nr. Bilhete Identidade
+0196#STR0196#ALL#Data de Emissão do Bilhete Identidade
+0197#STR0197#ALL#Descrição da primeira tarefa encontrada
+0198#STR0198#ALL#Aulas por semana da primeira tarefa
+0199#STR0199#ALL#Quantidade da primeira tarefa
+0200#STR0200#ALL#Valor unitário da primeira tarefa
+0201#STR0201#ALL#Valor total da primeira tarefa
+0202#STR0202#ALL#Descrição da segunda tarefa
+0203#STR0203#ALL#Aulas por semana da segunda tarefa
+0204#STR0204#ALL#Quantidade da segunda tarefa
+0205#STR0205#ALL#Valor unitário da segunda tarefa
+0206#STR0206#ALL#Valor total da segunda tarefa
+0207#STR0207#ALL#Numero Patronal para o CCSS
+0208#STR0208#ALL#Numero de Apólice para MTSS
+0209#STR0209#ALL#Numero da Filial do CCSS
+0210#STR0210#ALL#Código de Ocupação MTSS
+0211#STR0211#ALL#Código de Ocupação CCSS
+0212#STR0212#ALL#Código de Ocupação INS
+0213#STR0213#ALL#Descrição do Código de Ocupação MTSS
+0214#STR0214#ALL#Descrição do Código de Ocupação CCSS
+0215#STR0215#ALL#Descrição do Código de Ocupação INS
+0216#STR0216#ALL#Descrição da Localidade de Pagamento
+0217#STR0217#ALL#Turno de Trabalho
+0218#STR0218#ALL#Horas por Dia
+0219#STR0219#ALL#Distrito onde vive o trabalhador
+0220#STR0220#ALL#Descrição do Distrito
+0221#STR0221#ALL#Cantão onde vive o trabalhador
+0222#STR0222#ALL#Descrição do Cantão onde vive o trabalhador
+0223#STR0223#ALL#Estado onde vive o trabalhador
+0224#STR0225#ALL#Tipo de Demissão de Acordo com a Empresa
+0225#STR0226#ALL#Tipo numero de identificação
+0226#STR0227#ALL#Numero do Seguro Social
+0227#STR0228#ALL#Descrição Jornada
+0228#STR0229#ALL#Data de Modificação de Salário
+0229#STR0230#ALL#Estrangeiro vivendo no país (1=Sim, 2=Não)
+0230#STR0231#ALL#Tipo de Moeda para o Salário em contrato
+0231#STR0232#ALL#Associação Solidarista
+0232#STR0233#ALL#Descrição Associação Solidarista
+0233#STR0234#ALL#Classe Seguro
+0234#STR0235#ALL#Numero Assegurado
+0235#STR0236#ALL#Tipo de Gross up de Salário
+0236#STR0237#ALL#Salário Anterior
+0237#STR0238#ALL#Atenção
+0238#STR0239#ALL#Execute a opção do compatibilizador referente à 'Disponibilização dos campos RA_HABILIT e RA_COMPLEM para o Equador'. Para maiores informações, verifique respectivo Boletim Técnico.
+0239#STR0240#ALL#OK
+0240#STR0241#ALL#UF do Orgão Emissor Do Doc.identidade
+0241#STR0242#ALL#Data de Emissão do RG
+0242#STR0243#ALL#Data de Emissão da CTPS
+0243#STR0244#ALL#Cor do Funcionário
+0244#STR0245#ALL#2ª Data De Experiência
+0245#STR0246#ALL#Dia Da 2ª Data De Experiência
+0246#STR0247#ALL#Mês Da 2ª Data De Experiência
+0247#STR0248#ALL#Ano Da 2ª Data De Experiência
+0248#STR0249#ALL#Dias Da 2ª Experiência
+0249#STR0250#ALL#Marca 'x' se Nacionalidade Brasileira
+0250#STR0251#ALL#Marca 'x' se Nacionalidade Extrangeira
+0251#STR0252#ALL#Marca 'x' se Nacionalidade Brasileira Naturalizada
+0252#STR0253#ALL#Marca 'x' se Nacionalidade Brasileiro Nascido no Exterior
+0253#STR0254#ALL#Estado civil de acordo com o NIS/PIS
+0254#STR0255#ALL#Nome do Pai, informa IGNORADO caso esteja em branco
+0255#STR0256#ALL#Nome da Mãe, informa IGNORADO caso esteja em branco
+0256#STR0257#ALL#Complemento do RG
+0257#STR0258#ALL#Tipo de Certidão Civil
+0258#STR0259#ALL#Data de Emissão da Certidão Civil
+0259#STR0260#ALL#Termo/Matrícula da Certidão Civil
+0260#STR0261#ALL#Livro da Certidão Civil
+0261#STR0262#ALL#Folha da Certidão Civil
+0262#STR0263#ALL#Cartório da Certidão Civil
+0263#STR0264#ALL#UF da Certidão Civil
+0264#STR0265#ALL#Municipio da Certidão Civil
+0265#STR0266#ALL#Número do Passaporte
+0266#STR0267#ALL#Órgão Emissor do Passaporte
+0267#STR0268#ALL#UF do Passaporte
+0268#STR0269#ALL#Data Emissão Passaporte
+0269#STR0270#ALL#Data Validade Passaporte
+0270#STR0271#ALL#Pais de Emissao Passaporte
+0271#STR0272#ALL#Número de Naturalização
+0272#STR0273#ALL#Data de Naturalização
+0273#STR0274#ALL#Numero do RIC
+0274#STR0275#ALL#Orgão Emissor do RIC
+0275#STR0276#ALL#UF do RIC
+0276#STR0277#ALL#Município do RIC
+0277#STR0278#ALL#Data de Expedição do RIC
+0278#STR0279#ALL#Marca 'x' se Endereço for Comercial
+0279#STR0280#ALL#Marca 'x' se Endereço for Residencial
+0280#STR0281#ALL#Número do Endereço
+0281#STR0282#ALL#Caixa Postal
+0282#STR0283#ALL#CEP da Caixa Postal
+0283#STR0284#ALL#DDD do Telefone
+0284#STR0285#ALL#DDD do Celular
+0285#STR0286#ALL#Número do Celular
+0286#STR0287#ALL#Marca 'x' se Empresa por CNPJ
+0287#STR0288#ALL#Marca 'x' se Empresa por CEI
+0288#STR0289#ALL#Data de Expedição do RIC
+0289#STR0290#ALL#Seção Eleitoral
+0290#STR0291#ALL#Grau de Instrução conforme NIS/PIS
+0291#STR0292#ALL#Pais de Origem para o DCN/DMN
+0292#STR0294#ALL#DOTX
+0293#STR0295#ALL#Analfabeto
+0294#STR0296#ALL#Até a 4ª série incompleta do ensino fundamental
+0295#STR0297#ALL#Com a 4ª série completa do ensino fundamental
+0296#STR0298#ALL#De 5ª a 8ª série incompleta do ensino fundamental
+0297#STR0299#ALL#Ensino fundamental completo
+0298#STR0300#ALL#Ensino médio incompleto
+0299#STR0301#ALL#Ensino médio completo
+0300#STR0302#ALL#Superior incompleto
+0301#STR0303#ALL#Superior completo
+0302#STR0304#ALL#Mestrado
+0303#STR0305#ALL#Doutorado
+0304#STR0306#ALL#Especialização
+0305#STR0307#ALL#Pós Doutorado
+0306#STR0308#ALL#Estado de Nascimento NIS/PIS
+0307#STR0309#ALL#Municipio de Nascimento NIS/PIS
+0308#STR0310#ALL#Marca 'x' para tipo de DMN - Alteração
+0309#STR0311#ALL#Marca 'x' para tipo de DMN - Cadastro Retroativo
+0310#STR0312#ALL#Marca 'x' para tipo de DMN - Cancelamento
+0311#STR0313#ALL#Marca 'x' para tipo de DMN - Reativação
+0312#STR0314#ALL#Marca 'x' para tipo de DMN - Retroacao Cadastral
+0313#STR0315#ALL#Marca 'x' se sexo for Masculino
+0314#STR0316#ALL#Marca 'x' se sexo for Feminino
+0315#STR0317#ALL#Certidão de Nascimento
+0316#STR0318#ALL#Certidão de Casamento
+0317#STR0319#ALL#Certidão Administrativa de Nascimento Indígena
+0318#STR0320#ALL#Certidão de Óbito
+0319#STR0321#ALL#Informe o Tipo de Alteração do NIS-PIS
+0320#STR0322#ALL#Nenhum
+0321#STR0323#ALL#Alteração
+0322#STR0324#ALL#Cadastro Retroativo
+0323#STR0325#ALL#Cancelamento
+0324#STR0326#ALL#Reativação
+0325#STR0327#ALL#Retroação Cadastral
+0326#STR0328#ALL#Endereco da Localidade de Pagamento
+0327#STR0329#ALL#Bairro da Localidade de Pagamento
+0328#STR0330#ALL#Cidade da Localidade de Pagamento
+0329#STR0331#ALL#Estado da Localidade de Pagamento
+0330#STR0332#ALL#Municipio da Localidade de Pagamento
+0331#STR0333#ALL#CEP da Localidade de Pagamento
+0332#STR0334#ALL#Requisitos da Função
+0333#STR0335#ALL#Idade
+0334#STR0336#ALL#Codigo da Serventia
+0335#STR0337#ALL#Codigo do Acervo
+0336#STR0338#ALL#Registro Civil
+0337#STR0339#ALL#Tipo do Livro Reg.
+0338#STR0340#ALL#Cad.Excepcional
+0339#STR0341#ALL#Exclusão de Documento
+0340#STR0342#ALL#Marca 'x' para tipo de DMN - Cad. Excepcional
+0341#STR0343#ALL#Marca 'x' para tipo de DMN - Exclusão de Documento
+0342#STR0344#ALL#Marca 'x' se Empresa por CPF
+0343#STR0345#ALL#Data Final
+0344#STR0346#ALL#Data Inicial
+0345#STR0347#ALL#Rota do carregamento
+0346#STR0348#ALL#Sexo
+0347#STR0349#ALL#Tipo de Carga
+0348#STR0350#ALL#AFP do funcionário
+0349#STR0351#ALL#afeta a semana corrida
+0350#STR0352#ALL#Afeta Seguro Invalidez
+0351#STR0353#ALL#Banco Depósito Funcionário
+0352#STR0354#ALL#Campo Especial para Banco
+0353#STR0355#ALL#Centro de Trabalho
+0354#STR0356#ALL#Classe de Valor
+0355#STR0357#ALL#Cód. Departamento
+0356#STR0358#ALL#Critério Vale refeição
+0357#STR0359#ALL#Critério Transporte
+0358#STR0360#ALL#Descr. do Departamento
+0359#STR0361#ALL#Data Antig. Férias
+0360#STR0362#ALL#Dt. de Aumento salário
+0361#STR0363#ALL#Data Contrato Indefinido
+0362#STR0364#ALL#Data Contrato Inicial
+0363#STR0365#ALL#Incide Seguro Desemprego
+0364#STR0366#ALL#Indica se é Aposentado
+0365#STR0367#ALL#Instituição AFP
+0366#STR0368#ALL#Instituição Saúde
+0367#STR0369#ALL#Instituição de saúde
+0368#STR0370#ALL#Item Contábil
+0369#STR0371#ALL#Moeda do plano acordado
+0370#STR0372#ALL#Valor Vale refeição
+0371#STR0373#ALL#Transporte
+0372#STR0374#ALL#Núm. de Pagamento Aumento
+0373#STR0375#ALL#Núm. Contrato Isapre
+0374#STR0376#ALL#Núm. Pagamento Receita
+0375#STR0377#ALL#Período de Aumento
+0376#STR0378#ALL#Plano Pactado
+0377#STR0379#ALL#Estado
+0378#STR0380#ALL#Regime de trabalho
+0379#STR0381#ALL#Tipo Adiantamento
+0380#STR0382#ALL#Tipo Conta Depósito
+0381#STR0383#ALL#Tipo Adiantamento
+0382#STR0384#ALL#Tipo Conta Depósito
+0383#STR0385#ALL#Tipo Quitação
+0384#STR0386#ALL#Tipo Salário familia
+0385#STR0387#ALL#Valor de adiantamento
+0386#STR0388#ALL#Valor do plano pactado
+0387#STR0389#ALL#Valor Plano combinado em UF
+0388#STR0390#ALL#Descrição da atividade do cargo
+0389#STR0391#ALL#Não foram encontradas informações de salário família de dependentes na SRB.
+0390#STR0392#ALL#Não foram encontradas informações de IR de dependentes na SRB.
+0391#STR0393#ALL#Campo de Nome do Dependente em branco.
+0392#STR0394#ALL#Usuário não possui permissão de acesso a filial  
+0393#STR0395#ALL#Não foi possível carregar as informações da empresa.
+0394#STR0396#ALL#Matrículas processadas com Sucesso.
+0395#STR0397#ALL#Log de Integração
+0396#STR0398#ALL#Parametrização utilizada:
+0397#STR0399#ALL#Filial dê          ?
+0398#STR0400#ALL#Filial até         ?
+0399#STR0401#ALL#Matricula dê       ? 
+0400#STR0402#ALL#Matricula até      ? 
+0401#STR0403#ALL#Centro de Custo dê ? 
+0402#STR0404#ALL#Centro de Custo até? 
+0403#STR0405#ALL#Nome dê            ? 
+0404#STR0406#ALL#Nome até           ? 
+0405#STR0407#ALL#Turno dê           ? 
+0406#STR0408#ALL#Turno até          ? 
+0407#STR0409#ALL#Cod. Função dê     ? 
+0408#STR0410#ALL#Cod. Função até    ? 
+0409#STR0411#ALL#Sindicato dê       ? 
+0410#STR0412#ALL#Sindicato até      ? 
+0411#STR0413#ALL#Admissão dê        ? 
+0412#STR0414#ALL#Admissão até       ? 
+0413#STR0415#ALL#Situacao           ? 
+0414#STR0416#ALL#Categoria          ? 
+0415#STR0417#ALL#Log de Processamento

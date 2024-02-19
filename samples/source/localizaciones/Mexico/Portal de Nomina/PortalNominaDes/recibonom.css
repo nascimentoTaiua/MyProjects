@@ -1,0 +1,65 @@
+﻿body
+{
+    font-family:Arial;
+    font-size: 10px;
+}
+a
+{
+    text-decoration:none;
+    color: #084B8A;
+}
+table
+{
+    width: 100%;
+    border-collapse:collapse ;
+    border : 1px solid #ccc;
+}
+
+#enc 
+{
+    text-align : center ;
+}
+.btnRegresar
+{
+    font-family: Arial;
+    font-size: 8.5pt;
+    text-decoration: underline;
+    padding: 2px 5px 2px 20px;
+    width: 80px;
+    background-image: url(images/reverse_green.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    color: #084B8A;
+}
+.btnImprimir
+{
+    font-family: Arial;
+    font-size: 8.5pt;
+    text-decoration: underline;
+    padding: 2px 5px 2px 20px;
+    width: 80px;
+    background-image: url(images/printer_mono.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    color: #084B8A;
+}
+.btnEnviar:hover,.btnEliminar:Hover, .btnImprimir:Hover,.link:Hover,.btnRegresar:hover{
+    background-color:#dff4ff;
+    border:1px solid #c2e1ef;
+    color:#336699;
+}
+table .linea2
+{    
+    margin-top: 10px;
+    border-top: 1px dotted #ccc;
+    border-bottom: 0px solid #f00;
+    color: #fff;
+    background-color: #fff;
+    height: 0px; 
+}
+#sub_footer
+{
+    width: 560px;
+}

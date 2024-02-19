@@ -1,0 +1,60 @@
+0001#STR0001#ALL#Emissão de Recibos de Pagamento
+0002#STR0002#ALL#Recibo de Pagamento
+0003#STR0003#ALL#Recibo No.
+0004#STR0004#ALL#Período:
+0005#STR0005#ALL#Pagamento:
+0006#STR0006#ALL#Período de Pagamento:
+0007#STR0007#ALL#Data de Pagamento:
+0008#STR0008#ALL#Filial:
+0009#STR0009#ALL#Matrícula:
+0010#STR0010#ALL#Nome:
+0011#STR0011#ALL#Tipo ID:
+0012#STR0012#ALL#No. ID:
+0013#STR0013#ALL#Função:
+0014#STR0014#ALL#Desc:
+0015#STR0015#ALL#Cargo:
+0016#STR0016#ALL#C.Custo:
+0017#STR0017#ALL#Depto:
+0018#STR0018#ALL#ARL:
+0019#STR0019#ALL#EPS:
+0020#STR0020#ALL#AFP:
+0021#STR0021#ALL#CCF:
+0022#STR0022#ALL#Banco Emp:
+0023#STR0023#ALL#Banco CIA:
+0024#STR0024#ALL#Salário:
+0025#STR0025#ALL#Hrs. Men:
+0026#STR0026#ALL#Grossup:
+0027#STR0027#ALL#Vencidos
+0028#STR0028#ALL#Descontos
+0029#STR0029#ALL#Bases
+0030#STR0030#ALL#Verba
+0031#STR0031#ALL#Hrs./Dia
+0032#STR0032#ALL#Valores
+0033#STR0033#ALL#Base
+0034#STR0034#ALL#Total Vencidos:
+0035#STR0035#ALL#Total Descontos:
+0036#STR0036#ALL#Total Bases:
+0037#STR0037#ALL#Líquido Recebido (S/.):
+0038#STR0038#ALL#Conta:
+0039#STR0039#ALL#Recebi o valor anterior em __/__/___ ___________________________________________
+0040#STR0040#ALL#Funcionário
+0041#STR0041#ALL#Banco:
+0042#STR0042#ALL#Líquido Recebido:
+0043#STR0043#ALL#Cta.:
+0044#STR0044#ALL#Recebi o valor anterior em ___/___/____
+0045#STR0045#ALL#O servidor SMTP não está configurado
+0046#STR0046#ALL#A conta de e-mail não está configurada
+0047#STR0047#ALL#A senha de e-mail não está configurada
+0048#STR0048#ALL#Erros ocorridos durante o envio dos comprovantes de pagamento
+0049#STR0049#ALL#Sr.(a)
+0050#STR0050#ALL#Ocorreram alguns erros durante o envio do comprovante de pagamento por e-mail, observe a lista seguinte:
+0051#STR0051#ALL#Erro durante o envio da mensagem:
+0052#STR0052#ALL#Falta de endereço de e-mail registrado para o envio:
+0053#STR0053#ALL#Boleto de Remunerações - Saldos
+0054#STR0054#ALL#Atenciosamente,
+0055#STR0055#ALL#Selecionando Registros...
+0056#STR0056#ALL#Atenção!
+0057#STR0057#ALL#Não foram localizados comprovantes de pagamento disponíveis para esta consulta.
+0058#STR0058#ALL#CONTINÚA!
+0059#STR0059#ALL#Comprovante de pagamento
+0060#STR0060#ALL#Foi incluído no documento anexo seu comprovante de pagamento referente a

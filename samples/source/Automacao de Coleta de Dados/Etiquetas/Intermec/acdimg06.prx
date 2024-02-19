@@ -1,0 +1,54 @@
+/*
+Padrao Intermec
+ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+±±ÉÍÍÍÍÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍ»±±
+±±ºPrograma  ³IMG06     ºAutor  ³Sandro Valex        º Data ³  19/06/01   º±±
+±±ÌÍÍÍÍÍÍÍÍÍÍØÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍ¹±±
+±±ºDesc.     ³Ponto de entrada referente a imagem de identificacao do     º±±
+±±º          ³transporte                                                  º±±
+±±ÌÍÍÍÍÍÍÍÍÍÍØÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹±±
+±±ºUso       ³ AP5                                                        º±±
+±±ÈÍÍÍÍÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼±±
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+*/
+User Function Img06  // imagem de etiqueta de transportadora
+Local cCodigo
+Local nID := paramixb[1]
+If nID # NIL
+	cCodigo := nID
+ElseIf Empty(SA4->A4_IDETIQ)
+	If UsaCB0("06")
+		cCodigo := CBGrvEti('06',{SA4->A4_COD})
+		RecLock("SA4",.F.)
+		SA4->A4_IDETIQ := cCodigo
+		MsUnlock()
+	Else
+		cCodigo := SA4->A4_COD
+	EndIf
+Else
+	If UsaCB0("06")
+		cCodigo := SA4->A4_IDETIQ
+	Else
+		cCodigo := SA4->A4_COD
+	EndIf
+Endif
+cCodigo := Alltrim(cCodigo)
+//MSCBLOADGRF("SIGA.BMP")
+MSCBBEGIN(1,3)
+	MSCBBOX(01,02,34,76,1)
+	MSCBLineV(30,30,76,1)
+	MSCBLineV(23,02,76,1)
+	MSCBLineV(15,02,76,1)
+	MSCBLineH(23,30,34,1)
+//	MSCBGRAFIC(26,2,"SIGA",.T.)
+	MSCBSAY(32,33,'TRANSPORTADORA',"R","2","01,01")
+	MSCBSAY(29,33,"CODIGO","R","2","01,01")
+	MSCBSAY(26,33, SA4->A4_COD, "R", "2", "01,01")
+	MSCBSAY(22,05,"DESCRICAO","R","2","01,01")
+	MSCBSAY(19,05,SA4->A4_NOME,"R", "2", "01,01")
+	MSCBSAYBAR(12,22,cCodigo,"R","MB07",8.36,.F.,.T.,.F.,,2,2,.F.,.F.,"1",.T.)
+	MSCBInfoEti("Transportadora","30X100")
+MSCBEND()               
+Return .F.

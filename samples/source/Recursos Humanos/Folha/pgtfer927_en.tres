@@ -1,0 +1,28 @@
+0001#STR0001#BRA#The amounts of 1/3 of vacations that were generated as a base are carried out in the monthly transaction
+0002#STR0002#BRA#Payment of 1/3 of vacations MP-927
+0003#STR0003#BRA#Enter base amounts.
+0004#STR0004#BRA#Enter a group of base amounts to carry out the search in accumulated.
+0005#STR0005#BRA#Enter amount for Payment
+0006#STR0006#BRA#For each group of base amounts entered, it is necessary to fill in the corresponding amount for the payment.
+0007#STR0007#BRA#No record found
+0008#STR0008#BRA#No amount found in Accumulated, Table SRD, with the parameters informed.
+0009#STR0009#BRA#Entry in RGB not made.
+0010#STR0010#BRA#No active period. Branch:
+0011#STR0011#BRA#Process:
+0012#STR0012#BRA#Procedure:
+0013#STR0013#BRA#The payroll item
+0014#STR0014#BRA#Already exists in monthly entries.
+0015#STR0015#BRA#Employee
+0016#STR0016#BRA#Generation completed
+0017#STR0017#BRA#The Generation of Funds for monthly entries has been completed.
+0018#STR0018#BRA#No amount found to be deleted from the monthly entries, RGB table, with the parameters informed..
+0019#STR0019#BRA#Deletion completed.
+0020#STR0020#BRA#The deletion of funds in monthly entries has been completed.
+0021#STR0021#BRA#State the amounts of 1/3 vacation pays that were generated as a base and have not yet been paid.
+0022#STR0022#BRA#Unpaid 1/3 amounts
+0023#STR0023#BRA#Cost Center
+0024#STR0024#BRA#Funds
+0025#STR0025#BRA#Payment Date
+0026#STR0026#BRA#Employee Total
+0027#STR0027#BRA#Cost Center Total
+0028#STR0028#BRA#Branch Total

@@ -1,0 +1,28 @@
+0001#STR0001#BRA#Realiza el registro en el movimiento mensual, de los conceptos de 1/3 de vacaciones que se generaron como base.
+0002#STR0002#BRA#Pago de 1/3 de vacaciones MP-927
+0003#STR0003#BRA#Informe los conceptos de base
+0004#STR0004#BRA#Es necesario informar un grupo de conceptos base para realizar la búsqueda en el acumulado.
+0005#STR0005#BRA#Informe el concepto para pago
+0006#STR0006#BRA#Para cada grupo de conceptos base informado es necesario completar el concepto correspondiente para el pago.
+0007#STR0007#BRA#No se encontró ningún registro.
+0008#STR0008#BRA#No se encontrón ningún concepto en el acumulado, Tabla SRD, con los parámetros informados.
+0009#STR0009#BRA#El registro en la RGB no se realizó
+0010#STR0010#BRA#No existe período activo. Sucursal:
+0011#STR0011#BRA#Proceso:
+0012#STR0012#BRA#Procedimiento:
+0013#STR0013#BRA#A concepto
+0014#STR0014#BRA#Ya existen registros mensuales.
+0015#STR0015#BRA#Empleado
+0016#STR0016#BRA#Generación concluida
+0017#STR0017#BRA#La generación de los conceptos en los registros mensuales fue concluida.
+0018#STR0018#BRA#No se encontrón ningún concepto para borrar los registros mensuales, tabla RGB, con los parámetros informados.
+0019#STR0019#BRA#Borrado concluido
+0020#STR0020#BRA#El borrado de los conceptos en los registros mensuales fue concluido.
+0021#STR0021#BRA#Muestra los valores de los conceptos de 1/3 de vacaciones que se generaron como base y aún no se pagaron
+0022#STR0022#BRA#Valores de 1/3 no pagados
+0023#STR0023#BRA#Centro de costo
+0024#STR0024#BRA#Concepto
+0025#STR0025#BRA#Fecha de pago
+0026#STR0026#BRA#Total del empleado
+0027#STR0027#BRA#Total del centro de costo
+0028#STR0028#BRA#Total sucursal

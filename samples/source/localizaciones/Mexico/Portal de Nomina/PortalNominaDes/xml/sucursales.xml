@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes"?>
+<Filiales>
+  <filial id="T1/D MG 01" nombre="Grupo TOTVS 1/Filial BELO HOR" />
+  <filial id="T1/D MG 02" nombre="Grupo TOTVS 1/Filial UBERABA" />
+  <filial id="T1/D RJ 01" nombre="Grupo TOTVS 1/Filial RIO DE J" />
+  <filial id="T1/D RJ 02" nombre="Grupo TOTVS 1/Filial NITEROI" />
+  <filial id="T1/M PR 01" nombre="Grupo TOTVS 1/Filial CURITIBA" />
+  <filial id="T1/M PR 02" nombre="Grupo TOTVS 1/Filial CASCAVEL" />
+  <filial id="T1/M SP 01" nombre="Grupo TOTVS 1/Filial SAO PAUL" />
+  <filial id="T1/M SP 02" nombre="Grupo TOTVS 1/Filial CAMPINAS" />
+  <filial id="T2/L MG 01" nombre="Grupo TOTVS 2/Unidade BELO HO" />
+  <filial id="T2/L MG 02" nombre="Grupo TOTVS 2/Unidade UBERABA" />
+  <filial id="T2/L RJ 01" nombre="Grupo TOTVS 2/Filial RIO DE J" />
+  <filial id="T2/L RJ 02" nombre="Grupo TOTVS 2/Filial NITEROI" />
+  <filial id="T2/R PR 01" nombre="Grupo TOTVS 2/Filial CURITIBA" />
+  <filial id="T2/R PR 02" nombre="Grupo TOTVS 2/Filial CASCAVEL" />
+  <filial id="T2/R SP 01" nombre="Grupo TOTVS 2/Filial SAO PAUL" />
+  <filial id="T2/R SP 02" nombre="Grupo TOTVS 2/Filial CAMPINAS" />
+  <filial id="T3/M RJ 01" nombre="Grupo TOTVS 3/FILIAL ANGRA DO" />
+  <filial id="T3/M RJ 02" nombre="Grupo TOTVS 3/FILIAL BUZIOS" />
+  <filial id="T3/M SP 01" nombre="Grupo TOTVS 3/FILIAL ITATIBA" />
+  <filial id="T3/M SP 02" nombre="Grupo TOTVS 3/FILIAL VINHEDO" />
+  <filial id="T3/S PR 01" nombre="Grupo TOTVS 3/FILIAL COLORADO" />
+  <filial id="T3/S PR 02" nombre="Grupo TOTVS 3/FILIAL PALMEIRA" />
+  <filial id="T3/S SC 01" nombre="Grupo TOTVS 3/JOINVILLE" />
+  <filial id="T3/S SC 02" nombre="Grupo TOTVS 3/FILIAL BLUMENAU" />
+</Filiales>

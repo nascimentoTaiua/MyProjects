@@ -1,0 +1,14 @@
+0001#STR0001#ALL#Fórmulas do Iqf:
+0002#STR0002#ALL#Iqi: Iqp * Fc
+0003#STR0003#ALL#Iqp: ( 100 - K ) - Factor De Criticidade
+0004#STR0004#ALL#IA: ((Factor1 * q1 + Factor2 * q2 + Factor3 * q3) / (q1 + q2 + q3)) * 100
+0005#STR0005#ALL#Sendo FC: Factor De Correcção, Tabulado Em Função Do IQS
+0006#STR0006#ALL#K..: Qtd. obtida em função do índice de aceitação (IA)
+0007#STR0007#ALL# QX.: Quantidade entregue com o factor x.
+0008#STR0008#ALL#Ies: Ipo
+0009#STR0009#ALL#Ipo = ( 1 - (somatório Ni * Di / (
+0011#STR0011#ALL#Sendo Ni: quantidade entregue em atraso (lote a lote)
+0012#STR0012#ALL#            Di: Número de dias em atraso (lote a lote)
+0013#STR0013#ALL#            NT: Quantidade total entregue no mês
+0014#STR0014#ALL#           OBs: No cálculo do Ipo, se o n.º de dias em atraso real for maior do que o n.º
+0015#STR0015#ALL#                dias definido no parâmetro MV_QDIAIPO, será utilizado este último.

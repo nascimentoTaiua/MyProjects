@@ -1,0 +1,59 @@
+0001#STR0001#ALL#Exportacion de los archivos de beneficios
+0002#STR0002#ALL#Esta rutina procesa y genera archivos de beneficios para integracion
+0003#STR0003#ALL#Leyendo archivo INI
+0004#STR0004#ALL#Inicio de procesamiento
+0005#STR0005#ALL#Hubo problemas en el cierre del archivo.
+0006#STR0006#ALL#Fin del Procesamiento
+0007#STR0007#ALL#Exportacion de archivos de beneficios
+0008#STR0008#ALL#Ok
+0009#STR0009#ALL#Aviso
+0010#STR0010#ALL#No hay registros para grabar.
+0011#STR0011#ALL#¡Procesamiento anulado por el usuario!
+0012#STR0012#ALL#¡El archivo no se puede crear! Verifique los parametros.
+0013#STR0013#ALL#Atencion
+0014#STR0014#ALL#¡Procesamiento anulado por el usuario!
+0015#STR0015#ALL#Especial
+0016#STR0016#ALL#Administracion
+0017#STR0017#ALL#Listado de Beneficios
+0018#STR0018#ALL#Emision de Informe para evaluacion de Beneficios.
+0019#STR0019#ALL#Se imprimira de acuerdo con los parametros solicitados.
+0020#STR0020#ALL#*** ABORTADO POR EL OPERADOR ***
+0021#STR0021#ALL#Imprimiendo...
+0022#STR0022#ALL#Valores Totales Centro de Costo:
+0023#STR0023#ALL#Cantidad de asientos del centro de costo:
+0024#STR0024#ALL#Valores Totales de la Sucursal:
+0025#STR0025#ALL#Cantidad de asientos de la sucursal: 
+0026#STR0026#ALL#Valores Totales de la Empresa:
+0027#STR0027#ALL#Cantidad de asientos de la empresa:
+0028#STR0028#ALL#Existen datos invalidos. ¡Verifique el Log de Procesos de esta rutina!
+0029#STR0029#ALL#¡Archivo .INI no informado en la Tabla Auxiliar S018!
+0030#STR0030#ALL#Archivo de Salida no informado en la Tabla Auxiliar S018.
+0031#STR0031#ALL#Funcion de Validacion no informada en la Tabla Auxiliar S018
+0032#STR0032#ALL#Sucursal: 
+0033#STR0033#ALL# - Matricula: 
+0034#STR0034#ALL# - Empleado con campo RA_CEP en blanco.
+0035#STR0035#ALL# - Empleado con campo RA_CIC en blanco.
+0036#STR0036#ALL# - Empleado con campo RA_RG en blanco.
+0037#STR0037#ALL# - Empleado con campo RA_MAE en blanco.
+0038#STR0038#ALL# - Empleado con campo RA_ENDEREC en blanco.
+0039#STR0039#ALL# - Empleado con campo RA_COMPLEM en blanco.
+0040#STR0040#ALL# - Empleado con campo RA_MUNICIP en blanco.
+0041#STR0041#ALL# - Empleado con campo RA_ESTADO en blanco.
+0042#STR0042#ALL#Sucursal
+0043#STR0043#ALL#Matricula
+0044#STR0044#ALL#Nombre
+0045#STR0045#ALL#TP Benef.
+0046#STR0046#ALL#Valor Benef.
+0047#STR0047#ALL#Archivo de inicializacion no localizado: 
+0048#STR0048#ALL#Archivo ya existe. ¿Sobreescribir?
+0049#STR0049#ALL#No
+0050#STR0050#ALL#Si
+0051#STR0051#ALL#Parametro sobre proveedor no esta cumplimentado.
+0052#STR0052#ALL#Parametro sobre fecha de ingreso no esta cumplimentado.
+0053#STR0053#ALL#Parametro sobre Tipos de beneficios no esta cumplimentado.
+0054#STR0054#ALL#Archivo INI procesado
+0055#STR0055#ALL# - Empleado con el Codigo del lugar de entrega (RA_LOCBNF) en blanco.
+0056#STR0056#ALL#Funcion validadora con caracter -()- invalido, en la tabla S018
+0057#STR0057#ALL#No fue posible encontrar registros en la tabla de Empleados (SRA). Verifique los parámetros (Sucursal/Centro de costo/Matrícula/Fecha de ingreso) informados en el filtro.
+0058#STR0058#ALL#No fue posible encontrar registros en la tabla de Beneficios(SR0). Verifique los parámetros (Sucursal/Centro de costo/Matrícula/Fecha de ingreso/Proceso/Período) informados en el filtro.
+0059#STR0059#ALL#No fue posible encontrar registros en la tabla Historial de beneficios(RG2). Verifique los parámetros (Sucursal/Centro de costo/Matrícula/Fecha de ingreso/Proceso/Período) informados en el filtro.

@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<meta charset="windows-1252">
+		<meta charset="UTF-8">
+		<style>
+			body{
+				width: 			100%;
+				font:			normal normal normal 14px 'open sans', sans-serif;
+			}
+
+			h1 {
+				font: 			normal normal normal 22px 'open sans', sans-serif;
+				color: 			rgb(0, 136, 203);
+				padding-top: 	3px;
+				padding-bottom:	3px;
+			}
+
+			table{
+				font:			normal normal normal 14px 'open sans', sans-serif;
+				text-align: 	left;
+				border-width: 	0px;
+				width:450px
+			}
+
+			thead{
+				font:			normal normal normal 14px 'open sans', sans-serif;
+				background:		Gray;
+				color:			White;
+				text-align: 	left;
+				border-width: 	0px;
+
+			}
+
+			.grid{
+				border-top: 	solid rgb(0, 136, 203) 2px;
+				padding-top:	10px;
+				padding-bottom:	5px;
+				margin-top:		10px;
+			}
+			.Separador{
+				width:90%;
+				margin-left:2em;
+				font:normal normal normal 14px 'open sans', sans-serif;
+			}
+		</style>
+	</head>
+
+	<body>
+	<div class="Separador" >
+		<h1>
+			Marca&ccedil;&atilde;o do Funcion&aacute;rio
+		</h1>
+
+		<!-- Informa�?es do Atendente-->
+		<div class="grid" >
+			<table>
+				<tr>
+					<td>Codigo do Funcion&aacute;rio</td>
+					<td>%cCodigo%</td>
+				</tr>
+				<tr>
+					<td>Nome do Funcion&aacute;rio</td>
+					<td>%cNome%</td>
+				</tr>
+				<tr>
+					<td>Inicio</td>
+					<td>%cDataIni%</td>
+				</tr>
+				<tr>
+					<td>Fim</td>
+					<td>%cDataFim%</td>
+					</tr>
+			</table>
+		</div>
+
+		<!-- Batidas do atendente -->
+		<div class="grid" >
+			<table>
+				<thead >
+					<tr>
+						<td style="width:400px;">Data</td>
+						<td style="width:400px;">Dia</td>
+						<td style="width:200px;">Entrada</td>
+						<td style="width:200px;">Saida</td>
+						<td style="width:200px;">Entrada</td>
+						<td style="width:200px;">Saida</td>
+						<td style="width:200px;">Entrada</td>
+						<td style="width:200px;">Saida</td>
+						<td style="width:200px;">Entrada</td>
+						<td style="width:200px;">Saida</td>
+						<!--<td style="width:200px;">Total</td>-->
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="width:150px;">%It.Data%</td>
+						<td style="width:150px;">%It.Dia%</td>
+						<td style="width:400px;">%It.Entrada1%</td>
+						<td style="width:150px;">%It.Saida1%</td>
+						<td style="width:150px;">%It.Entrada2%</td>
+						<td style="width:150px;">%It.Saida2%</td>
+						<td style="width:400px;">%It.Entrada3%</td>
+						<td style="width:150px;">%It.Saida3%</td>
+						<td style="width:150px;">%It.Entrada4%</td>
+						<td style="width:150px;">%It.Saida4%</td>
+						<!--<td style="width:150px;">%It.nTotal%</td>-->
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	</body>
+</html>

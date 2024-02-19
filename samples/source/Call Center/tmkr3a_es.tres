@@ -1,0 +1,38 @@
+0001#STR0001#ALL#Emision de presupuesto de Ventas - Televentas
+0002#STR0002#ALL#Este programa emitira el presupuesto de ventas creado en el sistema
+0003#STR0003#ALL#con o sin autorizacion o la emision de la factura.
+0004#STR0004#ALL#Informe los parmetros de seleccion para emision de los presupuestos
+0005#STR0005#ALL#A rayas
+0006#STR0006#ALL#Administracion
+0007#STR0007#ALL#Seleccionando Registros...
+0008#STR0008#ALL#ANULADO POR EL OPERADOR
+0009#STR0009#ALL#Empresa
+0010#STR0010#ALL#LUGAR DE ENTREGA
+0011#STR0011#ALL#DIRECCION DE COBRANZA
+0012#STR0012#ALL#Nombe
+0013#STR0013#ALL#Direccion
+0014#STR0014#ALL#Inscr./RG
+0015#STR0015#ALL#CPF/CNPJ
+0016#STR0016#ALL#Atencion: 
+0017#STR0017#ALL#presupuesto    : 
+0018#STR0018#ALL#Emision     : 
+0019#STR0019#ALL#Flete       : 
+0020#STR0020#ALL#Inicio / Fin: 
+0021#STR0021#ALL#Gastos      : 
+0022#STR0022#ALL#Contacto    : 
+0023#STR0023#ALL#Descuento   : 
+0024#STR0024#ALL#Vendedor    : 
+0025#STR0025#ALL#Cond. Pago  : 
+0026#STR0026#ALL#Operador    : 
+0027#STR0027#ALL#Mapa Carg.  : 
+0028#STR0028#ALL#CARGA
+0029#STR0029#ALL#NO CARGA
+0030#STR0030#ALL#Forma Pago : 
+0031#STR0031#ALL#Indemnizacion 
+0032#STR0032#ALL#Transportad.: 
+0033#STR0033#ALL#Vencimiento : 
+0034#STR0034#ALL#Observacion 
+0035#STR0035#ALL#Item Producto                  Descripcion                     UM   Cant     Vlr Unit.      Vlr Item %Desc.   Val. Desc.  %Aum. Val Aumen.
+0036#STR0036#ALL#Total de las cantidades
+0037#STR0037#ALL#Valor total del presupuesto
+0038#STR0038#ALL#| Vencto   Forma          Valor || Vencto   Forma          Valor || Vencto   Forma          Valor || Vencto   Forma          Valor |

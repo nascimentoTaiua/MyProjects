@@ -1,0 +1,37 @@
+0001#STR0001#ALL#O cliente nao tem CUIT cadastrado. Nao sera gerada a nota fiscal.
+0002#STR0002#ALL#Atualize os dados do cliente!
+0003#STR0003#ALL#O cliente nao tem CUIT cadastrado 
+0004#STR0004#ALL#O cliente nao tem CUIT valido cadastrado. Nao sera gerada a nota fiscal.
+0005#STR0005#ALL#O CUIT e invalido 
+0006#STR0006#ALL#Dados do Cliente
+0007#STR0007#ALL#Dados do Cliente 
+0008#STR0008#ALL#Abertura de Documento
+0009#STR0009#ALL#Abertura de Documento 
+0010#STR0010#ALL#Dados do Produto 
+0011#STR0011#ALL#Fim de Impressao
+0012#STR0012#ALL#Error no Check de Memoria Fiscal. Terminal Bloqueado!
+0013#STR0013#ALL#Error no Check de Memoria de Trabalho. Terminal Bloqueado!
+0014#STR0014#ALL#Comando Desconhecido
+0015#STR0015#ALL#Dados Nao Validos em um Campo
+0016#STR0016#ALL#Comando Nao Valido para o Estado Fiscal Atual
+0017#STR0017#ALL#Acima do Total
+0018#STR0018#ALL#Memoria Fiscal cheia, bloqueada ou dada de baixa. Terminal Bloqueado!
+0019#STR0019#ALL#Memoria Fiscal a ponto de ser totalmente preenchida!
+0020#STR0020#ALL#Error nao determinado na Impressora Fiscal!
+0021#STR0021#ALL#Verificacao do Status da Impressora
+0022#STR0022#ALL# Verificacao do Status da Impressora 
+0023#STR0023#ALL#Erro na abertura do Documento!
+0024#STR0024#ALL#Erro da Impressora Fiscal
+0025#STR0025#ALL#Erro na abertura do Documento, nao retorna numero de Documento 
+0026#STR0026#ALL#Erro de Impressora Fiscal
+0027#STR0027#ALL#Verificar Problema
+0028#STR0028#ALL#Impressora Fiscal Off-Line!
+0029#STR0029#ALL#Falta Papel em Impressora Fiscal
+0030#STR0030#ALL#Falta Papel na Impressora Fiscal
+0031#STR0031#ALL#Tampa de Impressora Aberta!
+0032#STR0032#ALL#Numero de PDV
+0033#STR0033#ALL#Numero de PDV-Presupuesto 
+0034#STR0034#ALL#Error en el Sub-Total del documento
+0035#STR0035#ALL#Error en el Subtotal, no devuelve los datos del documento
+0036#STR0036#ALL#Fecha de la Impresora fiscal diferente de la fecha del sistema
+0037#STR0037#ALL#Atencion

@@ -1,0 +1,9 @@
+0001#STR0001#ALL#AWB´s não Facturadas
+0002#STR0002#ALL#Relatório de AWB's não Facturadas
+0003#STR0003#ALL#Cia.Aérea...: 
+0004#STR0004#ALL#Nr.AWB     Dig.          Peso         Valor AWB       Vl.Decresc.      Vl.AWB Desc.       Frete Docto     %CustxRec    Cliente
+0005#STR0005#ALL#Nr.Docto    Origem                                Peso    Destino                     Remetente                   Destinatário                  Vlr.Frete     Imposto    Frete Tot.
+0006#STR0006#ALL#Código de Barras
+0007#STR0007#ALL#Administração
+0010#STR0010#ALL#AWB's Não Facturadas
+0011#STR0011#ALL#Aguarde. A seleccionar registos...

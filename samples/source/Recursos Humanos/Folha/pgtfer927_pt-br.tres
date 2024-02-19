@@ -1,0 +1,28 @@
+0001#STR0001#BRA#Realiza o lançamento no movimento mensal, das verbas de 1/3 de férias que foram geradas como base.
+0002#STR0002#BRA#Pagamento de 1/3 de férias MP-927
+0003#STR0003#BRA#Informe as verbas de base
+0004#STR0004#BRA#É necessário informar um grupo de verbas base para realizar a busca no acumulado.
+0005#STR0005#BRA#Informe a verba para Pagamento
+0006#STR0006#BRA#Para cada grupo de verbas base informada é necessário preencher a verba correspondente para o pagamento.
+0007#STR0007#BRA#Nenhum registro encontrado
+0008#STR0008#BRA#Não foi encontrada nenhuma verba no Acumulado, Tabela SRD, com os parâmetros informados.
+0009#STR0009#BRA#O lançamento na RGB não foi realizado
+0010#STR0010#BRA#Não Existe período ativo. Filial: 
+0011#STR0011#BRA# Processo: 
+0012#STR0012#BRA# Roteiro: 
+0013#STR0013#BRA#A verba 
+0014#STR0014#BRA# Já existe nos lançamentos mensais.
+0015#STR0015#BRA#Funcionário
+0016#STR0016#BRA#Geração concluída
+0017#STR0017#BRA#A Geração das Verbas nos lançamentos mensais foi concluída.
+0018#STR0018#BRA#Não foi encontrada nenhuma verba para exclusão nos lançamentos mensais, tabela RGB, com os parâmetros informados.
+0019#STR0019#BRA#Exclusão concluída
+0020#STR0020#BRA#A exclusão das verbas nos lançamentos mensais foi concluída.
+0021#STR0021#BRA#Demonstra os valores das verbas de 1/3 de férias que foram geradas como base e ainda não foram pagas
+0022#STR0022#BRA#Valores de 1/3 não pagos
+0023#STR0023#BRA#Centro de Custo 
+0024#STR0024#BRA#Verba
+0025#STR0025#BRA#Data do Pagamento
+0026#STR0026#BRA#Total do Funcionário 
+0027#STR0027#BRA#Total do Centro de Custo 
+0028#STR0028#BRA#Total da Filial 

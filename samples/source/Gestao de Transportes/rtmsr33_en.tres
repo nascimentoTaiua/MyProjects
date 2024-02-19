@@ -1,0 +1,39 @@
+0001#STR0001#ALL#Freight table report
+0002#STR0002#ALL#Freight table
+0003#STR0003#ALL#Freight component
+0004#STR0004#ALL#Subranges
+0005#STR0005#ALL#Subrange complement
+0006#STR0006#ALL#Freight table complement
+0007#STR0007#ALL#Description
+0008#STR0008#ALL#Type of table
+0009#STR0009#ALL#Table type description
+0010#STR0010#ALL#Origin
+0011#STR0011#ALL#Origin description
+0012#STR0012#ALL#Destination
+0013#STR0013#ALL#Destination description
+0014#STR0014#ALL#Component
+0015#STR0015#ALL#Item
+0016#STR0016#ALL#Ranges - to
+0017#STR0017#ALL#Weight factor
+0018#STR0018#ALL#Value
+0019#STR0019#ALL#Fraction
+0020#STR0020#ALL#Rate component
+0021#STR0021#ALL#Minimum excess
+0022#STR0022#ALL#Minimum value
+0023#STR0023#ALL#Maximum value
+0024#STR0024#ALL#Exceeding value
+0025#STR0025#ALL#Exceeding fraction
+0026#STR0026#ALL#Product
+0027#STR0027#ALL#Branch
+0028#STR0028#ALL#Validity Start
+0029#STR0029#ALL#Product Description.
+0030#STR0030#ALL#Fee table
+0031#STR0031#ALL#Component complement
+0032#STR0032#ALL#Surplus of component ranges
+0033#STR0033#ALL#Subranges - to
+0034#STR0034#ALL#Components related to TDA
+0035#STR0035#ALL#Calculation Base Percentage
+0036#STR0036#ALL#Components related to TRT
+0037#STR0037#ALL#TRT freight component
+0038#STR0038#ALL#Percentage
+0039#STR0039#ALL#Validity End

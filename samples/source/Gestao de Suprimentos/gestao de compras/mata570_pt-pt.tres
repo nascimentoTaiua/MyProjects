@@ -1,0 +1,13 @@
+0001#STR0001#ALL#Esta  procedimento  exige  que  os   ficheiros
+0002#STR0002#ALL#Associados a ela não estejam em utilização  por
+0003#STR0003#ALL#Outras estações.
+0004#STR0004#ALL#Faca com que os outros utilizadors saiam do
+0005#STR0005#ALL#Sistema.
+0006#STR0006#ALL#Atenção
+0008#STR0008#ALL#Este programa tem o objectivo de efectuar a limpeza de ficheiros do módulo sigacom.
+0010#STR0010#ALL#Armazenados num jogo de ficheiros a serem criados pelo programa.
+0012#STR0012#ALL#Directório
+0013#STR0013#ALL#A recuperar espaço físico no ficheiro
+0014#STR0014#ALL#A efectuar limpeza no ficheiro
+0015#STR0015#ALL#Ficheiro 
+0017#STR0017#ALL#Ficheiro 

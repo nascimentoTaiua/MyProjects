@@ -1,0 +1,20 @@
+0001#STR0001#ALL#Warning!
+0002#STR0002#ALL#There are no data to list.
+0003#STR0003#ALL#OK
+0004#STR0004#ALL#Credit Note
+0005#STR0005#ALL#Generating view, wait...
+0006#STR0006#ALL#Code:
+0007#STR0007#ALL#Store:
+0008#STR0008#ALL#Name:
+0009#STR0009#ALL#Return Date:
+0010#STR0010#ALL#NCC Due Date:
+0011#STR0011#ALL#Prefix:
+0012#STR0012#ALL#Number:
+0013#STR0013#ALL#NCC Balance:
+0014#STR0014#ALL#Code
+0015#STR0015#ALL#Description
+0016#STR0016#ALL#NCC Value in 
+0017#STR0017#ALL# must not be higher than or equal to 1 million.
+0018#STR0018#ALL#Customer Data:
+0019#STR0019#ALL#Return/Exchange Data:
+0020#STR0020#ALL#Exchanged/Returned Products:

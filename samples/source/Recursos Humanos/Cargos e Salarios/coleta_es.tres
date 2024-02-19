@@ -1,0 +1,13 @@
+0001#STR0001#ALL#Integracion con MS-Word
+0002#STR0002#ALL#Esta rutina imprimira el Cuaderno de datos de la encuesta salarial.
+0003#STR0003#ALL#Elija Archivo     
+0004#STR0004#ALL#CODIGO: 
+0005#STR0005#ALL#CARGO: 
+0006#STR0006#ALL#OBJETIVOS DEL CARGO: 
+0007#STR0007#ALL#ESPECIFICACION:
+0008#STR0008#ALL#PEQUENO
+0009#STR0009#ALL#MEDIANO
+0010#STR0010#ALL#GRANDE
+0011#STR0011#ALL#Ejecute el programa Ms-Word para visualizar el documento 
+0012#STR0012#ALL# o haga clic en el boton cerrar.
+0013#STR0013#ALL#Cerrar

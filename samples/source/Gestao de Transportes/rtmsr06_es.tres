@@ -1,0 +1,50 @@
+0001#STR0001#ALL#Impresion de Contrato de Transporte
+0002#STR0002#ALL#Este programa listara los Contratos de Transportistas
+0003#STR0003#ALL#A rayas
+0004#STR0004#ALL#Administracion
+0005#STR0005#ALL#Viaje       : 
+0006#STR0006#ALL#Nro. Contrato: 
+0007#STR0007#ALL#Trajecto de 
+0008#STR0008#ALL#a 
+0009#STR0009#ALL#Peso Total..............: 
+0010#STR0010#ALL#Peso Pagado.............: 
+0011#STR0011#ALL#Tarifa.: 
+0012#STR0012#ALL#Valor Flete.............: 
+0013#STR0013#ALL#Anticipo................: 
+0014#STR0014#ALL#Valor Peaje.............: 
+0015#STR0015#ALL#Anticipo de Peaje.......: 
+0016#STR0016#ALL#Valor Total.............: 
+0017#STR0017#ALL#Saldo en Destino........: 
+0018#STR0018#ALL#Saldo a Pagar en Letras:    
+0019#STR0019#ALL#El saldo se pagara el
+0020#STR0020#ALL#El Conductor y/o proprietarios(s) asume(n) obligaciones aqui establecidas
+0021#STR0021#ALL#asi como las del acta de responsabilidad inherentes al transporte anexo.
+0022#STR0022#ALL#Declaro haber recibido el saldo de ete contrato como pago total y final:   
+0023#STR0023#ALL#Fecha
+0024#STR0024#ALL#Firma Conductor:
+0025#STR0025#ALL#Fecha Lleg          Hora             Valor Premio          Porc
+0026#STR0026#ALL#OBSERVACIONES
+0027#STR0027#ALL#Numero de Consulta Teleriesgo:
+0028#STR0028#ALL#Hora Emision Contrato: 
+0029#STR0029#ALL#VEHICULOS
+0030#STR0030#ALL#Vehiculo  Nomb                  Color                 Tipo                       Matric    Ciudad           Est Ano
+0031#STR0031#ALL#P R O P I E T A R I O S
+0032#STR0032#ALL#Vehiculo  Nomb                                      Direccion                                 Ciudad           Est CGC/CPF
+0033#STR0033#ALL#C O N D U C T O R
+0034#STR0034#ALL#Nomb                                      Direccion                                 Ciudad           Est CNH/PGU
+0035#STR0035#ALL#Contrato de Transporte-Cargamento
+0036#STR0036#ALL#PROPIO
+0037#STR0037#ALL#TERCERO
+0038#STR0038#ALL#Los Conductores y/o Propietarios antes mencionados se obligan por este medio a transportar la carga en los siguientes trayectos y 
+0039#STR0039#ALL#condiciones:  
+0040#STR0040#ALL# D E T A L L E  D E  L A  C A R G A
+0041#STR0041#ALL#MANIFIESTO  SUC.ORIGEN       SUC.DESTINO              PESO    MANIFIESTO  SUC.ORIGEN       SUC.DESTINO              PESO
+0042#STR0042#ALL#Lugar: 
+0043#STR0043#ALL#Viaje Nº.: 
+0044#STR0044#ALL#Conductor Nº.:
+0045#STR0045#ALL#Proceso de Transporte: 
+0046#STR0046#ALL#Local de Liquidacion:
+0047#STR0047#ALL#Los precios de los combustibles estan vigentes en la fecha/hora de la impresion del documento, sin embargo estan sujetos a modificacion.
+0048#STR0048#ALL# P U N T O S   D E   A P O Y O 
+0049#STR0049#ALL#Prevision         Gasolinera                                      Dirección                               Telefono        Vl. Gasoil
+0050#STR0050#ALL#Pago se efectuara por la Operadora de Flotas

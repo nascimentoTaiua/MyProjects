@@ -1,0 +1,8 @@
+0001#STR0001#ALL#Este relatório imprimirá a factura das AWB´s emitidas
+0002#STR0002#ALL#Relatório de Factura de AWB´s
+0003#STR0003#ALL#Cia.Aérea..: 
+0004#STR0004#ALL#Nr.AWB       Dig.         Peso         Valor AWB      Vl.AWB.Liq.        Frete Calc.       Vl.Decresc.      Vl.AWB Desc.     Frete Docto      %CustxRec  %CustxRec(R)  Cliente                            
+0005#STR0005#ALL#Nr.Docto     Tipo Origem                          Peso    Destino                     Remetente                    Destinatário               %CustxRec  %CustxRec(R)  Vlr.Frete     Imposto    Frete Tot.
+0006#STR0006#ALL#Código de Barras
+0007#STR0007#ALL#Administração
+0010#STR0010#ALL#Factura Aérea Nr. 

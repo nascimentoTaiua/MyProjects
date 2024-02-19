@@ -1,0 +1,27 @@
+0001#STR0001#MEX#01-Admission
+0002#STR0002#MEX#03-Disch. Rec. Issue
+0003#STR0003#MEX#05-Change Sal.
+0004#STR0004#MEX#06-Re-admission
+0005#STR0005#MEX#04-Empl. Rec. Issue
+0006#STR0006#MEX#20-Issue Payroll
+0007#STR0007#MEX#Department Change
+0008#STR0008#MEX#Cost Center Change
+0009#STR0009#MEX#Role Change
+0010#STR0010#MEX#Position Change
+0011#STR0011#MEX#Role not found
+0012#STR0012#MEX#Position not found
+0013#STR0013#MEX#Loc not found 
+0014#STR0014#MEX#CC not found.
+0015#STR0015#MEX#Role not found
+0016#STR0016#MEX#Position not found
+0017#STR0017#MEX#Requested
+0018#STR0018#MEX#Active
+0019#STR0019#MEX#Paid
+0020#STR0020#MEX#Suspended
+0021#STR0021#MEX#Enjoyment Days
+0022#STR0022#MEX#Scheduled Days
+0023#STR0023#MEX#Enjoyment Days
+0024#STR0024#MEX#Paid Days
+0025#STR0025#MEX#Work-related Accident
+0026#STR0026#MEX#Accident in Route
+0027#STR0027#MEX#Work Disease

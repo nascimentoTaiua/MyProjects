@@ -1,0 +1,18 @@
+0001#STR0001#ALL#Impressão do plano de viagem
+0002#STR0002#ALL#Este programa irá listar o plano de viagem das viagens seleccionadas
+0003#STR0003#ALL#Código de barras
+0005#STR0005#ALL#Número da viagem: 
+0006#STR0006#ALL#Proc. de transporte: 
+0007#STR0007#ALL# v e í c u l o s 
+0008#STR0008#ALL#Veiculo   Nome                  Cor                   Tipo                       Placa     Cidade           Uf  Ano
+0009#STR0009#ALL# m o t o r i s t a 
+0010#STR0010#ALL#Nome                                      Morada                                  Concelho           Uf  Cnh/pgu
+0011#STR0011#ALL# p o n t o s   d e   a p o i o 
+0012#STR0012#ALL#Previsão          Posto                                           Morada                                Telefone        Vl. Diesel
+0014#STR0014#ALL# c o n t r a t o   d e   c a m i o n i s t a 
+0015#STR0015#ALL#Contrato  Emissão           Proprietário                                    Vlr. Frete    Vlr. Portagem      Vlr. Adto.
+0016#STR0016#ALL# o b s e r v a ç õ e s 
+0017#STR0017#ALL# p r a ç a s   d e   p o r t a g e m 
+0018#STR0018#ALL#Seq. Port.  Estrada                                                 Km  Concelho        Sentido         Vlr. Eixo    Vlr. Veículo
+0019#STR0019#ALL# a c t i v i d a d e s 
+0020#STR0020#ALL#Ordem   Actividade

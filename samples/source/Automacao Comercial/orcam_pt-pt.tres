@@ -1,0 +1,31 @@
+0001#STR0001#ALL#Emissão De Orçamentos
+0002#STR0002#ALL#O objectivo deste relatório é exibir detalhadamente os orçamentos
+0003#STR0003#ALL#Código de barras
+0004#STR0004#ALL#Administração
+0005#STR0005#ALL#|nr. orçamento :
+0006#STR0006#ALL#Emissão :
+0008#STR0008#ALL#|cliente       :
+0009#STR0009#ALL#|vendedor      :
+0011#STR0011#ALL#|t o t a l ......................................................
+0012#STR0012#ALL#|d e s c o n t o ................................................
+0013#STR0013#ALL#|l í q u i d o ..................................................
+0014#STR0014#ALL#|condição pagamento :
+0015#STR0015#ALL#|forma de pagamento :
+0016#STR0016#ALL#Cond. pagamento 
+0017#STR0017#ALL#|o seu pedido nr.     :
+0018#STR0018#ALL#Nif: 
+0019#STR0019#ALL#Ie.: 
+0020#STR0020#ALL#If.: 
+0021#STR0021#ALL#Im.: 
+0022#STR0022#ALL#*** não é documento fiscal ***
+0023#STR0023#ALL#*** EXIJA O CUPÃO FISCAL - NÂO É VÁLIDO COMO GARANTIA DE MERCADORIA ***
+0024#STR0024#ALL#Não é Válido Como Garantia De Mercadoria
+0025#STR0025#ALL#|it      Código            Descrição                     Qtd.      Um       Vlr.unit.    St      Vlr.desc.         Vlr.total
+0026#STR0026#ALL#Não é Documento Fiscal - Não é Válido Como Garantia.
+0027#STR0027#ALL#|t o t a l 
+0028#STR0028#ALL#|d e s c o n t o 
+0029#STR0029#ALL#|l í q u i d o 
+0031#STR0031#ALL#Nr. do Documento Fiscal:_______________
+0032#STR0032#ALL#Emissão:
+0033#STR0033#ALL#Validade:
+0034#STR0034#ALL#                   É vedada a autenticação deste documento.

@@ -1,0 +1,11 @@
+0001#STR0001#ALL#Collection and Delivery Agreement
+0002#STR0002#ALL#This program will print the Collection and Delivery    
+0003#STR0003#ALL#according to the parameters chosen by the user
+0004#STR0004#ALL#Z.form
+0005#STR0005#ALL#Clerical      
+0006#STR0006#ALL#NUMBER       :
+0007#STR0007#ALL#CANCELED BY OPERATOR
+0008#STR0008#ALL#Date     Transp.Serv.  Transp. Type Trip      Qty.Vol. Qty.Doc.         Weig    Freig     IRRF SEST/SENAT     INSS   Net Value 
+0009#STR0009#ALL#THERE ARE NO TRIPS FOR THIS AGREEMENT 
+0010#STR0010#ALL#OWNER        :
+0011#STR0011#ALL#TOTAL==>

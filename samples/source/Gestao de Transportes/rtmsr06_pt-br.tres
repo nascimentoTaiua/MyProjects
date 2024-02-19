@@ -1,0 +1,50 @@
+0001#STR0001#ALL#Impressao do Contrato de Carreteiro
+0002#STR0002#ALL#Este programa ira listar os Contratos de Carreteiros
+0003#STR0003#ALL#Zebrado
+0004#STR0004#ALL#Administracao
+0005#STR0005#ALL#Viagem       : 
+0006#STR0006#ALL#No. Contrato : 
+0007#STR0007#ALL#Trajeto de 
+0008#STR0008#ALL#para 
+0009#STR0009#ALL#Peso Total..............: 
+0010#STR0010#ALL#Peso Pago...............: 
+0011#STR0011#ALL#Tarifa.: 
+0012#STR0012#ALL#Valor Frete.............: 
+0013#STR0013#ALL#Adiantamento............: 
+0014#STR0014#ALL#Valor Pedagio...........: 
+0015#STR0015#ALL#Adiantamento de Pedagio.: 
+0016#STR0016#ALL#Valor Total.............: 
+0017#STR0017#ALL#Saldo no Destino........: 
+0018#STR0018#ALL#Saldo a Pagar por Extenso : 
+0019#STR0019#ALL#O Saldo sera pago em 
+0020#STR0020#ALL#O Motorista e ou proprietarios(s) assumem obrigacoes aqui estabelecidas,
+0021#STR0021#ALL#bem como as do termo de responsabilidade inerentes ao transporte anexo.
+0022#STR0022#ALL#Declaro ter recebido o saldo deste contrato, dando total e plena quitacao :
+0023#STR0023#ALL#Data:
+0024#STR0024#ALL#Ass.Motorista : 
+0025#STR0025#ALL#Data Cheg           Horas            Valor Premio          Perc
+0026#STR0026#ALL#O B S E R V A C O E S
+0027#STR0027#ALL#Numero da Consulta Telerisco: 
+0028#STR0028#ALL#Hora Emissao Contrato: 
+0029#STR0029#ALL#V E I C U L O S
+0030#STR0030#ALL#Veiculo   Nome                  Cor                   Tipo                       Placa     Cidade           UF  Ano
+0031#STR0031#ALL#P R O P R I E T A R I O S
+0032#STR0032#ALL#Veiculo   Nome                                      Endereco                                  Cidade           UF   CGC/CPF
+0033#STR0033#ALL#M O T O R I S T A
+0034#STR0034#ALL#Nome                                      Endereco                                  Cidade           UF  CNH/PGU
+0035#STR0035#ALL#Contrato de Transporte - Carreto 
+0036#STR0036#ALL#PROPRIO
+0037#STR0037#ALL#TERCEIRO
+0038#STR0038#ALL#Os Motoristas e ou Proprietarios acima discriminados, se obrigam por este, a transportar a carga, no trajeto e nas condicoes abaixo
+0039#STR0039#ALL#como segue :  
+0040#STR0040#ALL# D E T A L H A M E N T O    D A   C A R G A
+0041#STR0041#ALL#MANIFESTO   FIL.ORIGEM       FIL.DESTINO              PESO    MANIFESTO   FIL.ORIGEM       FIL.DESTINO              PESO
+0042#STR0042#ALL#Local: 
+0043#STR0043#ALL#Viagem No : 
+0044#STR0044#ALL#Motorista No : 
+0045#STR0045#ALL#Processo de Transporte: 
+0046#STR0046#ALL#Local de Quitação:
+0047#STR0047#ALL#Os preços dos combustíveis estão em vigor na data/hora da impressão do documento, porém estão sujeitos à alteração.
+0048#STR0048#ALL# P O N T O S   D E   A P O I O 
+0049#STR0049#ALL#Previsao          Posto                                           Endereco                                Telefone        Vl. Diesel
+0050#STR0050#ALL#Pagamento será efetuado pela Operadora de Frotas

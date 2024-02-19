@@ -1,0 +1,34 @@
+0001#STR0001#ALL#This program will print the Cargo Manifest.   
+0002#STR0002#ALL#Cargo Manisfest    
+0003#STR0003#ALL#Z.form
+0004#STR0004#ALL#Management   
+0005#STR0005#ALL#Printing the Cargo Manifest.    
+0006#STR0006#ALL#CTRC       Remitter             State Registr.     Addressee            State Registr.     City                 ST Say Cont.            Vols      Act. Wgtl     Wgt. Col.      Good Value      T  Sour Targ
+0007#STR0007#ALL#CANCELED BY OPERATOR
+0008#STR0008#ALL#Blank    
+0009#STR0009#ALL#Invoices : 
+0010#STR0010#ALL#Manifest  : 
+0011#STR0011#ALL#Trip      : 
+0012#STR0012#ALL#ZIP : 
+0013#STR0013#ALL#CGC : 
+0014#STR0014#ALL#S R: 
+0015#STR0015#ALL#Vehicle   
+0016#STR0016#ALL#********************************************************************** M A N I F E S T  G E N E R A L  S U M M A R Y  ****************************************************************************
+0017#STR0017#ALL#Type : 
+0018#STR0018#ALL#Plate : 
+0019#STR0019#ALL#City L. Plate: 
+0020#STR0020#ALL#Driver    
+0021#STR0021#ALL#D.L.: 
+0022#STR0022#ALL#**************************************************************************** M A N I F E S T    S U M M A R Y    *********************************************************************************
+0023#STR0023#ALL#              Goods Value               Freight Value        Taxable N. Value             Taxable Value             ICMS Value          Vols.          Acc. Weight        Char.Wght          CTRCs
+0024#STR0024#ALL#**************************************************************************************************************************************************************************************************
+0025#STR0025#ALL#C I F
+0026#STR0026#ALL#F O B
+0027#STR0027#ALL#T O T A L 
+0028#STR0028#ALL#All the Manifests  
+0029#STR0029#ALL#All the trips   
+0030#STR0030#ALL#Note       : 
+0031#STR0031#ALL#Address (
+0032#STR0032#ALL#): 
+0033#STR0033#ALL#Seals  : 
+0034#STR0034#ALL#CRT        Sender               State registr.     Addressee            State registr.     City                 St Diz Conter           Vol.      Act. wght     Chrg. wght     Merch. val.     T  Orig Dest

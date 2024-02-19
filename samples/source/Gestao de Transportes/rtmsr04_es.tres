@@ -1,0 +1,34 @@
+0001#STR0001#ALL#Este programa emitira el Manifiesto de Cargas.
+0002#STR0002#ALL#Manifesto de Cargas
+0003#STR0003#ALL#A rayas
+0004#STR0004#ALL#Administracion
+0005#STR0005#ALL#Imprimiendo Manifiesto de Carga.
+0006#STR0006#ALL#CTRC       Remitente            Insc. Estatal      Destinatario         Insc. Estatal      Ciudad               UF Diz Conter           Vols      Peso Real     Peso Cob.      Valor Merc      T  Orig Dest
+0007#STR0007#ALL#CANCELADO POR EL OPERADOR
+0008#STR0008#ALL#En blanco
+0009#STR0009#ALL#Facturas : 
+0010#STR0010#ALL#Manifiesto: 
+0011#STR0011#ALL#Viaje     : 
+0012#STR0012#ALL#CP  : 
+0013#STR0013#ALL#Cgc : 
+0014#STR0014#ALL#IE : 
+0015#STR0015#ALL#Vehiculo  
+0016#STR0016#ALL#********************************************************************** R E S U M E N    G E N E R A L   M A N I F I E S T O *************************************************************************
+0017#STR0017#ALL#Tipo : 
+0018#STR0018#ALL#Placa : 
+0019#STR0019#ALL#Ciudad Placa : 
+0020#STR0020#ALL#Conductor 
+0021#STR0021#ALL#CNH : 
+0022#STR0022#ALL#**************************************************************************** R E S U M E N  D E L   M A N I F I E S T O *********************************************************************************
+0023#STR0023#ALL#              Valor Mercaderia          Valor Flete          Valor F. Tributable          Valor Tributable          Valor ICMS          Vols.          Peso Real          Peso Cob.          CTRCs
+0024#STR0024#ALL#**************************************************************************************************************************************************************************************************
+0025#STR0025#ALL#C I F
+0026#STR0026#ALL#F O B
+0027#STR0027#ALL#T O T A L 
+0028#STR0028#ALL#Todos los Manifiestos
+0029#STR0029#ALL#Todos los Viajes
+0030#STR0030#ALL#Observacion: 
+0031#STR0031#ALL#Direccion(
+0032#STR0032#ALL#): 
+0033#STR0033#ALL#Lacres : 
+0034#STR0034#ALL#CRT        Remitente            Insc. Estatal      Destinatario         Insc. Estatal      Ciudad               Est Dice Contener       Vol.      Peso Real     Peso Cob.      Valor Merc      T  Orig Dest

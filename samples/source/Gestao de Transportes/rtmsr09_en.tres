@@ -1,0 +1,48 @@
+0001#STR0001#ALL#Delivery dispatch note
+0002#STR0002#ALL#This program will list the Delivery Dispatch Note
+0003#STR0003#ALL#Z.form
+0004#STR0004#ALL#Management   
+0005#STR0005#ALL#Src.Brch. Document    Customer                                  Address                                   Distr.                            Vols.       Wght
+0006#STR0006#ALL#Totals -> 
+0007#STR0007#ALL#Orders  : 
+0008#STR0008#ALL#Weight : 
+0009#STR0009#ALL#Volume: 
+0010#STR0010#ALL#Note       : 
+0011#STR0011#ALL# Dirver signature     
+0012#STR0012#ALL# Assistant signature  
+0013#STR0013#ALL#Trip   : 
+0014#STR0014#ALL#Route  : 
+0015#STR0015#ALL#Vehicle   
+0016#STR0016#ALL#Plate : 
+0017#STR0017#ALL#   Capacity   : 
+0018#STR0018#ALL#Vehic.Type: 
+0019#STR0019#ALL#Depart.KM: 
+0020#STR0020#ALL#Arrival KM : 
+0021#STR0021#ALL#Driver    
+0022#STR0022#ALL#Assistant 
+0023#STR0023#ALL#Date
+0024#STR0024#ALL#Delivery Packing Slip
+0025#STR0025#ALL#This program lists the Delivery Packing Slip
+0026#STR0026#ALL#Trip
+0027#STR0027#ALL#Ori.Bra.
+0028#STR0028#ALL#Route
+0029#STR0029#ALL#Description
+0030#STR0030#ALL#Vehicle
+0031#STR0031#ALL#Plate
+0032#STR0032#ALL#Capacity
+0033#STR0033#ALL#Vehi Type
+0034#STR0034#ALL#Depart KM
+0035#STR0035#ALL#Arrival KM
+0036#STR0036#ALL#Driver
+0037#STR0037#ALL#Helper
+0038#STR0038#ALL#Documents
+0039#STR0039#ALL#Document
+0040#STR0040#ALL#Series
+0041#STR0041#ALL#Client
+0042#STR0042#ALL#Address
+0043#STR0043#ALL#District
+0044#STR0044#ALL#Vols
+0045#STR0045#ALL#Weight
+0046#STR0046#ALL#Remarks
+0047#STR0047#ALL#Date
+0048#STR0048#ALL#Trip Remarks

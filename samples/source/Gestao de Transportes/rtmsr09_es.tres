@@ -1,0 +1,48 @@
+0001#STR0001#ALL#Lista de Embarque  
+0002#STR0002#ALL#Este prog.genera Lista de Embarque p/entrega  
+0003#STR0003#ALL#A Rayas
+0004#STR0004#ALL#Administracion
+0005#STR0005#ALL#Suc.Orig. Documento   Cliente                                   Direccion                                 Barrio                            Vols.       Peso
+0006#STR0006#ALL#Totales-> 
+0007#STR0007#ALL#Pedidos : 
+0008#STR0008#ALL#Peso : 
+0009#STR0009#ALL#Volumen: 
+0010#STR0010#ALL#Observacion: 
+0011#STR0011#ALL# Firma del Conductor  
+0012#STR0012#ALL# Firma del Ayudante   
+0013#STR0013#ALL#Viaje  : 
+0014#STR0014#ALL#Ruta   : 
+0015#STR0015#ALL#Vehiculo: 
+0016#STR0016#ALL#Placa : 
+0017#STR0017#ALL#   Capacidad  : 
+0018#STR0018#ALL#Tipo Vehic: 
+0019#STR0019#ALL#KM Salida: 
+0020#STR0020#ALL#KM Llegada : 
+0021#STR0021#ALL#Conductor 
+0022#STR0022#ALL#Ayudante  
+0023#STR0023#ALL#Fec 
+0024#STR0024#ALL#Lista de embarque de entrega
+0025#STR0025#ALL#Este programa listara la lista de embarque de entrega
+0026#STR0026#ALL#Viaje
+0027#STR0027#ALL#Suc.Ori.
+0028#STR0028#ALL#Ruta
+0029#STR0029#ALL#Descripcion
+0030#STR0030#ALL#Vehiculo
+0031#STR0031#ALL#Matricula
+0032#STR0032#ALL#Capacidad
+0033#STR0033#ALL#Tipo Vehic
+0034#STR0034#ALL#Km Salida
+0035#STR0035#ALL#Km Llegada
+0036#STR0036#ALL#Conductor
+0037#STR0037#ALL#Ayudante
+0038#STR0038#ALL#Documentos
+0039#STR0039#ALL#Documento
+0040#STR0040#ALL#Serie
+0041#STR0041#ALL#Cliente
+0042#STR0042#ALL#Direccion
+0043#STR0043#ALL#Barrio
+0044#STR0044#ALL#Volum.
+0045#STR0045#ALL#Peso
+0046#STR0046#ALL#Observacion
+0047#STR0047#ALL#Fecha
+0048#STR0048#ALL#Obs.Viaje

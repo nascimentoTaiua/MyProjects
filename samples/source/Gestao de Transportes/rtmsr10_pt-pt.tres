@@ -1,0 +1,21 @@
+0001#STR0001#ALL#Este programa irá imprimir as cotacoes.             
+0003#STR0003#ALL#Cotação De Frete
+0004#STR0004#ALL#Código de barras
+0005#STR0005#ALL#Administração
+0006#STR0006#ALL#Imprimindo A Cotação De Frete.
+0007#STR0007#ALL#*** cancelado pelo operador ***
+0009#STR0009#ALL#Número.......: 
+0010#STR0010#ALL#Data cotação.: 
+0011#STR0011#ALL#Data validade: 
+0013#STR0013#ALL#Contacto...: 
+0018#STR0018#ALL#Peso real.....: 
+0019#STR0019#ALL#Peso cubado...: 
+0023#STR0023#ALL#Valor mercad..: 
+0024#STR0024#ALL#Tipo do frete.: 
+0025#STR0025#ALL#Tipo tabela..: 
+0027#STR0027#ALL# c l i e n t e 
+0028#STR0028#ALL# c a r g a 
+0029#STR0029#ALL# f r e t e   c o m b i n a d o 
+0030#STR0030#ALL# o b s e r v a ç õ e s 
+0031#STR0031#ALL#Total De Frete
+0033#STR0033#ALL#Paletes..: 

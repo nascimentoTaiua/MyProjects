@@ -1,0 +1,20 @@
+0001#STR0001#ALL#Impresion del Plan de Viaje
+0002#STR0002#ALL#Este programa listara el Plan de Viaje de los viajes seleccionados
+0003#STR0003#ALL#A Rayas
+0004#STR0004#ALL#Administracion
+0005#STR0005#ALL#Numero del Viaje: 
+0006#STR0006#ALL#Proc. de Transporte: 
+0007#STR0007#ALL# V E H I C U L O S 
+0008#STR0008#ALL#Vehiculo  Nombre                Color                 Tipo                       Matric.   Ciudad           Est Ano
+0009#STR0009#ALL# C O N D U C T O R 
+0010#STR0010#ALL#Nombre                                    Direccion                                 Ciudad           Est CNH/PGU
+0011#STR0011#ALL# P U N T O S   D E   A P O Y O 
+0012#STR0012#ALL#Prevision         Estacion de Serv.                               Direccion                               Telefono        Tic.Diesel
+0013#STR0013#ALL#Los precios de los combustibles estan en vigencia en la fecha/hora de la impresion del documento, sin embargo, estan sujetos a modificacion.
+0014#STR0014#ALL# C O N T R A T O   D E   T R A N S P O R T . 
+0015#STR0015#ALL#Contrato  Emision           Propietario                                     Vlr. Flete    Vlr. Peaje        Vlr. Antic
+0016#STR0016#ALL# O B S E R V A C I O N E S 
+0017#STR0017#ALL# P L A Z A S   D E   P E A J E 
+0018#STR0018#ALL#Sec. Pea.  Carretera                                               KM  Municipio        Sentido         Vlr. Eje     Vlr. Vehic. 
+0019#STR0019#ALL# A C T I V I D A D E S 
+0020#STR0020#ALL#Orden   Actividad

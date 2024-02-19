@@ -1,0 +1,21 @@
+0001#STR0001#ALL#Este programa irá emitir o manifesto de carga.
+0002#STR0002#ALL#Manifesto De Cargas
+0003#STR0003#ALL#Código de barras
+0004#STR0004#ALL#Administração
+0005#STR0005#ALL#Imprimindo O Manifesto De Carga.
+0006#STR0006#ALL#Ctrc       Remetente            Insc. Estatual     Destinatario         Insc. Estatudal    Cidade               Uf Diz Conter           Vols      Peso Real     Peso Cob.      Valor Merc      T  Orig Dest
+0007#STR0007#ALL#Cancelado Pelo Operador
+0009#STR0009#ALL#N fiscais  : 
+0014#STR0014#ALL#Ie : 
+0016#STR0016#ALL#********************************************************************** r e s u m o  g e r a l  d o  m a n i f e s t o ****************************************************************************
+0019#STR0019#ALL#Cidade placa : 
+0020#STR0020#ALL#Condutor  
+0021#STR0021#ALL#Cnh : 
+0022#STR0022#ALL#**************************************************************************** r e s u m o  d o  m a n i f e s t o *********************************************************************************
+0023#STR0023#ALL#              Valor Mercadoria          Valor Frete          Valor N. Tributavel          Valor Tributavel          Valor Icms          Vols.          Peso Real          Peso Cob.          Ctrcs
+0027#STR0027#ALL#T o t a l 
+0028#STR0028#ALL#Todos Os Manifestos
+0029#STR0029#ALL#Todas As Viagens
+0030#STR0030#ALL#Observação : 
+0031#STR0031#ALL#Morada(
+0034#STR0034#ALL#Crt        Remetente            Insc. Estatual     Destinatário         Insc. Estatudal    Cidade               Uf Diz Conter           Vols      Peso Real     Peso Cob.      Valor Merc      T  Orig Dest

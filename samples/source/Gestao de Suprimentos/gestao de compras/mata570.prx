@@ -1,0 +1,603 @@
+#Include "MATA570.ch"
+#include "FIVEWIN.ch"
+#include "FWMVCDEF.ch"
+#include "FWEVENTVIEWCONSTS.ch"
+#include "TOPCONN.ch"
+#include "PROTHEUS.ch"
+#Include "RWMAKE.ch"
+#Include "TBICONN.ch"
+
+/*
+ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+±±ÚÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄ¿±±
+±±³Fun‡…o    ³ Mata570  ³ Autor ³ Cristina M. Ogura     ³ Data ³ 02.10.96 ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Descri‡…o ³ Limpeza de Arquivos do modulo de Compras                   ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Sintaxe   ³ Mata570(void)                                              ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³ Uso      ³ Generico                                                   ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³ ATUALIZACOES SOFRIDAS DESDE A CONSTRUCAO INICIAL.                     ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³ PROGRAMADOR  ³ DATA   ³ BOPS ³  MOTIVO DA ALTERACAO                   ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³  Edson  M.   ³06/03/98³B.Hur ³Inclusao da Pergunta : Limpa NF ?       ³±±
+±±³  Edson  M.   ³06/11/98³XXXXXX³Correcao no layout p/ o ano 2000.       ³±±
+±±³ Aline C.Vale ³09/08/99³23076A³Nao excluir NF de Beneficiamto em aberto³±±
+±±ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ±±
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+*/
+
+User Function Mata570() 
+
+Local nOpca := 0
+Local oDlg
+Local oLimpa
+Local cVar
+
+Private dDataFim	:= Ctod("  /  /  ")
+Private aDbf		:= {}
+
+cMens := OemToAnsi(STR0001)+chr(13)		//"Esta  rotina  exige  que  os   arquivos"
+cMens += OemToAnsi(STR0002)+chr(13)		//"associados a ela n†o estejam em uso por"
+cMens += OemToAnsi(STR0003)+chr(13)		//"outras esta‡”es."
+cMens += OemToAnsi(STR0004)+chr(13)		//"Fa‡a com que os outros usu rios saiam do"
+cMens += OemToAnsi(STR0005)+chr(13)		//"sistema."
+
+If !MsgYesNo(cMens,OemToAnsi(STR0006))	//"ATEN€ŽO"
+	Return
+EndIf
+
+//Limpa Nota Fiscal  ?  mv_par01
+//Limpa Pedidos      ?  mv_par02
+//Limpa Cotacoes     ?  mv_par03
+//Limpa Contrato     ?  mv_par04 
+//Limpa Solicitacoes ?  mv_par05
+//Limpa Sol. Armazem ?  mv_par06
+
+If Empty(aDbf) 
+	aDbf := Fa570Arq({"SCP","SC1","SC3","SC7","SC8","SCE","SF1","SD1"})    
+EndIf
+
+Pergunte("MTA570",.T.)
+
+DEFINE MSDIALOG oDlg FROM  71,50 TO 400,495 TITLE OemToAnsi(STR0007) PIXEL		//"Limpeza Mensal"
+	
+	@ 003,007 TO 43,215 PIXEL OF oDlg
+	@ 122,007 TO 149,215 PIXEL OF oDlg
+	
+	@ 011,010 SAY OemToAnsi(STR0008) SIZE 200,7 OF oDlg PIXEL 		//"Este programa tem o objetivo de efetuar a limpeza de arquivos do m¢dulo SIGACOM."
+	@ 021,010 SAY OemToAnsi(STR0009) SIZE 200,7 OF oDlg PIXEL  		//"Dever  ser informada a data limite para limpeza.  Os registros deletados serÆo"
+	@ 031,010 SAY OemToAnsi(STR0010) SIZE 200,7 OF oDlg PIXEL  		//"armazenados em um jogo de arquivos a serem gerados pelo programa."
+	@ 132,010 SAY OemToAnsi(STR0011) SIZE 055,7 OF oDlg PIXEL  		//"Data Limite"
+		
+	@ 132,045 MSGET dDataFim Picture "99/99/9999"  SIZE 50, 10 OF oDlg PIXEL
+	
+	@ 049,007 LISTBOX oLimpa VAR cVar Fields HEADER OemToAnsi("Arquivos")  SIZE 208,65 OF oDlg PIXEL ON DBLCLICK (FA570File(oLimpa:nAt),oLimpa:Refresh()) NOSCROLL
+	
+	oLimpa:SetArray(aDbf)
+	oLimpa:bLine := { || { aDbf[oLimpa:nAt] } }
+
+	DEFINE SBUTTON FROM 132,146 TYPE 1 ENABLE OF oDlg ACTION (nOpca:=1,If(Fa570Teste(dDataFim),oDlg:End(),nOpca:=0))
+	DEFINE SBUTTON FROM 132,174 TYPE 2 ENABLE OF oDlg ACTION oDlg:End()
+
+ACTIVATE MSDIALOG oDlg CENTERED
+
+If nOpca == 1
+	Processa( {|lEnd| FA570Executa() } )
+EndIf
+
+Return
+
+/*
+ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+±±ÚÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄ¿±±
+±±³Fun‡…o    ³ Fa570Executa ³ Autor ³ Cristina M. Ogura ³ Data ³ 02.10.96 ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Descri‡…o ³ Executa a limpeza dos arquivos no modulo de Compras        ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Sintaxe	 ³ Fa570Executa()                                             ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Uso       ³ MATA570                                                    ³±±
+±±ÀÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ±±
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+*/
+
+Static Function Fa570Executa()
+
+//Abre o Arquivo de Cotacoes Encerradas
+If !ChkFile("SCE",.f.)
+	Help(" ",1,"A160SCE")
+EndIf
+
+If	ma280flock("SCP") .And. ma280flock("SC1") .And. ma280flock("SC3") .And. ma280flock("SC7") .And. ma280flock("SC8") .And. ;
+	ma280flock("SCE") .And. ma280flock("SD1") .And. ma280flock("SF1")
+	
+	//Gera arquivo morto e deleta os registros SCP
+	If Mv_Par06 == 1
+		Fa570SCP(dDataFim,aDbf)
+	EndIf
+
+	//Gera arquivo morto e deleta os registros SC1
+	If Mv_Par05 == 1
+		Fa570SC1(dDataFim,aDbf)
+	EndIf
+	
+	//Gera arquivo morto e deleta os registros SC3
+	If mv_par04 == 1
+		Fa570SC3(dDataFim,aDbf)
+	EndIf
+	
+	//Gera arquivo morto e deleta os registros SC7
+	if mv_par02 == 1
+		Fa570SC7(dDataFim,aDbf)
+	EndIf
+	
+	//Gera arquivo morto e deleta os registros SC8/SCE
+	If mv_par03 == 1
+		Fa570C8CE(dDataFim,aDbf)
+	EndIf
+	
+	//Gera arquivo morto e deleta os registros SF1/SD1
+	If mv_par01 == 1
+		Fa570F1D1(dDataFim,aDbf)
+	Endif
+EndIf
+
+Return
+
+/*
+ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+±±ÚÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄ¿±±
+±±³Fun‡…o    ³ Fa570SCP ³ Autor ³ Larson Zordan         ³ Data ³ 13.11.01 ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Descri‡…o ³ Grava no arquivo morto e deleta os registros do SCP.		  ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Sintaxe   ³ Fa570SCP(dDataFim,cDbf)                   	     		  ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Uso       ³ MATA570                                                    ³±±
+±±ÀÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ±±
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+*/
+
+Static Function Fa570SCP(dDataFim,aDbf)
+
+Local cQry		:= ""
+
+//Cria tabela no banco para backup da SCP
+cQry := " SELECT * INTO " + aDbf[1]
+cQry += " FROM " + RetSqlName("SCP")
+cQry += " WHERE D_E_L_E_T_ = ''"
+cQry += " AND CP_FILIAL = '" + xFilial("SCP") + "'"
+cQry += " AND (CP_EMISSAO <= '" + DtoS(dDataFim) + "' OR CP_QUANT - CP_QUJE = 0)"
+
+TcSqlExec(cQry) 
+
+//Deleta os registro que foram realizados o backup
+cQry := " DELETE FROM " + RetSqlName("SCP")
+cQry += " WHERE D_E_L_E_T_ = ''"
+cQry += " AND CP_FILIAL = '" + xFilial("SCP") + "'"
+cQry += " AND (CP_EMISSAO <= '" + DtoS(dDataFim) + "' OR CP_QUANT - CP_QUJE = 0)"
+	
+TcSqlExec(cQry)
+
+Return
+
+/*
+ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+±±ÚÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄ¿±±
+±±³Fun‡…o    ³ Fa570SC1 ³ Autor ³ Cristina M. Ogura     ³ Data ³ 02.10.96 ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Descri‡…o ³ Grava no arquivo morto e deleta os registros do SC1.		  ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Sintaxe   ³ Fa570SC1(dDataFim,cDir,cDbf)                   			  ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Uso       ³ MATA570                                                    ³±±
+±±ÀÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ±±
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+*/
+
+Static Function Fa570SC1(dDataFim,aDbf)
+
+Local cQry		:= ""
+
+//Cria tabela no banco para backup da SC1
+cQry := " SELECT * INTO " + aDbf[2]
+cQry += " FROM " + RetSqlName("SC1")
+cQry += " WHERE D_E_L_E_T_ = ''"
+cQry += " AND C1_FILIAL = '" + xFilial("SC1") + "'"
+cQry += " AND (C1_EMISSAO <= '" + DtoS(dDataFim) + "' OR C1_QUANT - C1_QUJE = 0)"
+
+TcSqlExec(cQry)
+
+//Deleta os registro que foram realizados o backup
+cQry := " DELETE FROM " + RetSqlName("SC1")
+cQry += " WHERE D_E_L_E_T_ = ''"
+cQry += " AND C1_FILIAL = '" + xFilial("SC1") + "'"
+cQry += " AND (C1_EMISSAO <= '" + DtoS(dDataFim) + "' OR C1_QUANT - C1_QUJE = 0)"
+
+TcSqlExec(cQry)
+
+Return
+
+/*
+ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+±±ÚÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄ¿±±
+±±³Fun‡…o    ³ Fa570SC3 ³ Autor ³ Cristina M. Ogura     ³ Data ³ 02.10.96 ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Descri‡…o ³ Grava no arquivo morto e deleta os registros do SC3.		  ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Sintaxe   ³ Fa570SC3(dDataFim,cDir,cDbf)                   			  ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Uso       ³ MATA570                                                    ³±±
+±±ÀÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ±±
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+*/
+
+Static Function Fa570SC3(dDataFim,aDbf)
+
+Local cQry		:= ""
+
+//Cria tabela no banco para backup da SC3
+cQry := " SELECT * INTO " + aDbf[3]
+cQry += " FROM " + RetSqlName("SC3")
+cQry += " WHERE D_E_L_E_T_ = ''"
+cQry += " AND C3_FILIAL = '" + xFilial("SC3") + "'"
+cQry += " AND (C3_EMISSAO <= '" + DtoS(dDataFim) + "' OR (C3_RESIDUO = 'S' AND C3_QUANT - C3_QUJE = 0))"
+
+TcSqlExec(cQry)
+
+//Deleta os registro que foram realizados o backup
+cQry := " DELETE FROM " + RetSqlName("SC3")
+cQry += " WHERE D_E_L_E_T_ = ''"
+cQry += " AND C3_FILIAL = '" + xFilial("SC3") + "'"
+cQry += " AND (C3_EMISSAO <= '" + DtoS(dDataFim) + "' OR (C3_RESIDUO = 'S' AND C3_QUANT - C3_QUJE = 0))"
+	
+TcSqlExec(cQry)
+
+Return
+
+/*
+ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+±±ÚÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄ¿±±
+±±³Fun‡…o    ³ Fa570SC7 ³ Autor ³ Cristina M. Ogura     ³ Data ³ 02.10.96 ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Descri‡…o ³ Grava no arquivo morto e deleta os registros do SC7.		  ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Sintaxe   ³ Fa570SC7(dDataFim,cDir,aDbf)                   			  ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Uso       ³ MATA570                                                    ³±±
+±±ÀÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ±±
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+*/
+
+Static Function Fa570SC7(dDataFim,aDbf)
+
+Local cQry		:= ""
+
+//Cria tabela no banco para backup da SC7
+cQry := " SELECT * INTO " + aDbf[4]
+cQry += " FROM " + RetSqlName("SC7")
+cQry += " WHERE D_E_L_E_T_ = ''"
+cQry += " AND C7_FILIAL = '" + xFilial("SC7") + "'"
+cQry += " AND (C7_EMISSAO <= '" + DtoS(dDataFim) + "' OR (C7_RESIDUO = 'S' AND C7_QUANT - C7_QUJE = 0))"
+
+TcSqlExec(cQry)
+
+//Deleta os registro que foram realizados o backup
+cQry := " DELETE FROM " + RetSqlName("SC7")
+cQry += " WHERE D_E_L_E_T_ = ''"
+cQry += " AND C7_FILIAL = '" + xFilial("SC7") + "'"
+cQry += " AND (C7_EMISSAO <= '" + DtoS(dDataFim) + "' OR (C7_RESIDUO = 'S' AND C7_QUANT - C7_QUJE = 0))"
+	
+TcSqlExec(cQry)
+
+Return
+
+/*
+ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+±±ÚÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄ¿±±
+±±³Fun‡…o    ³ Fa570C8CE³ Autor ³ Cristina M. Ogura     ³ Data ³ 02.10.96 ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Descri‡…o ³ Grava no arquivo morto e deleta os registros do SC8/SCE	  ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Sintaxe   ³ Fa570C8CE(dDataFim,cDir,aDbf)                   			  ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Uso       ³ MATA570                                                    ³±±
+±±ÀÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ±±
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+*/
+
+Static Function Fa570C8CE(dDataFim,aDbf)
+
+Local cQry		:= ""
+Local cBD		:= AllTrim(Upper(TcGetDb()))
+
+//Cria tabela no banco para backup da SC8
+cQry := " SELECT * INTO " + aDbf[5]
+cQry += " FROM " + RetSqlName("SC8")
+cQry += " WHERE D_E_L_E_T_ = ''"
+cQry += " AND C8_FILIAL = '" + xFilial("SC8") + "'"
+cQry += " AND (C8_EMISSAO <= '" + DtoS(dDataFim) + "' OR C8_NUMPED <> '')"
+
+TcSqlExec(cQry)
+
+//Cria tabela no banco para backup da SCE
+cQry := " SELECT * INTO " + aDbf[6]
+cQry += " FROM " + RetSqlName("SCE") + " CE"
+cQry += " WHERE CE.D_E_L_E_T_ = ''"
+cQry += " AND CE.CE_FILIAL = '" + xFilial("SCE") + "'"
+
+If cBD == "ORACLE"
+	cQry += " AND CE.CE_NUMCOT||CE.CE_ITEMCOT||CE.CE_PRODUTO||CE.CE_FORNECE||CE.CE_LOJA IN"  
+	cQry += " 								(SELECT C8.C8_NUM||C8.C8_ITEM||C8.C8_PRODUTO||C8.C8_FORNECE||C8.C8_LOJA"
+Else
+	cQry += " AND CE.CE_NUMCOT+CE.CE_ITEMCOT+CE.CE_PRODUTO+CE.CE_FORNECE+CE.CE_LOJA IN"  
+	cQry += " 								(SELECT C8.C8_NUM+C8.C8_ITEM+C8.C8_PRODUTO+C8.C8_FORNECE+C8.C8_LOJA"
+Endif
+
+cQry += " 								FROM " + RetSqlName("SC8") + " C8"
+cQry += " 								WHERE C8.D_E_L_E_T_ = ''"
+cQry += " 								AND C8.C8_FILIAL = '" + xFilial("SC8") + "'"
+cQry += " 								AND (C8.C8_EMISSAO <= '" + DtoS(dDataFim) + "' OR C8.C8_NUMPED <> ''))"
+
+TcSqlExec(cQry)
+
+//Deleta os registro que foram realizados o backup SCE
+cQry := " DELETE FROM " + RetSqlName("SCE")
+cQry += " WHERE D_E_L_E_T_ = ''"
+cQry += " AND CE_FILIAL = '" + xFilial("SCE") + "'"
+
+If cBD == "ORACLE"
+	cQry += " AND CE_NUMCOT||CE_ITEMCOT||CE_PRODUTO||CE_FORNECE||CE_LOJA IN"  
+	cQry += " 								(SELECT C8_NUM||C8_ITEM||C8_PRODUTO||C8_FORNECE||C8_LOJA"
+Else
+	cQry += " AND CE_NUMCOT+CE_ITEMCOT+CE_PRODUTO+CE_FORNECE+CE_LOJA IN"  
+	cQry += " 								(SELECT C8_NUM+C8_ITEM+C8_PRODUTO+C8_FORNECE+C8_LOJA"
+Endif
+
+cQry += " 								FROM " + RetSqlName("SC8")
+cQry += " 								WHERE D_E_L_E_T_ = ''"
+cQry += " 								AND C8_FILIAL = '" + xFilial("SC8") + "'"
+cQry += " 								AND (C8_EMISSAO <= '" + DtoS(dDataFim) + "' OR C8_NUMPED <> ''))"
+
+TcSqlExec(cQry)
+
+//Deleta os registro que foram realizados o backup SC8	
+cQry := " DELETE FROM " + RetSqlName("SC8")
+cQry += " WHERE D_E_L_E_T_ = ''"
+cQry += " AND C8_FILIAL = '" + xFilial("SC8") + "'"
+cQry += " AND (C8_EMISSAO <= '" + DtoS(dDataFim) + "' OR C8_NUMPED <> '')"
+
+TcSqlExec(cQry)
+
+Return
+
+/*
+ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+±±ÚÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄ¿±±
+±±³Fun‡…o    ³ Fa570F1D1³ Autor ³ Cristina M. Ogura     ³ Data ³ 02.10.96 ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Descri‡…o ³ Grava no arquivo morto e deleta os registros do SF1/SD1	  ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Sintaxe   ³ Fa570F1D1(dDataFim,cDir,aDbf)                 			  ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Uso       ³ MATA570                                                    ³±±
+±±ÀÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ±±
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+*/
+
+Static Function Fa570F1D1(dDataFim,aDbf)
+
+Local cQry		:= ""
+Local cBD		:= AllTrim(Upper(TcGetDb()))
+
+//Cria tabela no banco para backup da SF1
+cQry := " SELECT * INTO " + aDbf[7]
+cQry += " FROM " + RetSqlName("SF1")
+cQry += " WHERE D_E_L_E_T_ = ''"
+cQry += " AND F1_FILIAL = '" + xFilial("SF1") + "'"
+cQry += " AND (F1_DTDIGIT <= '" + DtoS(dDataFim) + "')"
+
+TcSqlExec(cQry)
+
+//Cria tabela no banco para backup da SD1 
+cQry := " SELECT * INTO " + aDbf[8]
+cQry += " FROM " + RetSqlName("SD1") + " D1"
+cQry += " WHERE D1.D_E_L_E_T_ = ''"
+cQry += " AND D1.D1_IDENTB6 = ''
+cQry += " AND D1.D1_FILIAL = '" + xFilial("SD1") + "'"
+
+If cBD == "ORACLE"
+	cQry += " AND D1.D1_DOC||D1.D1_SERIE||D1.D1_FORNECE||D1.D1_LOJA IN"  
+	cQry += " 								(SELECT F1.F1_DOC||F1.F1_SERIE||F1.F1_FORNECE||F1.F1_LOJA"
+Else
+	cQry += " AND D1.D1_DOC+D1.D1_SERIE+D1.D1_FORNECE+D1.D1_LOJA IN"  
+	cQry += " 								(SELECT F1.F1_DOC+F1.F1_SERIE+F1.F1_FORNECE+F1.F1_LOJA"
+Endif
+
+cQry += " 								FROM " + RetSqlName("SF1") + " F1"
+cQry += " 								WHERE F1.D_E_L_E_T_ = ''"
+cQry += " 								AND F1.F1_FILIAL = '" + xFilial("SF1") + "'"
+cQry += " 								AND (F1.F1_DTDIGIT <= '" + DtoS(dDataFim) + "'))"
+
+TcSqlExec(cQry)
+
+//Deleta os registro que foram realizados o backup SD1
+cQry := " DELETE FROM " + RetSqlName("SD1")
+cQry += " WHERE D_E_L_E_T_ = ''"
+cQry += " AND D1_IDENTB6 = ''
+cQry += " AND D1_FILIAL = '" + xFilial("SD1") + "'"
+
+If cBD == "ORACLE"
+	cQry += " AND D1_DOC||D1_SERIE||D1_FORNECE||D1_LOJA IN"  
+	cQry += " 								(SELECT F1_DOC||F1_SERIE||F1_FORNECE||F1_LOJA"
+Else
+	cQry += " AND D1_DOC+D1_SERIE+D1_FORNECE+D1_LOJA IN"  
+	cQry += " 								(SELECT F1_DOC+F1_SERIE+F1_FORNECE+F1_LOJA"
+Endif
+
+cQry += " 								FROM " + RetSqlName("SF1")
+cQry += " 								WHERE D_E_L_E_T_ = ''"
+cQry += " 								AND F1_FILIAL = '" + xFilial("SF1") + "'"
+cQry += " 								AND (F1_DTDIGIT <= '" + DtoS(dDataFim) + "'))"
+
+TcSqlExec(cQry)
+
+//Deleta os registro que foram realizados o backup SF1	
+cQry := " DELETE FROM " + RetSqlName("SF1")
+cQry += " WHERE D_E_L_E_T_ = ''"
+cQry += " AND F1_FILIAL = '" + xFilial("SF1") + "'"
+cQry += " AND (F1_DTDIGIT <= '" + DtoS(dDataFim) + "')"
+
+TcSqlExec(cQry)
+
+/*
+ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+±±ÚÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄ¿±±
+±±³Fun‡…o    ³ Fa570Arq ³ Autor ³ Cristina M. Ogura     ³ Data ³ 02.10.96 ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Descri‡…o ³ Monta matriz com nomes dos arquivos						  ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Sintaxe   ³ Fa570Arq(aArq) 			                                  ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Uso       ³ MATA570                                                    ³±±
+±±ÀÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ±±
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+*/
+
+Static Function Fa570Arq(aArq)
+
+Local cDia	:= ""
+Local cMes	:= ""
+Local cDbf	:= ""
+Local nCont	:= 0
+
+cDia := StrZero(Day(dDataBase),2)
+cMes := StrZero(Month(dDataBase),2)
+
+For nCont := 1 to Len(aArq)
+	cDbf := SubStr(aArq[nCont],2,2) + SubStr(cNumEmp,1,2) + cDia + cMes
+	Aadd(aDbf,cDbf)
+Next nCont
+
+Return aDbf
+/*
+ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+±±ÚÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄ¿±±
+±±³Fun‡…o    ³ Fa570File³ Autor ³ Cristina M. Ogura     ³ Data ³ 02.10.96 ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Descri‡…o ³ Monta listbox com os nomes dos arquivos                    ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Sintaxe	 ³                                                            ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³ Uso      ³ MATA570                                                    ³±±
+±±ÀÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ±±
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+*/
+
+Static Function Fa570File(nItem)
+
+Local nOpca	:= 0
+Local cArq	:= aDbf[nItem]
+
+DEFINE MSDIALOG oDlg FROM  15,6 TO 90,223 TITLE OemToAnsi(STR0007) PIXEL		//"Limpeza Mensal"
+
+	@ -2, 2 TO 20, 106 OF oDlg  PIXEL
+
+	@ 07,05 SAY     STR0017                 SIZE 22, 07 OF oDlg PIXEL		//"Arquivo "
+	@ 06,33 MSGET   cArq      Picture "@X"    SIZE 70, 10 OF oDlg PIXEL
+
+	DEFINE SBUTTON FROM 24,51 TYPE 1 ENABLE OF oDlg ACTION (nOpca:=1,oDlg:End())
+	DEFINE SBUTTON FROM 24,79 TYPE 2 ENABLE OF oDlg ACTION oDlg:End()
+
+ACTIVATE MSDIALOG oDlg CENTERED
+
+If nOpca == 1
+	aDbf[nItem] := cArq
+EndIf
+
+Return Nil
+
+/*
+ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+±±ÚÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄ¿±±
+±±³Fun‡…o    ³ Fa570Teste ³ Autor ³ Cristina M. Ogura   ³ Data ³ 02.10.96 ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Descri‡…o ³ Limpeza de Arquivos do modulo de Compras                   ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Sintaxe	 ³ Fa570Teste(dDataFim,cDir)                                  ³±±
+±±ÃÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´±±
+±±³Uso       ³ MATA570                                                    ³±±
+±±ÀÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ±±
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+*/
+
+Static Function Fa570Teste(dDataFim)
+
+Local nCont		:= 0
+Local cVldTable	:= ""
+Local cBD		:= AllTrim(Upper(TcGetDb()))
+Local cMsgAviso	:= ""
+Local cExistTbl	:= GetNextAlias()
+Local lRet		:= .T.
+
+If Empty(dDataFim)
+	Help(" ",1,"CA280EMPTY")
+	lRet := .F.
+EndIf
+
+If lRet
+	For nCont := 1 To Len(aDbf)
+		If cBD == "ORACLE"
+			cVldTable := "SELECT * FROM ALL_TABLES WHERE TABLE_NAME = '" + aDbf[nCont] + "'"
+		Else
+			cVldTable := "SELECT * FROM DBO.SYSOBJECTS WHERE NAME = '" + aDbf[nCont] + "'"
+		Endif
+		
+		cVldTable := ChangeQuery(cVldTable)
+	
+		dbUseArea(.T.,"TOPCONN",TcGenQry(,,cVldTable),cExistTbl,.T.,.T.)
+		
+		DbSelectArea(cExistTbl)
+		If (cExistTbl)->(!EOF()) //Existe tabela 
+			lRet := MsgRetryCancel(STR0015 + aDbf[nCont] + STR0016,STR0007)		//"Arquivo "###" j  existe !"###"Limpeza Mensal"
+			If !lRet
+				If Select(cExistTbl) > 0
+					(cExistTbl)->(DbCloseArea())
+				Endif
+				Exit
+			Else //Exclui tabela
+				cVldTable := "DROP TABLE " + aDbf[nCont]
+				
+				TcSqlExec(cVldTable)
+			EndIf
+		Endif
+		
+		If Select(cExistTbl) > 0
+			(cExistTbl)->(DbCloseArea())
+		Endif
+	Next nCont
+Endif
+
+Return lRet

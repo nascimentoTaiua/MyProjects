@@ -1,0 +1,13 @@
+0001#STR0001#ALL#Relação de agendamentos
+0003#STR0003#ALL#Código de barras
+0005#STR0005#ALL#Cancelado Pelo Operador
+0007#STR0007#ALL#Dt.registo: 
+0008#STR0008#ALL#Ddd/telefone: 
+0010#STR0010#ALL#Contacto....: 
+0011#STR0011#ALL#Morada....: 
+0012#STR0012#ALL#Morada.....: 
+0013#STR0013#ALL#Concelho...: 
+0014#STR0014#ALL#Distrito.....: 
+0015#STR0015#ALL#Código postal.........: 
+0016#STR0016#ALL#Item estado col   estado ent   local coleta remetente            destinatario         origem                         destino                        dt.prev.col hr.prev.col  dt.prev.ent  hr.prev.ent       tipo de veiculo 
+0017#STR0017#ALL#                                                                                      Produto                        Embalagem          Qtd.vol.    Qtd.unit.   Peso Real    Peso Cubado  Vlr.mercadoria

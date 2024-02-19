@@ -1,0 +1,27 @@
+0001#STR0001#ALL#Emissão Do Pedido De Vendas - Televendas
+0002#STR0002#ALL#Este programa irá emitir o pedido de vendas criado no módulo
+0003#STR0003#ALL#Com ou sem permissão ou a emissão da factura.
+0005#STR0005#ALL#Código de barras
+0007#STR0007#ALL#A Seleccionar Registos...
+0008#STR0008#ALL#Cancelado Pelo Operador
+0010#STR0010#ALL#Local De Entrega
+0011#STR0011#ALL#Morada De Cobrança
+0013#STR0013#ALL#Morada
+0014#STR0014#ALL#Inscr./Rg.
+0015#STR0015#ALL#Nif
+0018#STR0018#ALL#Emissão: 
+0019#STR0019#ALL#Serviço: 
+0020#STR0020#ALL#Início / Fim: 
+0021#STR0021#ALL#Despesas: 
+0022#STR0022#ALL#Contacto: 
+0023#STR0023#ALL#Desconto: 
+0024#STR0024#ALL#Vendedor: 
+0025#STR0025#ALL#Cond. pgt.: 
+0026#STR0026#ALL#Operador: 
+0027#STR0027#ALL#Mapa carreg.: 
+0028#STR0028#ALL#Carrega
+0029#STR0029#ALL#Não Carrega
+0030#STR0030#ALL#Forma pgt.: 
+0031#STR0031#ALL#Indemnização: 
+0033#STR0033#ALL#Validade: 
+0040#STR0040#ALL#Até O Atendimento

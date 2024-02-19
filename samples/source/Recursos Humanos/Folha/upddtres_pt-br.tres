@@ -1,0 +1,7 @@
+0001#STR0001#ALL#Essa rotina atualiza os registros das tabelas SRR e SRD de verbas informadas no cálculo de Rescisão que podem estar com o campo data de pagamento divergente do cabeçalho da rescisão, tabela SRG.
+0002#STR0002#ALL#ATENÇÃO!
+0003#STR0003#ALL#Realize o backup da base antes de executar esse processo.
+0004#STR0004#ALL#Essa rotina atualiza registros nas tabelas SRR - Itens de Férias e Rescisão e SRD - Histórico de Movimentos.
+0005#STR0005#ALL#Executar Rotina
+0006#STR0006#ALL#Cancelar
+0007#STR0007#ALL#Atualização data de pagamento

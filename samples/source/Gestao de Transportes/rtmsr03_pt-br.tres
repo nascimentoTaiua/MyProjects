@@ -1,0 +1,23 @@
+0001#STR0001#ALL#Romaneio de Coleta
+0002#STR0002#ALL#Este programa ira listar o Romaneio de Coleta
+0003#STR0003#ALL#Zebrado
+0004#STR0004#ALL#Administracao
+0005#STR0005#ALL#Fil.Orig. Documento   Solicitante                               Endereco                                  Bairro                            Vols.           Peso Chegada        Hora Chg  Saida          Hora Sai
+0006#STR0006#ALL#Totais -> 
+0007#STR0007#ALL#Pedidos : 
+0008#STR0008#ALL#Peso : 
+0009#STR0009#ALL#Volume : 
+0010#STR0010#ALL#Observacao : 
+0011#STR0011#ALL# Assinatura Motorista 
+0012#STR0012#ALL# Assinatura Ajudante  
+0013#STR0013#ALL#Viagem : 
+0014#STR0014#ALL#Rota   : 
+0015#STR0015#ALL#Veiculo   
+0016#STR0016#ALL#Placa : 
+0017#STR0017#ALL#   Capacidade : 
+0018#STR0018#ALL#Tipo Veic.: 
+0019#STR0019#ALL#KM Saida : 
+0020#STR0020#ALL# KM Chegada : 
+0021#STR0021#ALL#Motorista 
+0022#STR0022#ALL#Ajudante  
+0023#STR0023#ALL#Data

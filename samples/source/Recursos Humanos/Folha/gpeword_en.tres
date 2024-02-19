@@ -1,0 +1,419 @@
+0001#STR0001#ALL#Integration with MS-Word
+0002#STR0002#ALL#Print of Word Documents. They will be printed according to the
+0003#STR0003#ALL#Parameters Selection.
+0004#STR0004#ALL#Print_Variables
+0005#STR0005#ALL#Print_Document
+0006#STR0006#ALL#Documents Template(*.DOT)  |*.DOT|Documents Template(*.DOTX) |*.DOTX|
+0007#STR0007#ALL#Select the file *.DOT or *.DOTX
+0008#STR0008#ALL#DOT
+0009#STR0009#ALL#Selected File
+0010#STR0010#ALL#OK
+0011#STR0011#ALL#Invalid File 
+0012#STR0012#ALL#Selection canceled! You canceled file selection.
+0013#STR0013#ALL#Branch
+0014#STR0014#ALL#Registrat.
+0015#STR0015#ALL#Cost Center
+0016#STR0016#ALL#Cost Center Description
+0017#STR0017#ALL#Employee큦 Name
+0018#STR0018#ALL#CIC/CPF Number
+0019#STR0019#ALL#PIS Number
+0020#STR0020#ALL#ID Number
+0021#STR0021#ALL#CTPS Number
+0022#STR0022#ALL#CTPS Serial Number
+0023#STR0023#ALL#State that issued the CTPS
+0024#STR0024#ALL#Driving License Number (CNH)
+0025#STR0025#ALL#Reservist Card Number
+0026#STR0026#ALL#Voting Card Number
+0027#STR0027#ALL#Voting Card Zone/Section Number
+0028#STR0028#ALL#Address
+0029#STR0029#ALL#Address complement
+0030#STR0030#ALL#District
+0031#STR0031#ALL#City
+0032#STR0032#ALL#State acronym  
+0033#STR0033#ALL#State description  
+0034#STR0034#ALL#ZIP code number
+0035#STR0035#ALL#Telephone number
+0036#STR0036#ALL#Father큦 name
+0037#STR0037#ALL#Mother큦 name
+0038#STR0038#ALL#Sex
+0039#STR0039#ALL#Sex Description
+0040#STR0040#ALL#Marital Status
+0041#STR0041#ALL#Birth Place Code
+0042#STR0042#ALL#Birth Place Description
+0043#STR0043#ALL#Nationality Code
+0044#STR0044#ALL#Nationality Description
+0045#STR0045#ALL#Year of Arrival in the Country
+0046#STR0046#ALL#Number of Income Tax Dependants
+0047#STR0047#ALL#Number of Family Salary Dependants
+0047#STR0047#CHI#Allowance Amount of Family Salary
+0048#STR0048#ALL#Birth date
+0049#STR0049#ALL#Admission Date
+0050#STR0050#ALL#Admission Day
+0051#STR0051#ALL#Admission Month
+0052#STR0052#ALL#Admission Year
+0053#STR0053#ALL#FGTS Option Date
+0054#STR0054#ALL#Dismissal Date
+0055#STR0055#ALL#Trial Period Date
+0056#STR0056#ALL#Trial Period Day
+0057#STR0057#ALL#Trial Period Month
+0058#STR0058#ALL#Trial Period Year
+0059#STR0059#ALL#Trial Period Days
+0060#STR0060#ALL#Medical Examination Due Date
+0061#STR0061#ALL#Bank/Branch for Salary Deposit
+0062#STR0062#ALL#Description of the Bank for Salary Deposit
+0063#STR0063#ALL#Description of the Agency for Salary Deposit
+0064#STR0064#ALL#Account Number for Salary Deposit
+0065#STR0065#ALL#Bank/Branch for FGTS Deposit
+0066#STR0066#ALL#Description of the Bank for FGTS Deposit
+0067#STR0067#ALL#Description of the Branch for FGTS Deposit
+0068#STR0068#ALL#Account Number for FGTS Deposit
+0069#STR0069#ALL#Payroll Status
+0070#STR0070#ALL#Description of the Payroll Status
+0071#STR0071#ALL#Monthly Hours
+0072#STR0072#ALL#Weekly Hours
+0073#STR0073#ALL#Registration Number
+0074#STR0074#ALL#Code of the Work Shift
+0075#STR0075#ALL#Description of the Work Shift
+0076#STR0076#ALL#Role code       
+0077#STR0077#ALL#Role Description   
+0078#STR0078#ALL#CBO Number
+0079#STR0079#ALL#Code for Payment of Union Dues
+0080#STR0080#ALL#Labor Union Code
+0081#STR0081#ALL#Labor Union Description
+0082#STR0082#ALL#Health Insurance Code
+0083#STR0083#ALL#Number of Dependants for Health Insurance
+0083#STR0083#CHI#Amount of Familiar Duty for Medical Care
+0084#STR0084#ALL#Code of Differential for Service Period
+0085#STR0085#ALL#Basic Basket Code
+0086#STR0086#ALL#Meal Ticket Code
+0087#STR0087#ALL#Life Insurance Code
+0088#STR0088#ALL#Percentage of Alimony
+0089#STR0089#ALL#Percentage of Advance
+0090#STR0090#ALL#Employee큦 Category
+0091#STR0091#ALL#Description of the Employee큦 Category
+0092#STR0092#ALL#Description of the Payment Type (Month/Hour)
+0093#STR0093#ALL#Payment Type
+0094#STR0094#ALL#Description of Payment Type
+0095#STR0095#ALL#Salary
+0096#STR0096#ALL#Labor Agreement
+0097#STR0097#ALL#INSS Base Other Companies
+0098#STR0098#ALL#INSS Other Companies
+0099#STR0099#ALL#Hours of Risk
+0100#STR0100#ALL#Hours of Minimum Insalubrity
+0101#STR0101#ALL#Hours of Medium Insalubrity
+0102#STR0102#ALL#Hours of Maximum Insalubrity
+0103#STR0103#ALL#Admission Type
+0104#STR0104#ALL#Description of Admission Type
+0105#STR0105#ALL#FGTS Absence Code
+0106#STR0106#ALL#Description of FGTS Absence
+0107#STR0107#ALL#Code of RAIS Employment Relationship
+0108#STR0108#ALL#Description of RIAS Employment Relationship
+0109#STR0109#ALL#RAIS Instruction Code
+0110#STR0110#ALL#Description of RAIS Instruction Code
+0111#STR0111#ALL#RAIS Termination Code
+0112#STR0112#ALL#Badge Number
+0113#STR0113#ALL#Code of Annotation Rule
+0114#STR0114#ALL#Employee큦 Picture
+0115#STR0115#ALL#Registration Number
+0116#STR0116#ALL#File Card Number
+0117#STR0117#ALL#Code of Work Contract Type
+0118#STR0118#ALL#Description of Work Contract Type
+0119#STR0119#ALL#Employee큦 Nickname
+0120#STR0120#ALL#Employee큦 E-mail
+0121#STR0121#ALL#Text 01 for Free Typing
+0122#STR0122#ALL#Text 02 for Free Typing
+0123#STR0123#ALL#Text 03 for Free Typing
+0124#STR0124#ALL#Text 04 for Free Typing
+0125#STR0125#ALL#Salary written in full
+0126#STR0126#ALL#System Base Date
+0127#STR0127#ALL#System Base Date Day
+0128#STR0128#ALL#System Base Date Month
+0129#STR0129#ALL#System Base Date Year
+0130#STR0130#ALL#Company Name
+0131#STR0131#ALL#Company Address
+0132#STR0132#ALL#Company City
+0133#STR0133#ALL#Company Zip Code
+0134#STR0134#ALL#Company CGC
+0135#STR0135#ALL#Company State Registration Number
+0136#STR0136#ALL#Company Telephone/Fax
+0137#STR0137#ALL#Company District
+0138#STR0138#ALL#Description of RAIS Termination Type
+0139#STR0139#ALL#Dismissal Day
+0140#STR0140#ALL#Dismissal Month
+0141#STR0141#ALL#Dismissal Year
+0142#STR0142#ALL#Variable
+0143#STR0143#ALL#Variable Description
+0144#STR0144#ALL#GPE_Word Variables Report.
+0145#STR0145#ALL#It will be printed according to the parameters required by
+0146#STR0146#ALL#the user.
+0147#STR0147#ALL#Z. Form
+0148#STR0148#ALL#Management
+0149#STR0149#ALL#Variables                      Descript.
+0150#STR0150#ALL#Dependant큦 name
+0150#STR0150#CHI#Family Duty Name
+0151#STR0151#ALL#Dependant큦 Birth Date
+0151#STR0151#CHI#Birth date of Family Salary Duty
+0152#STR0152#ALL#Agency that has Issued the ID
+0153#STR0153#ALL#Dependence Relationship
+0154#STR0154#ALL#Income Tax Dependant 
+0155#STR0155#ALL#Written month admission 
+0156#STR0156#ALL#Attorney-at-fact's name 
+0157#STR0157#ALL#Company Activity 
+0158#STR0158#ALL#Book Number where registered
+0159#STR0159#ALL#Book Sheet Number where Registered
+0160#STR0160#ALL#Document delivery date
+0161#STR0161#ALL#Document posting date
+0162#STR0162#ALL#Selecting Files.....
+0163#STR0163#ALL#Date of Dependent큦 Birth acc. Income Tax
+0164#STR0164#ALL#Place of Birth
+0165#STR0165#ALL#Number of Birth Certificate
+0166#STR0166#ALL#City of Birth
+0167#STR0167#ALL#Word integration works only with Windows.
+0168#STR0168#ALL#Attention!
+0169#STR0169#ALL#First Name
+0170#STR0170#ALL#Second Name
+0171#STR0171#ALL#First Family Name
+0172#STR0172#ALL#Second Family Name
+0173#STR0173#ALL#Process Code
+0174#STR0174#ALL#Code of Payment Place
+0175#STR0175#ALL#IMSS Salary Type
+0176#STR0176#ALL#IMSS Employee Type
+0177#STR0177#ALL#IMSS Work Shift Type
+0178#STR0178#ALL#Readmission Date
+0179#STR0179#ALL#IMSS Posting Date
+0180#STR0180#ALL#Patronal Registration Code
+0181#STR0181#ALL#Department Code
+0182#STR0182#ALL#Station Code
+0183#STR0183#ALL#CURP
+0184#STR0184#ALL#Infonavit Type
+0185#STR0185#ALL#Infonavit Value
+0186#STR0186#ALL#Infonavit Credit Number
+0187#STR0187#ALL#Complete address of the place where Word file is exceeded the limit of 75 characters!
+0188#STR0188#ALL#Day Begin. VacationAquis.Per.
+0189#STR0189#ALL#Month Begin. VacationAquis.Per.
+0190#STR0190#ALL#Year Begin. VacationAquis.Per.
+0191#STR0191#ALL#Day End VacationAquis.Per.
+0192#STR0192#ALL#Month End VacationAquis.Per.
+0193#STR0193#ALL#Year End VacationAquis.Per.
+0194#STR0194#ALL#Marital status description
+0195#STR0195#ALL#No. Identity card
+0196#STR0196#ALL#Issue date of identity card
+0197#STR0197#ALL#Description of the first task found
+0198#STR0198#ALL#Classes per week of the first task
+0199#STR0199#ALL#Amount of the first task
+0200#STR0200#ALL#Unit value of the first task
+0201#STR0201#ALL#Total value of the first task
+0202#STR0202#ALL#Description of the second task
+0203#STR0203#ALL#Classes per week of the second task
+0204#STR0204#ALL#Amount of the second task
+0205#STR0205#ALL#Unit value of the second task
+0206#STR0206#ALL#Total value of the second task
+0207#STR0207#ALL#Employer Number for the CCSS
+0208#STR0208#ALL#Policy Number for MTSS
+0209#STR0209#ALL#Branch Nummber for CCSS
+0210#STR0210#ALL#MTSS Occupation Code
+0211#STR0211#ALL#CCSS Occupation Code
+0212#STR0212#ALL#INS Occupation Code
+0213#STR0213#ALL#MTSS Occupation Code Description
+0214#STR0214#ALL#CCSS Occupation Code Description
+0215#STR0215#ALL#INS Occupation Code Description
+0216#STR0216#ALL#Payment Location Description
+0217#STR0217#ALL#Work Shift
+0218#STR0218#ALL#Hours per Day
+0219#STR0219#ALL#District where the worker lives
+0220#STR0220#ALL#District Description
+0221#STR0221#ALL#Neighborhood where worker lives
+0222#STR0222#ALL#Description neighborhood where worker lives
+0223#STR0223#ALL#State where worker lives
+0224#STR0225#ALL#Dismissal type according to the company
+0225#STR0226#ALL#Identification number type
+0226#STR0227#ALL#Social Security Number
+0227#STR0228#ALL#Working Day Description
+0228#STR0229#ALL#Salary Change Date
+0229#STR0230#ALL#Foreigner living in the country (1=Yes, 2=No)
+0230#STR0231#ALL#Currency Type for the salary in contract
+0231#STR0232#ALL#Solidary Association
+0232#STR0233#ALL#Solidary Association Description
+0233#STR0234#ALL#Insurance Class
+0234#STR0235#ALL#Insured Number
+0235#STR0236#ALL#Salary gross up type
+0236#STR0237#ALL#Previous Salary
+0237#STR0238#ALL#Attention
+0238#STR0239#ALL#Run the compatibility option related to 'Availability of the fields RA_HABILIT and RA_COMPLEM for Ecuador'. For more information, check the respective Technical Newsletter.
+0239#STR0240#ALL#OK
+0240#STR0241#ALL#ID issuing body State
+0241#STR0242#ALL#ID card issue date
+0242#STR0243#ALL#Work Card Issue Date
+0243#STR0244#ALL#Employee Color
+0244#STR0245#ALL#2nd Experience Date
+0245#STR0246#ALL#Day of 2nd Experience Date
+0246#STR0247#ALL#Month of 2nd Experience Date
+0247#STR0248#ALL#Year of 2nd Experience Date
+0248#STR0249#ALL#Days of 2nd Experience
+0249#STR0250#ALL#Enter 'x' if Nationality is Brazilian
+0250#STR0251#ALL#Enter 'x' if Nationality is Foreign
+0251#STR0252#ALL#Enter 'x' if Nationality is Naturalized Brazilian
+0252#STR0253#ALL#Enter 'x' if Nationality is Brazilian Born Abroad
+0253#STR0254#ALL#Marital status according to NIS/PIS
+0254#STR0255#ALL#Father name, enter IGNORED if blank
+0255#STR0256#ALL#Mother name, enter IGNORED if blank
+0256#STR0257#ALL#Id Card Complement
+0257#STR0258#ALL#Civil Certificate Type
+0258#STR0259#ALL#Issue Date of Civil Certificate
+0259#STR0260#ALL#Term/Registration of Civil Certificate
+0260#STR0261#ALL#Book of Civil Certificate
+0261#STR0262#ALL#Page of Civil Certificate
+0262#STR0263#ALL#Notary of Civil Certificate
+0263#STR0264#ALL#FU of Civil Certificate
+0264#STR0265#ALL#City of Civil Certificate
+0265#STR0266#ALL#Passport Number
+0266#STR0267#ALL#Issuing agency of Passport
+0267#STR0268#ALL#FU of Passport
+0268#STR0269#ALL#Issue Date of Passport
+0269#STR0270#ALL#Expiry Date of Passport
+0270#STR0271#ALL#Issuing Country of Passport
+0271#STR0272#ALL#Naturalization Number
+0272#STR0273#ALL#Naturalization Date
+0273#STR0274#ALL#RIC Number
+0274#STR0275#ALL#Issuing Agency of RIC
+0275#STR0276#ALL#FU of RIC
+0276#STR0277#ALL#City of RIC
+0277#STR0278#ALL#Issue date of RIC
+0278#STR0279#ALL#Enter 'x' if Address is Commercial
+0279#STR0280#ALL#Enter 'x' if Address is Residential
+0280#STR0281#ALL#Address number
+0281#STR0282#ALL#P.O. Box
+0282#STR0283#ALL#Zip Code of Mailbox
+0283#STR0284#ALL#Telephone Area Code
+0284#STR0285#ALL#Area Code of Cell Phone
+0285#STR0286#ALL#Cell Phone Number
+0286#STR0287#ALL#Enter 'x' if Company is by CNPJ
+0287#STR0288#ALL#Enter 'x' if Company is by CEI
+0288#STR0289#ALL#Issue date of RIC
+0289#STR0290#ALL#Electoral Station
+0290#STR0291#ALL#Education Level according to NIS/PIS
+0291#STR0292#ALL#Origin Country for DCN/DMN
+0292#STR0294#ALL#DOTX
+0293#STR0295#ALL#Illiterate
+0294#STR0296#ALL#Up to incomplete 4th grade of elementary school
+0295#STR0297#ALL#Up to complete 4th grade of elementary school
+0296#STR0298#ALL#From 5th to 8th incomplete grade of elementary school
+0297#STR0299#ALL#Complete elementary school
+0298#STR0300#ALL#Incomplete elementary school
+0299#STR0301#ALL#Complete high school
+0300#STR0302#ALL#Incomplete higher education
+0301#STR0303#ALL#Complete higher education
+0302#STR0304#ALL#Master Degree
+0303#STR0305#ALL#Doctorate
+0304#STR0306#ALL#Specialization
+0305#STR0307#ALL#Post Doctorate
+0306#STR0308#ALL#NIS/PIS Birth State
+0307#STR0309#ALL#NIS/PIS Birth City
+0308#STR0310#ALL#Enter 'x' for DMN type - Change
+0309#STR0311#ALL#Enter 'x' for DMN type - Retroactive File
+0310#STR0312#ALL#Enter 'x' for DMN type - Cancellation
+0311#STR0313#ALL#Enter 'x' for DMN type - Reactivation
+0312#STR0314#ALL#Enter 'x' for DMN type - File Retroaction
+0313#STR0315#ALL#Enter 'x' if gender is Male
+0314#STR0316#ALL#Enter 'x' if gender is Female
+0315#STR0317#ALL#Birth Certificate
+0316#STR0318#ALL#Marriage Certificate
+0317#STR0319#ALL#Indigenous Birth Certificate
+0318#STR0320#ALL#Death Certificate
+0319#STR0321#ALL#Enter Type of Change of PIS
+0320#STR0322#ALL#None
+0321#STR0323#ALL#Change
+0322#STR0324#ALL#Retroactive File
+0323#STR0325#ALL#Cancellation
+0324#STR0326#ALL#Reactivation
+0325#STR0327#ALL#Registration Retroaction
+0326#STR0328#ALL#Address of Payment Location
+0327#STR0329#ALL#District of Payment Location
+0328#STR0330#ALL#City of Payment Location
+0329#STR0331#ALL#Payment Location State
+0330#STR0332#ALL#City of Payment Location
+0331#STR0333#ALL#Zip Code of Payment Location
+0332#STR0334#ALL#Function Requirements
+0333#STR0335#ALL#Age
+0334#STR0336#ALL#Usefulness Code
+0335#STR0337#ALL#Asset Code
+0336#STR0338#ALL#Civil Registry
+0337#STR0339#ALL#Type of Reg. Book
+0338#STR0340#ALL#Exceptional.Reg
+0339#STR0341#ALL#Document Exclusion
+0340#STR0342#ALL#Enter 'x' for DMN type - Reg. Excellent performance
+0341#STR0343#ALL#Enter 'x' for DMN type - Document Exclusion
+0342#STR0344#ALL#Enter 'x' if Company is by CPF
+0343#STR0345#ALL#End Date
+0344#STR0346#ALL#Start Date
+0345#STR0347#ALL#Loading route
+0346#STR0348#ALL#Gender
+0347#STR0349#ALL#Cargo Type
+0348#STR0350#ALL#Employee AFP
+0349#STR0351#ALL#Affects the week
+0350#STR0352#ALL#Affects Disability Insurance
+0351#STR0353#ALL#Employee Deposit Bank
+0352#STR0354#ALL#Special Field for Bank
+0353#STR0355#ALL#Work Center
+0354#STR0356#ALL#Value Class
+0355#STR0357#ALL#Department Code
+0356#STR0358#ALL#Meal voucher criterion
+0357#STR0359#ALL#Transportation criterion
+0358#STR0360#ALL#Department Descr.
+0359#STR0361#ALL#Former Vacations Date
+0360#STR0362#ALL#Salary increase Dt.
+0361#STR0363#ALL#Undefined Contract Date
+0362#STR0364#ALL#Start Contract Date
+0363#STR0365#ALL#Incurs Unemployment Insurance
+0364#STR0366#ALL#It indicates if Retired
+0365#STR0367#ALL#AFP Institution
+0366#STR0368#ALL#Health Institution
+0367#STR0369#ALL#Health institution
+0368#STR0370#ALL#Accounting Item
+0369#STR0371#ALL#Currency of plan agreed
+0370#STR0372#ALL#Meal voucher Value
+0371#STR0373#ALL#Transport
+0372#STR0374#ALL#Payment No. Increase
+0373#STR0375#ALL#Isapre Contract No.
+0374#STR0376#ALL#No. Income Payment
+0375#STR0377#ALL#Increase Period
+0376#STR0378#ALL#Accorded Plan
+0377#STR0379#ALL#State
+0378#STR0380#ALL#Work regime
+0379#STR0381#ALL#Advance Type
+0380#STR0382#ALL#Deposit Account Type
+0381#STR0383#ALL#Advance Type
+0382#STR0384#ALL#Deposit Account Type
+0383#STR0385#ALL#Settlement Type
+0384#STR0386#ALL#Type Family Allowance
+0385#STR0387#ALL#Advance value
+0386#STR0388#ALL#Accorded plan value
+0387#STR0389#ALL#Valor Plano combinado em UF
+0388#STR0390#ALL#Description of activities of the position
+0389#STR0391#ALL#No dependent family salary information was found in SRB.
+0390#STR0392#ALL#No dependent family income tax information was found in SRB.
+0391#STR0393#ALL#Field Dependent뭩 Name is blank.
+0392#STR0394#ALL#User not allowed to access the branch
+0393#STR0395#ALL#Unable to load company data.
+0394#STR0396#ALL#Registrations processed successfully.
+0395#STR0397#ALL#Integration log
+0396#STR0398#ALL#Parameterization used:
+0397#STR0399#ALL#From branch ?
+0398#STR0400#ALL#To branch ?
+0399#STR0401#ALL#From registration ?
+0400#STR0402#ALL#To registration ?
+0401#STR0403#ALL#From Cost Center ?
+0402#STR0404#ALL#To Cost Center ?
+0403#STR0405#ALL#From name ?
+0404#STR0406#ALL#To name ?
+0405#STR0407#ALL#From shift ?
+0406#STR0408#ALL#To shift ?
+0407#STR0409#ALL#From Function Code ? 
+0408#STR0410#ALL#To Function Code ?
+0409#STR0411#ALL#From Union ?
+0410#STR0412#ALL#To Union ?
+0411#STR0413#ALL#From Admission ?
+0412#STR0414#ALL#To Admission ?
+0413#STR0415#ALL#Status?
+0414#STR0416#ALL#Category?
+0415#STR0417#ALL#Processing Log

@@ -1,0 +1,50 @@
+0001#STR0001#ALL#Este programa emitira la Ficha del Conductor. 
+0002#STR0002#ALL#Ficha    Conductor
+0003#STR0003#ALL#A Rayas
+0004#STR0004#ALL#Administracion
+0005#STR0005#ALL#Imprimiendo Ficha del Conductor
+0006#STR0006#ALL#Consultar
+0007#STR0007#ALL#Visualiza
+0008#STR0008#ALL#Imprimir
+0009#STR0009#ALL#Ficha del Conductor
+0010#STR0010#ALL#Imprimiendo Ficha del Conductor...
+0011#STR0011#ALL#Seleccionando Registros..
+0012#STR0012#ALL#|Vehiculo Placa              Fab/Mod     Modelo                 Chasis              Capac.Carga Cubicac. Bloq.                    |
+0013#STR0013#ALL#|Vehiculo Nombre                         Direccion                                  CGC/CPF              Ciudad          CEP      |
+0014#STR0014#ALL#|         Telefono                       Barrio                                     INSS                 UF              Sucursal |
+0015#STR0015#ALL#|Conductor...: 
+0016#STR0016#ALL#Sucursal....: 
+0017#STR0017#ALL#|Sobrenombre.: 
+0018#STR0018#ALL#Fecha Nasc..: 
+0019#STR0019#ALL#|Direccion...: 
+0020#STR0020#ALL#|Ciudad......: 
+0021#STR0021#ALL#Barrio......: 
+0022#STR0022#ALL#|Estado......: 
+0023#STR0023#ALL#Telefono : 
+0024#STR0024#ALL#Recados.....: 
+0025#STR0025#ALL#|Hablar Con..: 
+0026#STR0026#ALL#|No.Seguro...: 
+0027#STR0027#ALL#Est.Civil...: 
+0028#STR0028#ALL#|Padre.......: 
+0029#STR0029#ALL#Altura.....:  
+0030#STR0030#ALL#|Madre.......: 
+0031#STR0031#ALL#Peso.......: 
+0032#STR0032#ALL#|Cicatrices..: 
+0033#STR0033#ALL#|Color de Piel:
+0034#STR0034#ALL#|Color de Barba
+0035#STR0035#ALL#|Color de Pelo 
+0036#STR0036#ALL#Bloqueado..: 
+0037#STR0037#ALL#|Color de Ojos 
+0038#STR0038#ALL#Venc CNH...: 
+0039#STR0039#ALL#Exped.CNH: 
+0040#STR0040#ALL#|No.Reg.CNH..: 
+0041#STR0041#ALL#|Obs.........: 
+0042#STR0042#ALL#Selecionando Conductores...
+0043#STR0043#ALL#V E H I C U L O S
+0044#STR0044#ALL#Marca/Color
+0045#STR0045#ALL#P R O P I E T A R I O S
+0046#STR0046#ALL#C O N D U C T O R
+0047#STR0047#ALL#CP
+0048#STR0048#ALL#CPF
+0049#STR0049#ALL#DI
+0050#STR0050#ALL#LC

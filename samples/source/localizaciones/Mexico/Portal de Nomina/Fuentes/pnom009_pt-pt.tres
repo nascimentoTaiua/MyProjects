@@ -1,0 +1,84 @@
+0001#STR0001#MEX#Control del Supervisor
+0002#STR0002#MEX#No hay empleados asignados al supervisor con matricula :
+0003#STR0003#MEX#Prestamos por Autorizar
+0004#STR0004#MEX#Vacaciones por Autorizar
+0005#STR0005#MEX#Datos Personales
+0006#STR0006#MEX#Historia Laboral
+0007#STR0007#MEX#Historial de Prestamos 
+0008#STR0008#MEX#Historial de Vacaciones 
+0009#STR0009#MEX#Historial de Ausencias 
+0010#STR0010#MEX#Salir
+0011#STR0011#MEX#Rechazar Prestamo
+0012#STR0012#MEX#Rechazar
+0013#STR0013#MEX#No hay Solicitudes de Prestamos pendientes...
+0014#STR0014#MEX#Autorización de Préstamos
+0017#STR0017#MEX#Invierte Selección
+0018#STR0018#MEX#Rechazar Vacaciones
+0019#STR0019#MEX#Rechazar
+0020#STR0020#MEX#No hay Solicitudes de Vacaciones pendientes...
+0021#STR0021#MEX#Autorización de Vacaciones
+0022#STR0022#MEX#No encontre datos para la matricula : 
+0023#STR0023#MEX#No hay datos configurados para visualizar desde la Terminal del Empleado, verifique
+0024#STR0024#MEX#Fch Motivo
+0026#STR0026#MEX#Sal Diario
+0027#STR0027#MEX#Sal Dia Int
+0028#STR0028#MEX#Sal Mensual
+0029#STR0029#MEX#Loc Pago
+0032#STR0032#MEX#Función
+0034#STR0034#MEX#No hay historia laboral para esta empleado
+0035#STR0035#MEX#Historia Laboral de  
+0038#STR0038#MEX#No hay prestamos activos de ningun empleado
+0039#STR0039#MEX#Consulta de Prestamos 
+0040#STR0040#MEX#Concepto
+0043#STR0043#MEX#Días Derecho 
+0044#STR0044#MEX#Días Disfrutados
+0045#STR0045#MEX#Días Programados
+0046#STR0046#MEX#Días Pagados
+0048#STR0048#MEX#Consulta de Vacaciones de 
+0051#STR0051#MEX#No hay ausencias para el empleado :
+0052#STR0052#MEX#Consulta de Ausencias de 
+0053#STR0053#MEX#Es necesario el correo electronico del supervisor para poder autorizar 
+0054#STR0054#MEX#Es necesario el correo electronico del Administrador de Nominas para poder autorizar 
+0055#STR0055#MEX#¿Estas Seguro de Autorizar?
+0056#STR0056#MEX#Autorizacion de Prestamos
+0057#STR0057#MEX#Se autorizan los prestamos al siguiente personal:
+0058#STR0058#MEX#Empleado : 
+0059#STR0059#MEX#/   Concepto: 
+0060#STR0060#MEX#/   Importe $ 
+0061#STR0061#MEX#Autorizado por : 
+0062#STR0062#MEX#Verifique si hay algun problema de conexión, no se logro enviar el correo al administrador de Nomina y no se logro autorizar 
+0063#STR0063#MEX#Envío de Autorización  con éxito 
+0064#STR0064#MEX#Autorización Realizada con Exito 
+0065#STR0065#MEX#Debe seleccionar al menos una solicitud para poder autorizar 
+0066#STR0066#MEX#¿Estas Seguro de cancelar las solicitudes?
+0067#STR0067#MEX#Describa el Motivo de Rechazo
+0068#STR0068#MEX#La descripcón del motivo es obligatoria 
+0069#STR0069#MEX#Debe seleccionar al menos una solicitud para poder Cancelar 
+0070#STR0070#MEX#Es necesario el correo electronico del supervisor para poder autorizar 
+0071#STR0071#MEX#Es necesario el correo electronico del Administrador de Nominas para poder autorizar 
+0072#STR0072#MEX#¿Estas Seguro de Autorizar?
+0073#STR0073#MEX#Autorizacion de Vacaciones
+0074#STR0074#MEX#Se autorizan las vacaciones al siguiente personal:
+0075#STR0075#MEX#Empleado : 
+0076#STR0076#MEX#/   Concepto: 
+0077#STR0077#MEX#/   Fecha Fin : 
+0078#STR0078#MEX#Autorizado por : 
+0079#STR0079#MEX#Verifique si hay algun problema de conexión, no se logro enviar el correo al administrador de Nomina y no se logro autorizar 
+0080#STR0080#MEX#Envío de Autorización  con éxito  
+0081#STR0081#MEX#Autorización Realizada con Exito 
+0082#STR0082#MEX#Debe seleccionar al menos una solicitud para poder autorizar 
+0083#STR0083#MEX#¿Estas Seguro de cancelar las solicitudes?
+0084#STR0084#MEX#Describa el Motivo de Rechazo
+0085#STR0085#MEX#La descripcón del motivo es obligatoria 
+0086#STR0086#MEX#Debe seleccionar al menos una solicitud para poder Cancelar 
+0088#STR0088#MEX#B-Bajas
+0089#STR0089#MEX#M-Modificacion
+0090#STR0090#MEX#L-Localidad de Pago
+0091#STR0091#MEX#C-Centros de costo
+0093#STR0093#MEX#F-Funciones
+0095#STR0095#MEX#Seleccione los Tipos de Movimiento
+0096#STR0096#MEX#Algun concepto seleccionado no existe 
+0097#STR0097#MEX#Este campo no puede estar vacio
+0098#STR0098#MEX#No existen datos a consultar
+0100#STR0100#MEX#Concepto
+0102#STR0102#MEX#Datos Personales

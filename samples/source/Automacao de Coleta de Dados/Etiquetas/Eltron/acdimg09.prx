@@ -1,0 +1,36 @@
+/*
+Padrao Eltron
+ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+±±ÉÍÍÍÍÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍ»±±
+±±ºPrograma  ³IMG09     ºAutor  ³Anderson Rodrigues  º Data ³  08/11/02   º±±
+±±ÌÍÍÍÍÍÍÍÍÍÍØÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍ¹±±
+±±ºDescricao ³Ponto de entrada referente a imagem de identificacao das    º±±
+±±º          ³Transacoes da Producao                                      º±±
+±±ÌÍÍÍÍÍÍÍÍÍÍØÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹±±
+±±ºUso       ³AP6                                                         º±±
+±±ÈÍÍÍÍÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼±±
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+*/
+User Function Img09  // imagem da Transacao da Producao
+Local nCopias := Val(paramixb[1])
+Local cCodigo := Alltrim(CBI->CBI_CODIGO)
+
+MSCBLOADGRF("SIGA.PCX")
+MSCBBEGIN(nCopias,6)
+MSCBGRAFIC(04,02,"SIGA")
+MSCBBOX(05,01,76,30,2)
+MSCBLineH(30,06,71,2)
+MSCBLineH(05,12,71,2)
+MSCBLineH(05,18,71,2)
+MSCBLineV(30,1,12,2) //Monta Linha Vertical
+MSCBSAY(33,02,'TRANSACAO',"N","2","1,2")
+MSCBSAY(33,07,"CODIGO", "N", "1", "1,1")
+MSCBSAY(33,09,cCodigo, "N", "1", "1,2")
+MSCBSAY(07,13,"DESCRICAO","N","1","1,1")
+MSCBSAY(07,15,CBI->CBI_DESCRI,"N", "1", "1,2")
+MSCBSAYBAR(28,19,cCodigo,'N',"MB07",06,.T.,,,,2,2,,,,)
+MSCBInfoEti("Trans.Producao","30X100")
+MSCBEND()
+Return .F.

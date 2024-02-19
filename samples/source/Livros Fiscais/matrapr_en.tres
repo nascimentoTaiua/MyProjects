@@ -1,0 +1,34 @@
+0001#STR0001#BRA#Tax rate
+0002#STR0002#BRA#CFOP
+0003#STR0003#BRA#CFOP/Tax rate
+0004#STR0004#BRA#St/CFOP
+0005#STR0005#BRA#Summary Map of the Tax Records
+0006#STR0006#BRA#This report will print a summary with the movements through inflow/outflow invoices, ICMS or IPI                    
+0007#STR0007#BRA#1.000 - Inflows and/or Acquis.of Services in the State
+0008#STR0008#BRA#2.000 - Inflows and/or Acquisition of Services in Other States
+0009#STR0009#BRA#3.000 - Inflows and/or Acquisition of Services Abroad   
+0010#STR0010#BRA#5.000 - Inflows and/or Prov. of Services for the State 
+0011#STR0011#BRA#6.000 - Inflows and/or Provision of Services for Other States 
+0012#STR0012#BRA#7.000 - Inflows and/or Provision of Services Abroad       
+0013#STR0013#BRA#Inflows and/or Acquisition of Serv. 
+0014#STR0014#BRA#Outflows and/or Acq. of Services  
+0015#STR0015#BRA#Inflows 
+0016#STR0016#BRA#Outflows
+0017#STR0017#BRA#CFOP
+0018#STR0018#BRA#Tax rate
+0019#STR0019#BRA#Acctng. Value 
+0020#STR0020#BRA#CalculationBase
+0021#STR0021#BRA#Taxed amount   
+0022#STR0022#BRA#Exempt 
+0023#STR0023#BRA#Others
+0024#STR0024#BRA#Total Inflows     
+0025#STR0025#BRA#Total Outflows  
+0026#STR0026#BRA#Total
+0027#STR0027#BRA#* <- CFOPs not registered in Table [13]  
+0028#STR0028#BRA#State total    
+0029#STR0029#BRA#State
+0030#STR0030#BRA#Tax Records   
+0031#STR0031#BRA#Movements 
+0032#STR0032#BRA#Branches
+0033#STR0033#BRA#Branch: 
+0034#STR0034#BRA#Calculat.

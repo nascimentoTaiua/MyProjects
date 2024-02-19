@@ -1,0 +1,7 @@
+0001#STR0001#ALL#Esta rutina actualiza los registros de las tablas SRR y SRD de conceptos informados en el cálculo de Rescisión, que pueden estar con el campo fecha de pago divergente del encabezado de la rescisión, tabla SRG.
+0002#STR0002#ALL#¡ATENCIÓN!
+0003#STR0003#ALL#Realice la copia de seguridad de la base antes de ejecutar este proceso.
+0004#STR0004#ALL#Esta rutina actualiza registros en las tablas SRR - Ítems de vacaciones y Rescisión y SRD - Historial de movimientos.
+0005#STR0005#ALL#Ejecutar rutina
+0006#STR0006#ALL#Anular
+0007#STR0007#ALL#Actualización fecha de pago

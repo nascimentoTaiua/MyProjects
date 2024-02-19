@@ -1,0 +1,35 @@
+/*
+Padrao Intermec
+ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+±±ÉÍÍÍÍÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍËÍÍÍÍÍÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍ»±±
+±±ºPrograma  ³IMG08     ºAutor  ³Anderson Rodrigues  º Data ³  07/11/02   º±±
+±±ÌÍÍÍÍÍÍÍÍÍÍØÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÊÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍ¹±±
+±±ºDescricao ³Ponto de entrada referente a imagem de identificacao do     º±±
+±±º          ³Recurso                                                     º±±
+±±ÌÍÍÍÍÍÍÍÍÍÍØÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹±±
+±±ºUso       ³AP6                                                         º±±
+±±ÈÍÍÍÍÍÍÍÍÍÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼±±
+±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±
+ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+*/
+User Function Img08  // imagem da etiqueta do recurso
+Local nCopias := Val(paramixb[1])
+Local cCodigo := Alltrim(SH1->H1_CODIGO)
+//MSCBLOADGRF("SIGA.BMP")
+MSCBBEGIN(nCopias,3)
+	MSCBBOX(01,02,34,76,1)
+	MSCBLineV(30,30,76,1)
+	MSCBLineV(23,02,76,1)
+	MSCBLineV(15,02,76,1)
+	MSCBLineH(23,30,34,1)
+//	MSCBGRAFIC(26,2,"SIGA",.T.)
+	MSCBSAY(32,33,'RECURSO',"R","2","01,01")
+	MSCBSAY(29,33,"CODIGO","R","2","01,01")
+	MSCBSAY(26,33, cCodigo, "R", "2", "01,01")
+	MSCBSAY(22,05,"DESCRICAO","R","2","01,01")
+	MSCBSAY(19,05,SH1->H1_DESCRI,"R", "2", "01,01")
+	MSCBSAYBAR(12,22,cCodigo,"R","MB07",8.36,.F.,.T.,.F.,,2,2,.F.,.F.,"1",.T.)
+	MSCBInfoEti("Recurso","30X100")
+MSCBEND()               
+Return .F.

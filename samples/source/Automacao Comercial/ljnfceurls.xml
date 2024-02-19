@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<UrlsNFCe>
+	
+	<!-- AMBIENTE DE PRODUCAO -->
+	<Producao EstCob="AC" URL="www.sefaznet.ac.gov.br/nfce/consulta" QrCode="http://www.sefaznet.ac.gov.br/nfce/qrcode?" />
+	<Producao EstCob="AL" URL="www.sefaz.al.gov.br/nfce/consulta" QrCode="http://nfce.sefaz.al.gov.br/QRCode/consultarNFCe.jsp?" />
+	<Producao EstCob="AM" URL="www.sefaz.am.gov.br/nfce/consulta" QrCode="http://sistemas.sefaz.am.gov.br/nfceweb/consultarNFCe.jsp?" />
+	<Producao EstCob="AP" URL="www.sefaz.ap.gov.br/nfce/consulta" QrCode="https://www.sefaz.ap.gov.br/nfce/nfcep.php?" />
+	<Producao EstCob="BA" URL="www.sefaz.ba.gov.br/nfce/consulta" QrCode="http://nfe.sefaz.ba.gov.br/servicos/nfce/modulos/geral/NFCEC_consulta_chave_acesso.aspx?" />
+	<Producao EstCob="CE" URL="www.sefaz.ce.gov.br/nfce/consulta" QrCode="http://nfce.sefaz.ce.gov.br/pages/ShowNFCe.html?" />
+	<Producao EstCob="DF" URL="www.fazenda.df.gov.br/nfce/consulta" QrCode="http://dec.fazenda.df.gov.br/ConsultarNFCe.aspx?" />
+	<Producao EstCob="ES" URL="www.sefaz.es.gov.br/nfce/consulta" QrCode="http://app.sefaz.es.gov.br/ConsultaNFCe/qrcode.aspx?" />
+	<Producao EstCob="GO" URL="www.sefaz.go.gov.br/nfce/consulta" QrCode="http://nfe.sefaz.go.gov.br/nfeweb/sites/nfce/danfeNFCe?" />
+	<Producao EstCob="MA" URL="www.sefaz.ma.gov.br/nfce/consulta" QrCode="http://www.nfce.sefaz.ma.gov.br/portal/consultarNFCe.jsp?" />
+	<Producao EstCob="MG" URL="http://nfce.fazenda.mg.gov.br/portalnfce" QrCode="https://nfce.fazenda.mg.gov.br/portalnfce/sistema/qrcode.xhtml?" />
+	<Producao EstCob="MS" URL="www.dfe.ms.gov.br/nfce/" QrCode="http://www.dfe.ms.gov.br/nfce/qrcode?" />
+	<Producao EstCob="MT" URL="http://www.sefaz.mt.gov.br/nfce/consultanfce" QrCode="http://www.sefaz.mt.gov.br/nfce/consultanfce?" />
+	<Producao EstCob="PA" URL="www.sefa.pa.gov.br/nfce/consulta" QrCode="https://appnfc.sefa.pa.gov.br/portal/view/consultas/nfce/nfceForm.seam?" />
+	<Producao EstCob="PB" URL="www.receita.pb.gov.br/nfce/consulta" QrCode="http://www.sefaz.pb.gov.br/nfce?" />
+	<Producao EstCob="PE" URL="nfce.sefaz.pe.gov.br/nfce/consulta" QrCode="http://nfce.sefaz.pe.gov.br/nfce/consulta?" />
+	<Producao EstCob="PI" URL="www.sefaz.pi.gov.br/nfce/consulta" QrCode="http://webas.sefaz.pi.gov.br/nfceweb/consultarNFCe.jsf?" />
+	<Producao EstCob="PR" URL="http://www.fazenda.pr.gov.br/nfce/consulta" QrCode="http://www.fazenda.pr.gov.br/nfce/qrcode?" />
+	<Producao EstCob="RJ" URL="www.fazenda.rj.gov.br/nfce/consulta" QrCode="http://www4.fazenda.rj.gov.br/consultaNFCe/QRCode?" />
+	<Producao EstCob="RN" URL="www.set.rn.gov.br/nfce/consulta" QrCode="http://nfce.set.rn.gov.br/consultarNFCe.aspx?" />
+	<Producao EstCob="RO" URL="www.sefin.ro.gov.br/nfce/consulta"  QrCode="http://www.nfce.sefin.ro.gov.br/consultanfce/consulta.jsp?" />
+	<Producao EstCob="RR" URL="www.sefaz.rr.gov.br/nfce/consulta" QrCode="https://www.sefaz.rr.gov.br/nfce/servlet/qrcode?" />
+	<Producao EstCob="RS" URL="www.sefaz.rs.gov.br/nfce/consulta" QrCode="https://www.sefaz.rs.gov.br/NFCE/NFCE-COM.aspx?" />
+	<Producao EstCob="SE" URL="http://www.sefaz.se.gov.br/nfce/consulta" QrCode="http://www.nfce.se.gov.br/portal/consultarNFCe.jsp?" />
+	<Producao EstCob="SP" URL="https://www.nfce.fazenda.sp.gov.br/consulta" QrCode="https://www.nfce.fazenda.sp.gov.br/NFCeConsultaPublica/Paginas/ConsultaQRCode.aspx?" />
+	<Producao EstCob="TO" URL="www.sefaz.to.gov.br/nfce/consulta" QrCode="http://apps.sefaz.to.gov.br/portal-nfce/qrcodeNFCe?" />
+	<Producao EstCob="SC" URL="https://sat.sef.sc.gov.br/nfce/consulta" QrCode="https://sat.sef.sc.gov.br/nfce/consulta?p=" />
+
+	<!-- AMBIENTE DE HOMOLOGACAO -->
+	<Homologacao EstCob="AC" URL="www.sefaznet.ac.gov.br/nfce/consulta" QrCode="http://hml.sefaznet.ac.gov.br/nfce/qrcode?" />
+	<Homologacao EstCob="AL" URL="www.sefaz.al.gov.br/nfce/consulta" QrCode="http://nfce.sefaz.al.gov.br/QRCode/consultarNFCe.jsp?" />
+	<Homologacao EstCob="AM" URL="www.sefaz.am.gov.br/nfce/consulta" QrCode="http://homnfce.sefaz.am.gov.br/nfceweb/consultarNFCe.jsp?" />
+	<Homologacao EstCob="AP" URL="www.sefaz.ap.gov.br/nfce/consulta" QrCode="https://www.sefaz.ap.gov.br/nfcehml/nfce.php?" />
+	<Homologacao EstCob="BA" URL="http://hinternet.sefaz.ba.gov.br/nfce/consulta" QrCode="http://hnfe.sefaz.ba.gov.br/servicos/nfce/modulos/geral/NFCEC_consulta_chave_acesso.aspx?" />
+	<Homologacao EstCob="CE" URL="www.sefaz.ce.gov.br/nfce/consulta" QrCode="http://nfceh.sefaz.ce.gov.br/pages/ShowNFCe.html?" />
+	<Homologacao EstCob="DF" URL="www.fazenda.df.gov.br/nfce/consulta" QrCode="http://dec.fazenda.df.gov.br/ConsultarNFCe.aspx?" />
+	<Homologacao EstCob="ES" URL="www.sefaz.es.gov.br/nfce/consulta" QrCode="http://homologacao.sefaz.es.gov.br/ConsultaNFCe/qrcode.aspx?" />
+	<Homologacao EstCob="GO" URL="www.sefaz.go.gov.br/nfce/consulta" QrCode="http://homolog.sefaz.go.gov.br/nfeweb/sites/nfce/danfeNFCe?" />
+	<Homologacao EstCob="MA" URL="www.sefaz.ma.gov.br/nfce/consulta" QrCode="http://www.hom.nfce.sefaz.ma.gov.br/portal/consultarNFCe.jsp?" />
+	<Homologacao EstCob="MG" URL="http://hnfce.fazenda.mg.gov.br/portalnfce" QrCode="https://nfce.fazenda.mg.gov.br/portalnfce/sistema/qrcode.xhtml?" />
+	<Homologacao EstCob="MS" URL="www.dfe.ms.gov.br/nfce/" QrCode="http://www.dfe.ms.gov.br/nfce/qrcode?" />
+	<Homologacao EstCob="MT" URL="http://homologacao.sefaz.mt.gov.br/nfce/consultanfce" QrCode="http://homologacao.sefaz.mt.gov.br/nfce/consultanfce?" />
+	<Homologacao EstCob="PA" URL="www.sefa.pa.gov.br/nfce/consulta" QrCode="https://appnfc.sefa.pa.gov.br/portal-homologacao/view/consultas/nfce/nfceForm.seam?" />
+	<Homologacao EstCob="PB" URL="www.receita.pb.gov.br/nfcehom" QrCode="http://www.sefaz.pb.gov.br/nfcehom?" />
+	<Homologacao EstCob="PE" URL="nfce.sefaz.pe.gov.br/nfce/consulta" QrCode="http://nfcehomolog.sefaz.pe.gov.br/nfce-web/consultarNFCe?" />
+	<Homologacao EstCob="PI" URL="www.sefaz.pi.gov.br/nfce/consulta" QrCode="http://webas.sefaz.pi.gov.br/nfceweb-homologacao/consultarNFCe.jsf?" />
+	<Homologacao EstCob="PR" URL="http://www.fazenda.pr.gov.br/nfce/consulta" QrCode="http://www.fazenda.pr.gov.br/nfce/qrcode?" />
+	<Homologacao EstCob="RJ" URL="www.fazenda.rj.gov.br/nfce/consulta" QrCode="http://www4.fazenda.rj.gov.br/consultaNFCe/QRCode?" />
+	<Homologacao EstCob="RN" URL="www.set.rn.gov.br/nfce/consulta" QrCode="http://hom.nfce.set.rn.gov.br/consultarNFCe.aspx?" />
+	<Homologacao EstCob="RO" URL="www.sefin.ro.gov.br/nfce/consulta" QrCode="http://www.nfce.sefin.ro.gov.br/consultanfce/consulta.jsp?" />
+	<Homologacao EstCob="RR" URL="www.sefaz.rr.gov.br/nfce/consulta" QrCode="http://200.174.88.103:8080/nfce/servlet/qrcode?" />
+	<Homologacao EstCob="RS" URL="www.sefaz.rs.gov.br/nfce/consulta" QrCode="https://www.sefaz.rs.gov.br/NFCE/NFCE-COM.aspx?" />
+	<Homologacao EstCob="SE" URL="http://www.hom.nfe.se.gov.br/nfce/consulta" QrCode="http://www.hom.nfe.se.gov.br/portal/consultarNFCe.jsp?" />
+	<Homologacao EstCob="SP" URL="https://www.homologacao.nfce.fazenda.sp.gov.br/consulta" QrCode="https://www.homologacao.nfce.fazenda.sp.gov.br/NFCeConsultaPublica/Paginas/ConsultaQRCode.aspx?" />
+	<Homologacao EstCob="TO" URL="http://homologacao.sefaz.to.gov.br/nfce/consulta.jsf" QrCode="http://apps.sefaz.to.gov.br/portal-nfce-homologacao/qrcodeNFCe?" />
+	<Homologacao EstCob="SC" URL="https://hom.sat.sef.sc.gov.br/nfce/consulta" QrCode="https://hom.sat.sef.sc.gov.br/nfce/consulta?p=" />
+
+</UrlsNFCe>

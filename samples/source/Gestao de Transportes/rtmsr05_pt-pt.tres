@@ -1,0 +1,17 @@
+0001#STR0001#ALL#Este programa irá emitir o romaneio de carga.
+0002#STR0002#ALL#Romaneio De Carga
+0003#STR0003#ALL#Código de barras
+0004#STR0004#ALL#Administração
+0005#STR0005#ALL#Imprimindo O Romaneio De Carga.
+0006#STR0006#ALL#Cancelado Pelo Operador
+0009#STR0009#ALL#Filial de origem: 
+0010#STR0010#ALL#Emissão: 
+0011#STR0011#ALL#Cnh : 
+0013#STR0013#ALL# tipo: 
+0015#STR0016#ALL#Condutor : 
+0017#STR0018#ALL#Observação: 
+0018#STR0019#ALL#Valor adto.: 
+0021#STR0022#ALL#|destino     |
+0022#STR0023#ALL#|descarga    |
+0024#STR0025#ALL# |  no. lacre: 
+0025#STR0026#ALL#Local/localização  Documento/serie  Volume

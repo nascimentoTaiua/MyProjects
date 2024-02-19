@@ -1,0 +1,35 @@
+0001#STR0001#ALL#Emissao de Orcamentos
+0002#STR0002#ALL#O objetivo deste relatorio e exibir detalhadamente os orcamentos
+0003#STR0003#ALL#Zebrado
+0004#STR0004#ALL#Administracao
+0005#STR0005#ALL#|No. Orcamento :
+0006#STR0006#ALL#Emissao :
+0007#STR0007#ALL#Validade :
+0008#STR0008#ALL#|Cliente       :
+0009#STR0009#ALL#|Vendedor      :
+0010#STR0010#ALL#|It Codigo          Descricao                                                   |
+0011#STR0011#ALL#|T O T A L ......................................................
+0012#STR0012#ALL#|D E S C O N T O ................................................
+0013#STR0013#ALL#|L I Q U I D O ..................................................
+0014#STR0014#ALL#|Condicao Pagamento :
+0015#STR0015#ALL#|Forma de Pagamento :
+0016#STR0016#ALL#Cond. Pagamento 
+0017#STR0017#ALL#|Seu Pedido No.     :
+0018#STR0018#ALL#CNPJ: 
+0019#STR0019#ALL#IE.: 
+0020#STR0020#ALL#IF.: 
+0021#STR0021#ALL#IM.: 
+0022#STR0022#ALL#*** NÃO É DOCUMENTO FISCAL ***
+0023#STR0023#ALL#*** EXIJA O CUPOM FISCAL - NÂO É VÁLIDO COMO GARANTIA DE MERCADORIA ***
+0024#STR0024#ALL#NAO E VALIDO COMO GARANTIA DE MERCADORIA
+0025#STR0025#ALL#|IT      Codigo            Descricao                     Qtde      UM       Vl.Unit.    ST      Vl.Desc.         Vlr.Total
+0026#STR0026#ALL#NAO E DOCUMENTO FISCAL - NAO VALIDO COMO GARANTIA.
+0027#STR0027#ALL#|T O T A L 
+0028#STR0028#ALL#|D E S C O N T O 
+0029#STR0029#ALL#|L I Q U I D O 
+0030#STR0030#ALL#DOCUMENTO AUXILIAR DE VENDA - ORÇAMENTO
+0031#STR0031#ALL#No do Documento Fiscal:_______________
+0032#STR0032#ALL#Emissao       :
+0033#STR0033#ALL#Validade :
+0034#STR0034#ALL#                   E vedada a autenticacao deste documento
+0035#STR0035#ALL#|Qtde.        Um    Vlr.Unitario   Vlr.Desconto      Vlr.Total                  |

@@ -1,0 +1,7 @@
+0001#STR0001#ALL#This routine updates the records in the SRR and SRD tables of funds informed in the Termination calculation, which may have a different payment date field in the header, SRG table.
+0002#STR0002#ALL#ATTENTION!
+0003#STR0003#ALL#Backup base before executing this process.
+0004#STR0004#ALL#This routine updates records in tables SRR - Vacation and Termination Items and SRD - Movement History.
+0005#STR0005#ALL#Run Routine
+0006#STR0006#ALL#Cancel
+0007#STR0007#ALL#Payment date update

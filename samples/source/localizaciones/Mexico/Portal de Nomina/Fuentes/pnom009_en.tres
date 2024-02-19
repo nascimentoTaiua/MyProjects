@@ -1,0 +1,102 @@
+0001#STR0001#MEX#Supervisor Control
+0002#STR0002#MEX#No employees are allocated to supervisor with registration:
+0003#STR0003#MEX#Loans to Authorize
+0004#STR0004#MEX#Vacations to Authorize
+0005#STR0005#MEX#Personal Data
+0006#STR0006#MEX#Working History
+0007#STR0007#MEX#Loans History
+0008#STR0008#MEX#Vacations History
+0009#STR0009#MEX#Absences History
+0010#STR0010#MEX#Exit
+0011#STR0011#MEX#Reject Loan
+0012#STR0012#MEX#Reject
+0013#STR0013#MEX#No pending Loan Requests found...
+0014#STR0014#MEX#Loan Authorization
+0015#STR0015#MEX#Flag All
+0016#STR0016#MEX#Clear All
+0017#STR0017#MEX#Reverse Selection
+0018#STR0018#MEX#Reject Vacations
+0019#STR0019#MEX#Reject
+0020#STR0020#MEX#No pending Vacation Requests found...
+0021#STR0021#MEX#Vacation Authorization
+0022#STR0022#MEX#No data found for registration:
+0023#STR0023#MEX#No data configured for viewing since Employee Terminal.
+0024#STR0024#MEX#Reason Date
+0025#STR0025#MEX#Type
+0026#STR0026#MEX#Daily Salary
+0027#STR0027#MEX#Int Daily Sal.
+0028#STR0028#MEX#Sal. Monthly
+0029#STR0029#MEX#Loc. Payment
+0030#STR0030#MEX#C.C.
+0031#STR0031#MEX#Dept
+0032#STR0032#MEX#Role
+0033#STR0033#MEX#Position
+0034#STR0034#MEX#There is no functional history for this employee
+0035#STR0035#MEX#Functional History from 
+0036#STR0036#MEX#Filter
+0037#STR0037#MEX#Filter
+0038#STR0038#MEX#No active loans of any employee
+0039#STR0039#MEX#Loans Search 
+0040#STR0040#MEX#Payroll Item
+0041#STR0041#MEX#,
+0042#STR0042#MEX#,
+0043#STR0043#MEX#Entitled Days
+0044#STR0044#MEX#Enjoyment Days
+0045#STR0045#MEX#Scheduled Days
+0046#STR0046#MEX#Paid Days
+0047#STR0047#MEX#Balance
+0048#STR0048#MEX#Vacation Query from 
+0049#STR0049#MEX#Filter
+0050#STR0050#MEX#Filter
+0051#STR0051#MEX#No absences for this employee:
+0052#STR0052#MEX#Absences Query from 
+0053#STR0053#MEX#You need electronic mail of supervisor to authorize 
+0054#STR0054#MEX#You need electronic mail of Admin of Payroll to authorize 
+0055#STR0055#MEX#Are you sure to authorize?
+0056#STR0056#MEX#Loan Authorization
+0057#STR0057#MEX#Loans are authorized for the following personnel:
+0058#STR0058#MEX#Employee:
+0059#STR0059#MEX#/ Budget: 
+0060#STR0060#MEX#/ Value $ 
+0061#STR0061#MEX#Authorize per: 
+0062#STR0062#MEX#Check whether there is any connection problem, as you cannot send e-mail for Payroll administrator and you cannot authorize 
+0063#STR0063#MEX#Delivery of Authorization with success 
+0064#STR0064#MEX#Authorization successfully performed 
+0065#STR0065#MEX#Select at least one request to Authorize
+0066#STR0066#MEX#Are you sure you want to null requests?
+0067#STR0067#MEX#Describe rejection reason
+0068#STR0068#MEX#Reason description is mandatory 
+0069#STR0069#MEX#Select at least one request to Cancel 
+0070#STR0070#MEX#You need electronic mail of supervisor to authorize 
+0071#STR0071#MEX#You need electronic mail of Admin of Payroll to authorize 
+0072#STR0072#MEX#Are you sure to authorize?
+0073#STR0073#MEX#Vacation Authorization
+0074#STR0074#MEX#Vacation authorized of the following personal:
+0075#STR0075#MEX#Employee:
+0076#STR0076#MEX#/ Budget:
+0077#STR0077#MEX#/ End Date :
+0078#STR0078#MEX#Authorized per: 
+0079#STR0079#MEX#Check whether there is any connection problem, as you cannot send e-mail for Payroll administrator and you cannot authorize 
+0080#STR0080#MEX#Delivery of Authorization with Success
+0081#STR0081#MEX#Authorization successfully performed
+0082#STR0082#MEX#Select at least one request to authorize 
+0083#STR0083#MEX#Are you sure you want to null requests?
+0084#STR0084#MEX#Describe rejection reason
+0085#STR0085#MEX#The reason description is mandatory
+0086#STR0086#MEX#Select at least one request to Cancel
+0087#STR0087#MEX#A-Discharge
+0088#STR0088#MEX#B-Issues
+0089#STR0089#MEX#M-Change
+0090#STR0090#MEX#L-Payroll
+0091#STR0091#MEX#C-Cost Center
+0092#STR0092#MEX#D-Department
+0093#STR0093#MEX#F-Roles
+0094#STR0094#MEX#P-Positions
+0095#STR0095#MEX#Select Type of Movement
+0096#STR0096#MEX#The selected fund does not exist 
+0097#STR0097#MEX#This field cannot be blank
+0098#STR0098#MEX#There are no data to query
+0099#STR0099#MEX#Notice
+0100#STR0100#MEX#Payroll Item
+0101#STR0101#MEX#Check/Uncheck All
+0102#STR0102#MEX#Personal Data

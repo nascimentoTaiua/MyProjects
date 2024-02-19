@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<Home>
+  <Menu text="DATOS PERSONALES" url="FrmPrincipal.aspx">
+    <SubMenu text="MODIFICAR" url="EMPLEADOSMOD.ASPX" />
+    <SubMenu text="CONSULTAR" url="EMPLEADOS.ASPX" />
+  </Menu>
+  <Menu text="MOVIMIENTOS" url="FrmPrincipal.aspx">
+    <SubMenu text="RECIBOS DE NOMINA" url="FRMRECIBONOMINA.ASPX" />
+    <SubMenu text="ESTADOS DE CUENTA MOVIMIENTOS" url="FRMEDOCTANOMINA.ASPX" />
+  </Menu>
+  <Menu text="PRESTAMOS" url="FrmPrincipal.aspx">
+    <SubMenu text="SOLICITUD DE PRESTAMOS" url="SOLICITUDPRESTAMOS.ASPX" />
+    <SubMenu text="ESTADOS DE CUENTA   PRESTAMOS" url="EDOCTAPRESTAMOS.ASPX" />
+  </Menu>
+  <Menu text="VACACIONES Y AUSENTISMOS" url="FrmPrincipal.aspx">
+    <SubMenu text="SOLICITUD" url="FRMVACACIONES.ASPX" />
+    <SubMenu text="DIAS FESTIVOS" url="FRMDIASFESTIVOS.ASPX" />
+    <SubMenu text="ESTADO DE CUENTA" url="FRMEDOCUENTAVAC.ASPX" />
+    <SubMenu text="PERMISOS Y AUSENCIAS" url="FRMPERMISOSYAUSENCIAS.ASPX" />
+  </Menu>
+  <Menu text="HISTORIAL LABORAL" url="FRMHISTLABORAL.ASPX" />
+  <Menu text="SOLICITUD DE DOCUMENTOS" url="FRMSOLDOCS.ASPX" />
+</Home>

@@ -1,0 +1,15 @@
+0001#STR0001#ALL#VQI FORMULAS    :
+0002#STR0002#ALL#IQI : IQP * FC
+0003#STR0003#ALL#IQP : ( 100 - K ) - Criticity Factor    
+0004#STR0004#ALL#IA  : ((Factor1* q1 + Factor2* q2 + Factor3* q3) / (q1 + q2 + q3)) * 100
+0005#STR0005#ALL#      Being FC.: Correction Factor, tabulated in IQS function
+0006#STR0006#ALL#            K..: Qty. obtained in Acceptance Index - AI function  
+0007#STR0007#ALL#            qx.: Quantity delivered with Factor  x.
+0008#STR0008#ALL#IES : IPO
+0009#STR0009#ALL#IPO : ( 1 - (Addition  Ni * Di / (
+0010#STR0010#ALL# * Nt)) ) * 100
+0011#STR0011#ALL#      Being Ni: Quantitydelivered in delay    (lot by lot )
+0012#STR0012#ALL#            Di: Days in delay            (lot by lot )
+0013#STR0013#ALL#            Nt: Total quantity delivered monthly
+0014#STR0014#ALL#          Note: During IPO calcul, if the nr. of days in current delay is larger than the
+0015#STR0015#ALL#                nr. of days defined in the MV_QDIAIPO parameter, the last one will be used.

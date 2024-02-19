@@ -1,0 +1,1592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s0="urn:protheus/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" targetNamespace="urn:protheus/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="urn:protheus/">
+      <s:element name="CAMBIOPASS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PASSWORD" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="NEWPASS" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CAMBIOPASSRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CAMBIOPASSRESULT" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DELSOLDOC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RECNUMS" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DELSOLDOCRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DELSOLDOCRESULT" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DELSOLPRE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RECNUMS" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DELSOLPRERESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DELSOLPRERESULT" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DELSOLVAC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="RECNUMS" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DELSOLVACRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DELSOLVACRESULT" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GENERAMENU">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GENERAMENURESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GENERAMENURESULT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETAMORTIZ">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CNUMID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETAMORTIZRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETAMORTIZRESULT" type="s0:ARRAYOFSTRUAMORTIZ" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETCAMPOS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IDCARPETA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETCAMPOSRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETCAMPOSRESULT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETCARPETAS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETCARPETASRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETCARPETASRESULT" type="s0:ARRAYOFSTRCARPETA" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETCONCEPTOSVAC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETCONCEPTOSVACRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETCONCEPTOSVACRESULT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETCONPERYAUS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETCONPERYAUSRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETCONPERYAUSRESULT" type="s0:ARRAYOFSTREXTCON" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETCONSOLPRE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETCONSOLPRERESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETCONSOLPRERESULT" type="s0:ARRAYOFSTREXTCON" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETDATOSENVIO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETDATOSENVIORESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETDATOSENVIORESULT" type="s0:STRDATOSMAIL" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETDIASFEST">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETDIASFESTRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETDIASFESTRESULT" type="s0:ARRAYOFSTRDIASFES" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETEDOCTANOM">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CONCEPTO" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FECHAINICIO" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FECHAFIN" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IMPORTE" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETEDOCTANOMRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETEDOCTANOMRESULT" type="s0:ARRAYOFSTRCTANOM" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETEDOPRES">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETEDOPRESRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETEDOPRESRESULT" type="s0:ARRAYOFSTRUEDOPRES" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETEXTAUS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FILTRO" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETEXTAUSRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETEXTAUSRESULT" type="s0:ARRAYOFSTREXTAUS" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETEXTCON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETEXTCONRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETEXTCONRESULT" type="s0:ARRAYOFSTREXTCON" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETEXTVAC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETEXTVACRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETEXTVACRESULT" type="s0:ARRAYOFSTREXTVAC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETFECADMIS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETFECADMISRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETFECADMISRESULT" type="s:date" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETFECNOM">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETFECNOMRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETFECNOMRESULT" type="s0:ARRAYOFSTRFECRECNOM" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETFILIAL">
+        <s:complexType>
+          <s:sequence />
+        </s:complexType>
+      </s:element>
+      <s:element name="GETFILIALRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETFILIALRESULT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETHISLAB">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FILTRO" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FECHAINICIO" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FECHAFIN" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETHISLABRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETHISLABRESULT" type="s0:ARRAYOFSTRHISLAB" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETMAIL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETMAILRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETMAILRESULT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETMAILSUPERVISOR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETMAILSUPERVISORRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETMAILSUPERVISORRESULT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETPARAMETRO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CMV_PAR" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETPARAMETRORESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETPARAMETRORESULT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETRCNOM">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PERIODO" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="NUMPAGO" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PROCESO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETRCNOMRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETRCNOMRESULT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETRECNOM">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PERIODO" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="NUMPAGO" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETRECNOMRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETRECNOMRESULT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETSOLDOC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETSOLDOCRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETSOLDOCRESULT" type="s0:ARRAYOFSTRUSOLDOC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETSOLPRES">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETSOLPRESRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETSOLPRESRESULT" type="s0:ARRAYOFSTRUSOLPRES" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETSOLVAC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETSOLVACRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETSOLVACRESULT" type="s0:ARRAYOFSTRVACACIONES" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETSSL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETSSLRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETSSLRESULT" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETTELCONT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETTELCONTRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETTELCONTRESULT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETTIPDOC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GETTIPDOCRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GETTIPDOCRESULT" type="s0:ARRAYOFSTRTIPDOC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SETSOLDOC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="DOCTO" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="INTERESA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SETSOLDOCRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SETSOLDOCRESULT" type="s0:STSOLDOC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SETSOLPRES">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CONCEPTO" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IMPORTE" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SETSOLPRESRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SETSOLPRESRESULT" type="s0:STSOLPRE" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SETSOLVAC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CONCEPTO" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FECHAINICIO" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FECHAFIN" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SETSOLVACRESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SETSOLVACRESULT" type="s0:STRSOLVAC" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VERIFICARACCESO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MATRICULA" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PASSWORD" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="SUCURSAL" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="EMPRESA" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VERIFICARACCESORESPONSE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VERIFICARACCESORESULT" type="s0:STRTRANSACCION" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="STRUAMORTIZ">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CDESC" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CDTPAGO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CPD" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NABONO" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="NCARGO" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="NVLSALDO" type="s:float" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="STRUEDOPRES">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CDTVENC" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CINICIO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CNUMID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CSITUAC" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NPARCELA" type="s:integer" />
+          <s:element minOccurs="1" maxOccurs="1" name="NPARPAG" type="s:integer" />
+          <s:element minOccurs="1" maxOccurs="1" name="NSALDOD" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="NVALORPA" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="NVALORTOT" type="s:float" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="STRUSOLDOC">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CDOCTO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CINTERE" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NRECNO" type="s:integer" />
+          <s:element minOccurs="1" maxOccurs="1" name="SFECSOL" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="STRUSOLPRES">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CDESPD" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CDESSTAT" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CMOTREC" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CSTATUS" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NIMPORTE" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NRECNO" type="s:integer" />
+          <s:element minOccurs="1" maxOccurs="1" name="SFECRES" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SFECSOL" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="STRTIPDOC">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CCODSX5" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CDESCSX5" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="STRCARPETA">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NOMBRE" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="STRDIASFES">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="DESCRIPCION" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="STREXTAUS">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="DESCRIPCION" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DIAS" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECFIN" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECINI" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TIPO" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="STREXTCON">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CODIGO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DESCRIPCION" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="STRCTANOM">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CONCEPTO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IMPORTE" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SUMA" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="STREXTVAC">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="DESCRIPCION" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DIASDER" type="s:integer" />
+          <s:element minOccurs="1" maxOccurs="1" name="DIASDIS" type="s:integer" />
+          <s:element minOccurs="1" maxOccurs="1" name="DIASPAG" type="s:integer" />
+          <s:element minOccurs="1" maxOccurs="1" name="DIASPRO" type="s:integer" />
+          <s:element minOccurs="1" maxOccurs="1" name="DIASSAL" type="s:integer" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECFIN" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECINI" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="STRFECRECNOM">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="FECRECNOM" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECVALUE" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="STRHISLAB">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CARGO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CENCOS" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DEPTO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DESCRIPCION" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECMOV" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FUNCION" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LOCPAGO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SALDIAINT" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SALDIARIO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SALMENSUAL" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="STRDATOSMAIL">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CEMAIL" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CMAILENVIO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CPASSMAIL" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CSMPT" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="STSOLDOC">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="INSERTADO" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="MENSAJE" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="STSOLPRE">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="INSERTADO" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="MENSAJE" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="STRSOLVAC">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="INSERTADO" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="MENSAJE" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="STRTRANSACCION">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ESTATUS" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="NOMBRE" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="STRVACACIONES">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CONCEPTO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ESTATUS" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECFIN" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECINI" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECRES" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECSOL" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MOTREC" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="RECNUM" type="s:integer" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ARRAYOFSTRUAMORTIZ">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="STRUAMORTIZ" type="s0:STRUAMORTIZ" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ARRAYOFSTRUEDOPRES">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="STRUEDOPRES" type="s0:STRUEDOPRES" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ARRAYOFSTRUSOLDOC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="STRUSOLDOC" type="s0:STRUSOLDOC" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ARRAYOFSTRUSOLPRES">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="STRUSOLPRES" type="s0:STRUSOLPRES" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ARRAYOFSTRTIPDOC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="STRTIPDOC" type="s0:STRTIPDOC" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ARRAYOFSTRCARPETA">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="STRCARPETA" type="s0:STRCARPETA" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ARRAYOFSTRDIASFES">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="STRDIASFES" type="s0:STRDIASFES" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ARRAYOFSTREXTAUS">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="STREXTAUS" type="s0:STREXTAUS" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ARRAYOFSTREXTCON">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="STREXTCON" type="s0:STREXTCON" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ARRAYOFSTRCTANOM">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="STRCTANOM" type="s0:STRCTANOM" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ARRAYOFSTREXTVAC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="STREXTVAC" type="s0:STREXTVAC" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ARRAYOFSTRFECRECNOM">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="STRFECRECNOM" type="s0:STRFECRECNOM" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ARRAYOFSTRHISLAB">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="STRHISLAB" type="s0:STRHISLAB" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ARRAYOFSTRVACACIONES">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="STRVACACIONES" type="s0:STRVACACIONES" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </types>
+  <message name="CAMBIOPASSSOAPIN">
+    <part name="parameters" element="s0:CAMBIOPASS" />
+  </message>
+  <message name="CAMBIOPASSSOAPOUT">
+    <part name="parameters" element="s0:CAMBIOPASSRESPONSE" />
+  </message>
+  <message name="DELSOLDOCSOAPIN">
+    <part name="parameters" element="s0:DELSOLDOC" />
+  </message>
+  <message name="DELSOLDOCSOAPOUT">
+    <part name="parameters" element="s0:DELSOLDOCRESPONSE" />
+  </message>
+  <message name="DELSOLPRESOAPIN">
+    <part name="parameters" element="s0:DELSOLPRE" />
+  </message>
+  <message name="DELSOLPRESOAPOUT">
+    <part name="parameters" element="s0:DELSOLPRERESPONSE" />
+  </message>
+  <message name="DELSOLVACSOAPIN">
+    <part name="parameters" element="s0:DELSOLVAC" />
+  </message>
+  <message name="DELSOLVACSOAPOUT">
+    <part name="parameters" element="s0:DELSOLVACRESPONSE" />
+  </message>
+  <message name="GENERAMENUSOAPIN">
+    <part name="parameters" element="s0:GENERAMENU" />
+  </message>
+  <message name="GENERAMENUSOAPOUT">
+    <part name="parameters" element="s0:GENERAMENURESPONSE" />
+  </message>
+  <message name="GETAMORTIZSOAPIN">
+    <part name="parameters" element="s0:GETAMORTIZ" />
+  </message>
+  <message name="GETAMORTIZSOAPOUT">
+    <part name="parameters" element="s0:GETAMORTIZRESPONSE" />
+  </message>
+  <message name="GETCAMPOSSOAPIN">
+    <part name="parameters" element="s0:GETCAMPOS" />
+  </message>
+  <message name="GETCAMPOSSOAPOUT">
+    <part name="parameters" element="s0:GETCAMPOSRESPONSE" />
+  </message>
+  <message name="GETCARPETASSOAPIN">
+    <part name="parameters" element="s0:GETCARPETAS" />
+  </message>
+  <message name="GETCARPETASSOAPOUT">
+    <part name="parameters" element="s0:GETCARPETASRESPONSE" />
+  </message>
+  <message name="GETCONCEPTOSVACSOAPIN">
+    <part name="parameters" element="s0:GETCONCEPTOSVAC" />
+  </message>
+  <message name="GETCONCEPTOSVACSOAPOUT">
+    <part name="parameters" element="s0:GETCONCEPTOSVACRESPONSE" />
+  </message>
+  <message name="GETCONPERYAUSSOAPIN">
+    <part name="parameters" element="s0:GETCONPERYAUS" />
+  </message>
+  <message name="GETCONPERYAUSSOAPOUT">
+    <part name="parameters" element="s0:GETCONPERYAUSRESPONSE" />
+  </message>
+  <message name="GETCONSOLPRESOAPIN">
+    <part name="parameters" element="s0:GETCONSOLPRE" />
+  </message>
+  <message name="GETCONSOLPRESOAPOUT">
+    <part name="parameters" element="s0:GETCONSOLPRERESPONSE" />
+  </message>
+  <message name="GETDATOSENVIOSOAPIN">
+    <part name="parameters" element="s0:GETDATOSENVIO" />
+  </message>
+  <message name="GETDATOSENVIOSOAPOUT">
+    <part name="parameters" element="s0:GETDATOSENVIORESPONSE" />
+  </message>
+  <message name="GETDIASFESTSOAPIN">
+    <part name="parameters" element="s0:GETDIASFEST" />
+  </message>
+  <message name="GETDIASFESTSOAPOUT">
+    <part name="parameters" element="s0:GETDIASFESTRESPONSE" />
+  </message>
+  <message name="GETEDOCTANOMSOAPIN">
+    <part name="parameters" element="s0:GETEDOCTANOM" />
+  </message>
+  <message name="GETEDOCTANOMSOAPOUT">
+    <part name="parameters" element="s0:GETEDOCTANOMRESPONSE" />
+  </message>
+  <message name="GETEDOPRESSOAPIN">
+    <part name="parameters" element="s0:GETEDOPRES" />
+  </message>
+  <message name="GETEDOPRESSOAPOUT">
+    <part name="parameters" element="s0:GETEDOPRESRESPONSE" />
+  </message>
+  <message name="GETEXTAUSSOAPIN">
+    <part name="parameters" element="s0:GETEXTAUS" />
+  </message>
+  <message name="GETEXTAUSSOAPOUT">
+    <part name="parameters" element="s0:GETEXTAUSRESPONSE" />
+  </message>
+  <message name="GETEXTCONSOAPIN">
+    <part name="parameters" element="s0:GETEXTCON" />
+  </message>
+  <message name="GETEXTCONSOAPOUT">
+    <part name="parameters" element="s0:GETEXTCONRESPONSE" />
+  </message>
+  <message name="GETEXTVACSOAPIN">
+    <part name="parameters" element="s0:GETEXTVAC" />
+  </message>
+  <message name="GETEXTVACSOAPOUT">
+    <part name="parameters" element="s0:GETEXTVACRESPONSE" />
+  </message>
+  <message name="GETFECADMISSOAPIN">
+    <part name="parameters" element="s0:GETFECADMIS" />
+  </message>
+  <message name="GETFECADMISSOAPOUT">
+    <part name="parameters" element="s0:GETFECADMISRESPONSE" />
+  </message>
+  <message name="GETFECNOMSOAPIN">
+    <part name="parameters" element="s0:GETFECNOM" />
+  </message>
+  <message name="GETFECNOMSOAPOUT">
+    <part name="parameters" element="s0:GETFECNOMRESPONSE" />
+  </message>
+  <message name="GETFILIALSOAPIN">
+    <part name="parameters" element="s0:GETFILIAL" />
+  </message>
+  <message name="GETFILIALSOAPOUT">
+    <part name="parameters" element="s0:GETFILIALRESPONSE" />
+  </message>
+  <message name="GETHISLABSOAPIN">
+    <part name="parameters" element="s0:GETHISLAB" />
+  </message>
+  <message name="GETHISLABSOAPOUT">
+    <part name="parameters" element="s0:GETHISLABRESPONSE" />
+  </message>
+  <message name="GETMAILSOAPIN">
+    <part name="parameters" element="s0:GETMAIL" />
+  </message>
+  <message name="GETMAILSOAPOUT">
+    <part name="parameters" element="s0:GETMAILRESPONSE" />
+  </message>
+  <message name="GETMAILSUPERVISORSOAPIN">
+    <part name="parameters" element="s0:GETMAILSUPERVISOR" />
+  </message>
+  <message name="GETMAILSUPERVISORSOAPOUT">
+    <part name="parameters" element="s0:GETMAILSUPERVISORRESPONSE" />
+  </message>
+  <message name="GETPARAMETROSOAPIN">
+    <part name="parameters" element="s0:GETPARAMETRO" />
+  </message>
+  <message name="GETPARAMETROSOAPOUT">
+    <part name="parameters" element="s0:GETPARAMETRORESPONSE" />
+  </message>
+  <message name="GETRCNOMSOAPIN">
+    <part name="parameters" element="s0:GETRCNOM" />
+  </message>
+  <message name="GETRCNOMSOAPOUT">
+    <part name="parameters" element="s0:GETRCNOMRESPONSE" />
+  </message>
+  <message name="GETRECNOMSOAPIN">
+    <part name="parameters" element="s0:GETRECNOM" />
+  </message>
+  <message name="GETRECNOMSOAPOUT">
+    <part name="parameters" element="s0:GETRECNOMRESPONSE" />
+  </message>
+  <message name="GETSOLDOCSOAPIN">
+    <part name="parameters" element="s0:GETSOLDOC" />
+  </message>
+  <message name="GETSOLDOCSOAPOUT">
+    <part name="parameters" element="s0:GETSOLDOCRESPONSE" />
+  </message>
+  <message name="GETSOLPRESSOAPIN">
+    <part name="parameters" element="s0:GETSOLPRES" />
+  </message>
+  <message name="GETSOLPRESSOAPOUT">
+    <part name="parameters" element="s0:GETSOLPRESRESPONSE" />
+  </message>
+  <message name="GETSOLVACSOAPIN">
+    <part name="parameters" element="s0:GETSOLVAC" />
+  </message>
+  <message name="GETSOLVACSOAPOUT">
+    <part name="parameters" element="s0:GETSOLVACRESPONSE" />
+  </message>
+  <message name="GETSSLSOAPIN">
+    <part name="parameters" element="s0:GETSSL" />
+  </message>
+  <message name="GETSSLSOAPOUT">
+    <part name="parameters" element="s0:GETSSLRESPONSE" />
+  </message>
+  <message name="GETTELCONTSOAPIN">
+    <part name="parameters" element="s0:GETTELCONT" />
+  </message>
+  <message name="GETTELCONTSOAPOUT">
+    <part name="parameters" element="s0:GETTELCONTRESPONSE" />
+  </message>
+  <message name="GETTIPDOCSOAPIN">
+    <part name="parameters" element="s0:GETTIPDOC" />
+  </message>
+  <message name="GETTIPDOCSOAPOUT">
+    <part name="parameters" element="s0:GETTIPDOCRESPONSE" />
+  </message>
+  <message name="SETSOLDOCSOAPIN">
+    <part name="parameters" element="s0:SETSOLDOC" />
+  </message>
+  <message name="SETSOLDOCSOAPOUT">
+    <part name="parameters" element="s0:SETSOLDOCRESPONSE" />
+  </message>
+  <message name="SETSOLPRESSOAPIN">
+    <part name="parameters" element="s0:SETSOLPRES" />
+  </message>
+  <message name="SETSOLPRESSOAPOUT">
+    <part name="parameters" element="s0:SETSOLPRESRESPONSE" />
+  </message>
+  <message name="SETSOLVACSOAPIN">
+    <part name="parameters" element="s0:SETSOLVAC" />
+  </message>
+  <message name="SETSOLVACSOAPOUT">
+    <part name="parameters" element="s0:SETSOLVACRESPONSE" />
+  </message>
+  <message name="VERIFICARACCESOSOAPIN">
+    <part name="parameters" element="s0:VERIFICARACCESO" />
+  </message>
+  <message name="VERIFICARACCESOSOAPOUT">
+    <part name="parameters" element="s0:VERIFICARACCESORESPONSE" />
+  </message>
+  <portType name="WSPTALNOMSOAP">
+    <operation name="CAMBIOPASS">
+      <documentation>Realiza el cambio de password para acceso al portal del empleado</documentation>
+      <input message="s0:CAMBIOPASSSOAPIN" />
+      <output message="s0:CAMBIOPASSSOAPOUT" />
+    </operation>
+    <operation name="DELSOLDOC">
+      <documentation>Elimina las solicitudes de documentos de un empleado</documentation>
+      <input message="s0:DELSOLDOCSOAPIN" />
+      <output message="s0:DELSOLDOCSOAPOUT" />
+    </operation>
+    <operation name="DELSOLPRE">
+      <documentation>Elimina las solicitudes de prestamo de un empleado</documentation>
+      <input message="s0:DELSOLPRESOAPIN" />
+      <output message="s0:DELSOLPRESOAPOUT" />
+    </operation>
+    <operation name="DELSOLVAC">
+      <documentation>Elimina las solicitudes de vacaciones de un empleado</documentation>
+      <input message="s0:DELSOLVACSOAPIN" />
+      <output message="s0:DELSOLVACSOAPOUT" />
+    </operation>
+    <operation name="GENERAMENU">
+      <documentation>Obtiene la configuración para el menú del portal del empleado</documentation>
+      <input message="s0:GENERAMENUSOAPIN" />
+      <output message="s0:GENERAMENUSOAPOUT" />
+    </operation>
+    <operation name="GETAMORTIZ">
+      <documentation>Obtiene las amortizaciones por ID del prestamo</documentation>
+      <input message="s0:GETAMORTIZSOAPIN" />
+      <output message="s0:GETAMORTIZSOAPOUT" />
+    </operation>
+    <operation name="GETCAMPOS">
+      <documentation>Obtiene la configuración de los campos para portal del empleado</documentation>
+      <input message="s0:GETCAMPOSSOAPIN" />
+      <output message="s0:GETCAMPOSSOAPOUT" />
+    </operation>
+    <operation name="GETCARPETAS">
+      <documentation>Obtiene el nombre de las carpetas a la que pertenecen los campos</documentation>
+      <input message="s0:GETCARPETASSOAPIN" />
+      <output message="s0:GETCARPETASSOAPOUT" />
+    </operation>
+    <operation name="GETCONCEPTOSVAC">
+      <documentation>Obtiene conceptos de vacaciones</documentation>
+      <input message="s0:GETCONCEPTOSVACSOAPIN" />
+      <output message="s0:GETCONCEPTOSVACSOAPOUT" />
+    </operation>
+    <operation name="GETCONPERYAUS">
+      <documentation>Obtiene la lista de conceptos para permisos y ausencias  </documentation>
+      <input message="s0:GETCONPERYAUSSOAPIN" />
+      <output message="s0:GETCONPERYAUSSOAPOUT" />
+    </operation>
+    <operation name="GETCONSOLPRE">
+      <documentation>Obtiene la lista de conceptos para solicitudes de préstamos</documentation>
+      <input message="s0:GETCONSOLPRESOAPIN" />
+      <output message="s0:GETCONSOLPRESOAPOUT" />
+    </operation>
+    <operation name="GETDATOSENVIO">
+      <documentation>Obtiene datos de envío de email</documentation>
+      <input message="s0:GETDATOSENVIOSOAPIN" />
+      <output message="s0:GETDATOSENVIOSOAPOUT" />
+    </operation>
+    <operation name="GETDIASFEST">
+      <documentation>Obtiene el calendario con los días festivos del año en curso </documentation>
+      <input message="s0:GETDIASFESTSOAPIN" />
+      <output message="s0:GETDIASFESTSOAPOUT" />
+    </operation>
+    <operation name="GETEDOCTANOM">
+      <documentation>Obtiene el estado de cuenta de nómina de un empleado</documentation>
+      <input message="s0:GETEDOCTANOMSOAPIN" />
+      <output message="s0:GETEDOCTANOMSOAPOUT" />
+    </operation>
+    <operation name="GETEDOPRES">
+      <documentation>Obtiene el Estado de Cuenta de Prestamos</documentation>
+      <input message="s0:GETEDOPRESSOAPIN" />
+      <output message="s0:GETEDOPRESSOAPOUT" />
+    </operation>
+    <operation name="GETEXTAUS">
+      <documentation>Obtiene los permisos otorgados a un empleado</documentation>
+      <input message="s0:GETEXTAUSSOAPIN" />
+      <output message="s0:GETEXTAUSSOAPOUT" />
+    </operation>
+    <operation name="GETEXTCON">
+      <documentation>Obtiene conceptos para estado de cuenta de nómina del empleado </documentation>
+      <input message="s0:GETEXTCONSOAPIN" />
+      <output message="s0:GETEXTCONSOAPOUT" />
+    </operation>
+    <operation name="GETEXTVAC">
+      <documentation>Obtiene el estado de cuenta de vacaciones del empleado</documentation>
+      <input message="s0:GETEXTVACSOAPIN" />
+      <output message="s0:GETEXTVACSOAPOUT" />
+    </operation>
+    <operation name="GETFECADMIS">
+      <documentation>Obtiene la fecha de admisión de un empleado</documentation>
+      <input message="s0:GETFECADMISSOAPIN" />
+      <output message="s0:GETFECADMISSOAPOUT" />
+    </operation>
+    <operation name="GETFECNOM">
+      <documentation>Obtiene las fechas de los recibos de nómina de un empleado</documentation>
+      <input message="s0:GETFECNOMSOAPIN" />
+      <output message="s0:GETFECNOMSOAPOUT" />
+    </operation>
+    <operation name="GETFILIAL">
+      <documentation>Obtiene las filiales del sigamat y las retorna en un xml</documentation>
+      <input message="s0:GETFILIALSOAPIN" />
+      <output message="s0:GETFILIALSOAPOUT" />
+    </operation>
+    <operation name="GETHISLAB">
+      <documentation>Obtiene el historial labolar de un empleado dado</documentation>
+      <input message="s0:GETHISLABSOAPIN" />
+      <output message="s0:GETHISLABSOAPOUT" />
+    </operation>
+    <operation name="GETMAIL">
+      <documentation>Obtiene el mail del supervisor de un empleado dado</documentation>
+      <input message="s0:GETMAILSOAPIN" />
+      <output message="s0:GETMAILSOAPOUT" />
+    </operation>
+    <operation name="GETMAILSUPERVISOR">
+      <documentation>Obtiene mail del supervisor</documentation>
+      <input message="s0:GETMAILSUPERVISORSOAPIN" />
+      <output message="s0:GETMAILSUPERVISORSOAPOUT" />
+    </operation>
+    <operation name="GETPARAMETRO">
+      <documentation>Obtiene el Valor de un parámetro dado</documentation>
+      <input message="s0:GETPARAMETROSOAPIN" />
+      <output message="s0:GETPARAMETROSOAPOUT" />
+    </operation>
+    <operation name="GETRCNOM">
+      <documentation>Imprime el recibo de nómina del empleado</documentation>
+      <input message="s0:GETRCNOMSOAPIN" />
+      <output message="s0:GETRCNOMSOAPOUT" />
+    </operation>
+    <operation name="GETRECNOM">
+      <documentation>Obtiene el recibo de nímina en formato HTML</documentation>
+      <input message="s0:GETRECNOMSOAPIN" />
+      <output message="s0:GETRECNOMSOAPOUT" />
+    </operation>
+    <operation name="GETSOLDOC">
+      <documentation>Obtiene las solicitudes de documentos</documentation>
+      <input message="s0:GETSOLDOCSOAPIN" />
+      <output message="s0:GETSOLDOCSOAPOUT" />
+    </operation>
+    <operation name="GETSOLPRES">
+      <documentation>Obtiene las solicitudes de prestamos</documentation>
+      <input message="s0:GETSOLPRESSOAPIN" />
+      <output message="s0:GETSOLPRESSOAPOUT" />
+    </operation>
+    <operation name="GETSOLVAC">
+      <documentation>Obtienes las solicitudes de Vacaciones de un empleado</documentation>
+      <input message="s0:GETSOLVACSOAPIN" />
+      <output message="s0:GETSOLVACSOAPOUT" />
+    </operation>
+    <operation name="GETSSL">
+      <documentation>Obtiene el valor del parametro SSL</documentation>
+      <input message="s0:GETSSLSOAPIN" />
+      <output message="s0:GETSSLSOAPOUT" />
+    </operation>
+    <operation name="GETTELCONT">
+      <documentation>Obtiene el número telefónico de contacto con el depto de recursos humanos o administración de nóminas</documentation>
+      <input message="s0:GETTELCONTSOAPIN" />
+      <output message="s0:GETTELCONTSOAPOUT" />
+    </operation>
+    <operation name="GETTIPDOC">
+      <documentation>Obtiene los tipo de documentos de la tabla W1</documentation>
+      <input message="s0:GETTIPDOCSOAPIN" />
+      <output message="s0:GETTIPDOCSOAPOUT" />
+    </operation>
+    <operation name="SETSOLDOC">
+      <documentation>Inserta solicitud de documentos </documentation>
+      <input message="s0:SETSOLDOCSOAPIN" />
+      <output message="s0:SETSOLDOCSOAPOUT" />
+    </operation>
+    <operation name="SETSOLPRES">
+      <documentation>Inserta solicitud de prestamos </documentation>
+      <input message="s0:SETSOLPRESSOAPIN" />
+      <output message="s0:SETSOLPRESSOAPOUT" />
+    </operation>
+    <operation name="SETSOLVAC">
+      <documentation>Inserta solicitud de vacaciones</documentation>
+      <input message="s0:SETSOLVACSOAPIN" />
+      <output message="s0:SETSOLVACSOAPOUT" />
+    </operation>
+    <operation name="VERIFICARACCESO">
+      <documentation>Verifica si los datos de acceso al portal del empleado son correctos</documentation>
+      <input message="s0:VERIFICARACCESOSOAPIN" />
+      <output message="s0:VERIFICARACCESOSOAPOUT" />
+    </operation>
+  </portType>
+  <binding name="WSPTALNOMSOAP" type="s0:WSPTALNOMSOAP">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="CAMBIOPASS">
+      <soap:operation soapAction="urn:protheus/CAMBIOPASS" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="DELSOLDOC">
+      <soap:operation soapAction="urn:protheus/DELSOLDOC" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="DELSOLPRE">
+      <soap:operation soapAction="urn:protheus/DELSOLPRE" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="DELSOLVAC">
+      <soap:operation soapAction="urn:protheus/DELSOLVAC" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GENERAMENU">
+      <soap:operation soapAction="urn:protheus/GENERAMENU" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETAMORTIZ">
+      <soap:operation soapAction="urn:protheus/GETAMORTIZ" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETCAMPOS">
+      <soap:operation soapAction="urn:protheus/GETCAMPOS" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETCARPETAS">
+      <soap:operation soapAction="urn:protheus/GETCARPETAS" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETCONCEPTOSVAC">
+      <soap:operation soapAction="urn:protheus/GETCONCEPTOSVAC" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETCONPERYAUS">
+      <soap:operation soapAction="urn:protheus/GETCONPERYAUS" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETCONSOLPRE">
+      <soap:operation soapAction="urn:protheus/GETCONSOLPRE" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETDATOSENVIO">
+      <soap:operation soapAction="urn:protheus/GETDATOSENVIO" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETDIASFEST">
+      <soap:operation soapAction="urn:protheus/GETDIASFEST" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETEDOCTANOM">
+      <soap:operation soapAction="urn:protheus/GETEDOCTANOM" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETEDOPRES">
+      <soap:operation soapAction="urn:protheus/GETEDOPRES" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETEXTAUS">
+      <soap:operation soapAction="urn:protheus/GETEXTAUS" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETEXTCON">
+      <soap:operation soapAction="urn:protheus/GETEXTCON" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETEXTVAC">
+      <soap:operation soapAction="urn:protheus/GETEXTVAC" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETFECADMIS">
+      <soap:operation soapAction="urn:protheus/GETFECADMIS" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETFECNOM">
+      <soap:operation soapAction="urn:protheus/GETFECNOM" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETFILIAL">
+      <soap:operation soapAction="urn:protheus/GETFILIAL" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETHISLAB">
+      <soap:operation soapAction="urn:protheus/GETHISLAB" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETMAIL">
+      <soap:operation soapAction="urn:protheus/GETMAIL" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETMAILSUPERVISOR">
+      <soap:operation soapAction="urn:protheus/GETMAILSUPERVISOR" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETPARAMETRO">
+      <soap:operation soapAction="urn:protheus/GETPARAMETRO" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETRCNOM">
+      <soap:operation soapAction="urn:protheus/GETRCNOM" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETRECNOM">
+      <soap:operation soapAction="urn:protheus/GETRECNOM" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETSOLDOC">
+      <soap:operation soapAction="urn:protheus/GETSOLDOC" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETSOLPRES">
+      <soap:operation soapAction="urn:protheus/GETSOLPRES" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETSOLVAC">
+      <soap:operation soapAction="urn:protheus/GETSOLVAC" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETSSL">
+      <soap:operation soapAction="urn:protheus/GETSSL" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETTELCONT">
+      <soap:operation soapAction="urn:protheus/GETTELCONT" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GETTIPDOC">
+      <soap:operation soapAction="urn:protheus/GETTIPDOC" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="SETSOLDOC">
+      <soap:operation soapAction="urn:protheus/SETSOLDOC" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="SETSOLPRES">
+      <soap:operation soapAction="urn:protheus/SETSOLPRES" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="SETSOLVAC">
+      <soap:operation soapAction="urn:protheus/SETSOLVAC" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="VERIFICARACCESO">
+      <soap:operation soapAction="urn:protheus/VERIFICARACCESO" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WSPTALNOM">
+    <documentation>Funcionalidad para procesos del portal de Nomina para el  Empleado </documentation>
+    <port name="WSPTALNOMSOAP" binding="s0:WSPTALNOMSOAP">
+      <soap:address location="http://localhost:1388/ws/WSPTALNOM.apw" />
+    </port>
+  </service>
+</definitions>

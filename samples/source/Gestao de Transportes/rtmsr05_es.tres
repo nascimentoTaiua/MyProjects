@@ -1,0 +1,25 @@
+0001#STR0001#ALL#Este programa emitira Lista de Embarque.  
+0002#STR0002#ALL#Lista de Embarque
+0003#STR0003#ALL#A rayas
+0004#STR0004#ALL#Administracion
+0005#STR0005#ALL#Imprimiendo Lista de Emabrque. 
+0006#STR0006#ALL#CANCELADO POR  OPERADOR
+0007#STR0007#ALL#Verificador                          Organizador
+0008#STR0008#ALL#Ayudante                             Ayudante
+0009#STR0009#ALL#Sucursal de Origen
+0010#STR0010#ALL#Emision: 
+0011#STR0011#ALL#CNH : 
+0012#STR0012#ALL#Vehiculo  : 
+0013#STR0013#ALL# Tipo: 
+0014#STR0014#ALL#Capac: 
+0015#STR0016#ALL#Conductor : 
+0016#STR0017#ALL#Teleriesgo:
+0017#STR0018#ALL#Observacion:
+0018#STR0019#ALL#Valor Adic.: 
+0019#STR0020#ALL#Teleriego: 
+0020#STR0021#ALL#Viaje : 
+0021#STR0022#ALL#|Destino     |
+0022#STR0023#ALL#|Descarga    |
+0023#STR0024#ALL#|(  ) 1a Parte |(  ) 2a Parte |(  ) 3a Parte |(  ) Cierre      
+0024#STR0025#ALL# |  Nº. Lacre: 
+0025#STR0026#ALL#Local/Localizacion Documento/Serie Volumen

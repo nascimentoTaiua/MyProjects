@@ -1,0 +1,25 @@
+0001#STR0001#ALL#Romaneio De Entrega
+0002#STR0002#ALL#Este Programa Irá Listar O Romaneio De Entrega
+0003#STR0003#ALL#Código de barras
+0004#STR0004#ALL#Administração
+0005#STR0005#ALL#Fil.orig. Documento   Cliente                                   Morada                                  Freguesia                           Vols.       Peso
+0010#STR0010#ALL#Observação : 
+0011#STR0011#ALL# assinatura condutor  
+0012#STR0012#ALL# assinatura ajudante  
+0017#STR0017#ALL#   capacidade : 
+0018#STR0018#ALL#Tipo veic.: 
+0019#STR0019#ALL#Km saida : 
+0020#STR0020#ALL#Km chegada : 
+0021#STR0021#ALL#Condutor  
+0024#STR0024#ALL#Romaneio De Entrega
+0025#STR0025#ALL#Este Programa Irá Listar O Romaneio De Entrega
+0027#STR0027#ALL#Fil.ori.
+0029#STR0029#ALL#Descrição
+0030#STR0030#ALL#Veículo
+0031#STR0031#ALL#Matrícula
+0033#STR0033#ALL#Tipo Veíc
+0034#STR0034#ALL#Km Saída
+0040#STR0040#ALL#Série
+0042#STR0042#ALL#Morada
+0043#STR0043#ALL#Localidade
+0046#STR0046#ALL#Observação
