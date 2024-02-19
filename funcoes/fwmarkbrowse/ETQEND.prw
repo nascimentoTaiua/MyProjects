@@ -3,19 +3,19 @@
 
 Static lMarkAll := .T. //Indicador de marca/desmarca todos
 Static nContTMP := 0   //Contador de Registros Marcados (ProcRegua)
-/*/{Protheus.doc} ETQEND
+/*/{Protheus.doc} NFEMAN
 Impressão de etiquetas de Endereço
 @author ricardo.rotta
 @VERSION PROTHEUS 12
 @SINCE 06/01/23
 @Impressão Etiquetas de Endereço
 /*/
-User Function ETQEND()
+User Function NFEMAN()
 
 Local aColsBrw    := {}
 Local aColsSX3    := {}
 Local aSeeks      := {}
-Private cPerg     := "ETIQEND"
+Private cPerg     := "NFEMANU"
 Private oBrowse   := Nil
 Private cAliasBrw := GetNextAlias()
 Private cMarca    := "X"
@@ -50,7 +50,7 @@ Gera_SX1(cPerg)
 
 	oBrowse:= FWMarkBrowse():New()
 	oBrowse:SetDescription("Etiqueta Endereço")
-	oBrowse:SetMenuDef("ETQEND")
+	oBrowse:SetMenuDef("NFEMAN")
 	oBrowse:SetFields(aColsBrw)
 	oBrowse:SetSeek(.T.,aSeeks)
 	oBrowse:SetTemporary(.T.)
@@ -88,8 +88,8 @@ Return
 //-------------------------------------------------------------------//
 Static Function MenuDef()
 Local aRotina := {}
-	ADD OPTION aRotina TITLE "Selecionar"	ACTION 'StaticCall(ETQEND,RecarSel)' 	OPERATION 3 ACCESS 0 // Processar
-	ADD OPTION aRotina TITLE "Imprimir" 	ACTION 'StaticCall(ETQEND,IMP001)' 		OPERATION 4 ACCESS 0 // Processar
+	ADD OPTION aRotina TITLE "Selecionar"	ACTION 'StaticCall(NFEMAN,RecarSel)' 	OPERATION 3 ACCESS 0 // Processar
+	ADD OPTION aRotina TITLE "Imprimir" 	ACTION 'StaticCall(NFEMAN,IMP001)' 		OPERATION 4 ACCESS 0 // Processar
 Return aRotina
 //-------------------------------------------------------------------------
 
