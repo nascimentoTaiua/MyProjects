@@ -3,14 +3,14 @@
 #INCLUDE 'totvs.ch'
 
 /*/{Protheus.doc} zNfse
-    FunÁ„o para chamar o link da NFS-e, de acordo com a RPS informada. 
+    Fun√ß√£o para chamar o link da NFS-e, de acordo com a RPS informada. 
     @type  Function
-    @author Taiu„ Nascimento | TOTVS Nordeste
+    @author Taiu√£ Nascimento | TOTVS Nordeste
     @since 09/01/2024
     @version 1.02
-    Obs1: Necess·rio criar consulta padr„o da SF2 que retorne F2_DOC, F2_SERIE, F2_CLIENTE e F2_LOJA.
-    Obs2: Criar campo na tabela CC2->CC2_XLINK, nesse campo ser· informado a estrutura da URL para
-    VizualizaÁ„o da NFS-e emitida pela respectiva prefeitura.
+    Obs1: Necess√°rio criar consulta padr√£o da SF2 que retorne F2_DOC, F2_SERIE, F2_CLIENTE e F2_LOJA.
+    Obs2: Criar campo na tabela CC2->CC2_XLINK, nesse campo ser√° informado a estrutura da URL para
+    Vizualiza√ß√£o da NFS-e emitida pela respectiva prefeitura.
 /*/
 
 User Function zNfse()
@@ -32,7 +32,7 @@ User Function zNfse()
     aadd(aPergs, {1, "Cliente"    , paramCliente, "", ".T.", ""   , ".T.", 80, .F.})
     aadd(aPergs, {1, "Loja"       , paramLoja   , "", ".T.", ""      , ".T.", 80, .F.})
 
-    IF Parambox(aPergs, "Informe os Par‚metros")
+    IF Parambox(aPergs, "Informe os Par√¢metros")
         
         cNfs       := AllTrim(Posicione( 'SF2' ,1,FWxFilial( 'SF2' )+MV_PAR01+AllTrim(MV_PAR02)+MV_PAR03+MV_PAR04+ ' ' + 'N' , 'F2_NFELETR' ))
 
@@ -42,10 +42,10 @@ User Function zNfse()
 
         IF (cNfs == "" .AND. cProtocolo == "")
             cMsg := "Nota ainda nao autorizada. Selecione uma nota com codigo de verificacao. "
-            cMsg += "Verifique o conte˙do dos campos F2_NFELETR e F2_CODNFE"
+            cMsg += "Verifique o conte√∫do dos campos F2_NFELETR e F2_CODNFE"
             MSGALERT(cMsg)
         ELSE
-            cLink := Posicione("CC2",1,XFILIAL("CC2")+cEstado+cMunicipio,"CC2_XLINK")
+            cLink := GetMV("MV_XNFSLNK")
             ShellExecute("Open", &(cLink), "", "", 1)
         ENDIF
     ENDIF
